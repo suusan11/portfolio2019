@@ -1,0 +1,12 @@
+//break point
+@mixin pcSize {
+  @media (min-width: (1000px)) {
+    @content;
+  }
+}
+
+@mixin middleSize {
+  @media (min-width: 640px) and (max-width: 999px) {
+    @content;
+  }
+}
