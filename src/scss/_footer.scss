@@ -1,0 +1,29 @@
+@import "color", "mixin", "typography";
+
+footer {
+  width: 100vw;
+  height: 200px;
+  background-color: $black;
+  padding: 20% 0;
+  text-align: center;
+
+  .footer__flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .icon {
+      width: 12vw;
+      height: 6vw;
+      stroke-width: 0;
+      fill: $white;
+    }
+  }
+
+  p {
+    color: $white;
+    @include font_vw(9);
+    font-weight: $font-weight-light;
+    margin-top: 8%;
+  }
+}
