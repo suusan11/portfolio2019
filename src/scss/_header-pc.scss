@@ -1,0 +1,6 @@
+//depend on the browser
+@include mobileSize {
+  .header__pc {
+    display: none;
+  }
+}

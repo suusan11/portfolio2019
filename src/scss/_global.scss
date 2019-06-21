@@ -27,6 +27,7 @@ section {
   margin: 5% 0;
 }
 
+//fonts style
 .hero__title h1 {
   font-family: $font-empha;
   @include font_vw(94);
@@ -65,6 +66,9 @@ p {
     color: $pink;
   }
 }
+.header__mb p{
+  @include font_vw(14);
+}
 .hero__title p {
   @include font_vw(18);
   @include pcSize {
@@ -78,6 +82,7 @@ p {
   }
 }
 a {
+  text-decoration: none;
   color: $black;
 }
 .header__flex--right {
@@ -86,6 +91,7 @@ a {
   }
 }
 
+//common styles
 .container {
   width: 80vw;
   margin: 0 auto;
