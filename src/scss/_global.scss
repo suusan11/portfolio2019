@@ -27,22 +27,33 @@ section {
   margin: 5% 0;
 }
 
-h1 {
-
+.hero__title h1 {
+  font-family: $font-empha;
+  @include font_vw(94);
 }
-
-h2 {
-
+h1.section__title {
+  @include font_vw(47);
+  color: $black__opacity;
+  font-weight: $font-weight-bold;
+  font-style: italic;
 }
-
+.about h2 {
+  font-family: $font-empha;
+  @include font_vw(47);
+}
 h3 {
-
+  @include font_vw(17);
 }
-
 p {
+  @include font_vw(12);
 
+  span {
+    color: $pink;
+  }
 }
-
+.contact p {
+  @include font_vw(14);
+}
 a {
-
+  color: $black;
 }

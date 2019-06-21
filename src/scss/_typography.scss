@@ -1,16 +1,23 @@
 @import "color", "mixin";
 // _typography.scss defined everything about font-family
 
-
 // font-family
 @import url('https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&display=swap');
+@font-face {
+  font-family: 'emmeline';
+  src: url('../font/emmeline-regular-webfont.woff') format('woff'),
+       url('../font/emmeline-regular-webfont.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
 
 $font-base: 'Roboto', sans-serif;
+$font-empha: 'emmeline', serif;
 
 //font size
-$font-size-base: 13px;
-$font-size-h1: 3.846rem; //50px
-$font-size-h3: 1.538rem; //20px
+//$font-size-base: 13px;
+//$font-size-h1: 3.846rem; //50px
+//$font-size-h3: 1.538rem; //20px
 
 //font-weight
 $font-weight-thin: 100;
@@ -22,7 +29,7 @@ $font-weight-black: 900;
 
 html {
   font-family: $font-base;
-  font-size: $font-size-base;
+  //font-size: $font-size-base;
   line-height: 1.2;
   font-weight: $font-weight-regular;
   -webkit-font-smoothing: subpixel-antialiased;
@@ -30,8 +37,8 @@ html {
   color: $black;
 }
 
-@include pcSize {
-  html {
-    font-size: $font-size-base * 1.23;
-  }
-}
+//@include pcSize {
+//  html {
+//    font-size: $font-size-base * 0.3;
+//  }
+//}

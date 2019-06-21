@@ -10,3 +10,14 @@
     @content;
   }
 }
+
+//font calc
+@function get_vw($size, $viewport: 320) {
+  $rate: 100 / $viewport;
+  @return $rate * $size * 1vw;
+}
+
+@mixin font_vw($font-size: 10) {
+  font-size: $font-size * 1px;
+  font-size: get_vw($font-size);
+}
