@@ -30,30 +30,58 @@ section {
 .hero__title h1 {
   font-family: $font-empha;
   @include font_vw(94);
+  @include pcSize {
+    font-size: 160px;
+  }
 }
 h1.section__title {
   @include font_vw(47);
   color: $black__opacity;
   font-weight: $font-weight-bold;
   font-style: italic;
+  @include pcSize {
+    font-size: 70px;
+  }
 }
 .about h2 {
   font-family: $font-empha;
   @include font_vw(47);
+  @include pcSize {
+    font-size: 70px;
+  }
 }
 h3 {
   @include font_vw(17);
+  @include pcSize {
+    font-size: 23px;
+  }
 }
 p {
   @include font_vw(12);
-
+  @include pcSize {
+    font-size: 18px;
+  }
   span {
     color: $pink;
   }
 }
+.hero__title p {
+  @include font_vw(18);
+  @include pcSize {
+    font-size: 26px;
+  }
+}
 .contact p {
   @include font_vw(14);
+  @include pcSize {
+    font-size: 18px;
+  }
 }
 a {
   color: $black;
+}
+.header__flex--right {
+  li {
+    font-size: 18px;
+  }
 }
