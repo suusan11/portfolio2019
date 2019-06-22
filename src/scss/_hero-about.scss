@@ -1,4 +1,4 @@
-@import 'color';
+@import 'color', 'mixin';
 
 //only to hero section
 .hero {
@@ -55,10 +55,28 @@
     h2 {
       margin-bottom: 6%;
     }
+
+    &:first-child::after {
+      @include line(-20deg, 20vw, 5vh, $white);
+    }
+    &:last-child::after {
+      @include line(20deg, 10vw, -2vh, $white);
+    }
   }
 }
 
 //only to about__wrap bottom
 .about__wrap.bottom {
   margin-top: -13vh;
+
+  .about__wrap--item {
+    &:first-child::before {
+      @include line(10deg, 23vw, -3vh, $black);
+      margin-top: -15vh;
+    }
+    &:last-child::before {
+      @include line(-10deg, 15vw, 1vh, $black);
+      margin-top: -10vh;
+    }
+  }
 }
