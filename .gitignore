@@ -9,3 +9,5 @@ package-lock.json
 dist/main.js.map
 
 .idea/
+
+dist/images/sample.jpg
