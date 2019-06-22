@@ -44,7 +44,7 @@ h1.section__title {
     font-size: 70px;
   }
 }
-.about h2 {
+.about__wrap h2 {
   font-family: $font-empha;
   @include font_vw(47);
   @include pcSize {
@@ -71,6 +71,7 @@ p {
 }
 .hero__title p {
   @include font_vw(18);
+  font-weight: $font-weight-light;
   @include pcSize {
     font-size: 26px;
   }
