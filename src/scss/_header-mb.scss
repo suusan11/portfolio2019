@@ -33,6 +33,10 @@
 
     a {
       color: $white;
+
+      p {
+        @include font_vw(14);
+      }
     }
   }
 }

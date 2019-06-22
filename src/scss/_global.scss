@@ -27,26 +27,12 @@ section {
   margin: 5% 0;
 }
 
-//fonts style
-.hero__title h1 {
-  font-family: $font-empha;
-  @include font_vw(94);
-  @include pcSize {
-    font-size: 160px;
-  }
-}
+//common fonts style
 h1.section__title {
   @include font_vw(47);
   color: $black__opacity;
   font-weight: $font-weight-bold;
   font-style: italic;
-  @include pcSize {
-    font-size: 70px;
-  }
-}
-.about__wrap h2 {
-  font-family: $font-empha;
-  @include font_vw(47);
   @include pcSize {
     font-size: 70px;
   }
@@ -66,30 +52,9 @@ p {
     color: $pink;
   }
 }
-.header__mb p{
-  @include font_vw(14);
-}
-.hero__title p {
-  @include font_vw(18);
-  font-weight: $font-weight-light;
-  @include pcSize {
-    font-size: 26px;
-  }
-}
-.contact p {
-  @include font_vw(14);
-  @include pcSize {
-    font-size: 18px;
-  }
-}
 a {
   text-decoration: none;
   color: $black;
-}
-.header__flex--right {
-  li {
-    font-size: 18px;
-  }
 }
 
 //common styles

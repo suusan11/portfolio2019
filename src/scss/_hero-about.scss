@@ -1,4 +1,4 @@
-@import 'color', 'mixin';
+@import 'color', 'typography', 'mixin';
 
 //only to hero section
 .hero {
@@ -11,7 +11,23 @@
 
   &__title {
     padding-top: 15vh;
+
+    h1 {
+      font-family: $font-empha;
+      @include font_vw(94);
+      @include pcSize {
+        font-size: 160px;
+      }
+    }
+    p {
+      @include font_vw(18);
+      font-weight: $font-weight-light;
+      @include pcSize {
+        font-size: 26px;
+      }
+    }
   }
+
   &__img {
     position: absolute;
     top: 85vh;
@@ -36,6 +52,14 @@
 
   &--item {
     width: 50%;
+
+    h2 {
+      font-family: $font-empha;
+      @include font_vw(47);
+      @include pcSize {
+        font-size: 70px;
+      }
+    }
 
     & > p {
       text-align: left;
