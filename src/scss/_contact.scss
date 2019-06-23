@@ -1,8 +1,35 @@
-@import "mixin";
+@import "color", "mixin";
 
-.contact p {
-  @include font_vw(14);
-  @include pcSize {
-    font-size: 18px;
+.contact {
+  margin: 15vh auto;
+
+  &__info{
+    width: 70vw;
+    margin: 5% auto;
+    padding-left: 5vw;
+
+    p {
+      @include font_vw(14);
+      @include pcSize {
+        font-size: 18px;
+      }
+      line-height: 1.7;
+    }
+  }
+
+  button {
+    display: block;
+    width: 55vw;
+    background-color: $white;
+    border: 3px solid $black;
+    padding: 5% 10%;
+    margin: 5vh auto 0;
+
+    a {
+      @include font_vw(14);
+      @include pcSize {
+        font-size: 20px;
+      }
+    }
   }
 }
