@@ -1,0 +1,20 @@
+@import "color";
+
+.values {
+  //margin: 10vh auto;
+  position: relative;
+  width: 80vw;
+  height: 50vh;
+  border: 6px solid $border;
+  margin: 10vh auto;
+  padding: 15% 5%;
+
+  h1 {
+    position: absolute;
+    top: -5vh;
+    left: 14vw;
+    background-color: $white;
+    padding: 0 5%;
+    z-index: 2;
+  }
+}
