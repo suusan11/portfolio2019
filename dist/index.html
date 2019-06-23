@@ -8,34 +8,35 @@
     <script src="./main.js"></script>
 </head>
 <body>
-    <!--header for mobile-->
-    <header class="header__mb">
-        <img src="" alt="logo">
-        <div class="header__mb__flex">
-            <h3>Mie Suzuki</h3>
-            <a href=""><p>MENU</p></a>
-        </div>
-    </header>
+    <!--&lt;!&ndash;header for mobile&ndash;&gt;-->
+    <!--<header class="header__mb" id="js-header">-->
+        <!--<img src="" alt="logo">-->
+        <!--<div class="header__mb__flex">-->
+            <!--<h3>Mie Suzuki</h3>-->
+            <!--<a href=""><p>MENU</p></a>-->
+        <!--</div>-->
+    <!--</header>-->
 
     <!--header for web browser-->
-    <header class="header__pc">
-        <div class="header__pc__flex">
-            <div class="header__pc__flex--left">
+    <header class="header" id="js-header">
+        <div class="header__flex">
+            <div class="header__flex--left">
                 <img src="" alt="logo">
                 <h3>Mie Suzuki</h3>
             </div>
-            <ul class="header__pc__flex--right">
+            <ul class="header__flex--right">
                 <li>ABOUT</li>
                 <li>WORKS</li>
                 <li>CONTACT</li>
             </ul>
+            <a class="global__menu" href=""><p>MENU</p></a>
         </div>
     </header>
 
     <!--hero and about section-->
     <section class="hero">
         <div class="container">
-            <div class="hero__title">
+            <div class="hero__title" id="js-breakPoint">
                 <h1>I'm Mie.</h1>
                 <p>Based on Vancouver</p>
             </div>
@@ -43,7 +44,7 @@
             <div class="about__wrap top">
                 <div class="about__wrap--item">
                     <h2>Design</h2>
-                    <p>A keen eye for <span>pixel-perfect details</span> for user-friendly. Believe that design is a means of problem-solving.</p>
+                    <p>A keen eye for <span>pixel-perfect details</span>. Believe that design is a means of problem-solving.</p>
                 </div>
                 <div class="about__wrap--item">
                     <h2>Coding</h2>

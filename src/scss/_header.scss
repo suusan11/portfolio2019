@@ -1,0 +1,76 @@
+@import "color", "mixin";
+
+//browser for web and tablet
+@include pcSize {
+  .global__menu {
+    display: none;
+  }
+}
+@include middleSize {
+  .global__menu {
+    display: none;
+  }
+}
+
+//browser for mobile
+@include mobileSize {
+  .header__flex--right {
+    display: none;
+  }
+}
+
+.header {
+  width: 100vw;
+  height: 65px;
+  background-color: $black;
+  color: $white;
+  padding-top: 5%;
+  transition: position 3s;
+
+  img {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+  &__flex {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-left: 20%;
+
+    //only for mobile
+    a {
+      color: $white;
+
+      p {
+        @include font_vw(14);
+      }
+    }
+
+    //only for pc and tablet
+    &__flex--right {
+      li {
+        font-size: 18px;
+      }
+    }
+  }
+}
+
+//fixed to header --> handle by js
+.is-show {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  animation: smoothScroll 0.4s ease-in forwards;
+}
+
+@keyframes smoothScroll {
+  0% {
+    transform: translateY(-50px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
