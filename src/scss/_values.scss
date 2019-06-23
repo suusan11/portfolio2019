@@ -22,7 +22,7 @@
       display: flex;
       justify-content: center;
       align-items:flex-start;
-      margin-bottom: 20px;
+      margin-bottom: 5vh;
 
       &-icon {
         stroke-width: 0;
@@ -32,6 +32,10 @@
 
       &:last-child {
         margin-bottom: 0;
+
+        .values__item--flex-icon {
+          padding-right: 13px;
+        }
       }
     }
   }
