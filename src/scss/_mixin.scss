@@ -37,3 +37,15 @@
   transform: rotate($rotate) translateX($x) translateY($y);
   background-color: $color;
 }
+
+//background line to works section
+@mixin bgLine($left) {
+  position: absolute;
+  top: 0;
+  left: $left;
+  display: block;
+  content: "";
+  width: 1px;
+  height: 100%;
+  background-color: $bgLine;
+}

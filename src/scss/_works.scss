@@ -1,3 +1,38 @@
-.work img {
-  width: 80vw;
+@import "color", "mixin";
+
+.works {
+  position: relative;
+  width: 100vw;
+  background-color: $gray;
+  padding: 10% 0;
+  text-align: center;
+
+  h1 {
+    margin-bottom: 5vh;
+  }
+
+  &::before {
+    @include bgLine(33vw);
+  }
+  &::after {
+    @include bgLine(66vw);
+  }
+}
+
+.work {
+  position: relative;
+  margin: 15vh 0;
+  z-index: 2;
+
+  img {
+    width: 80vw;
+  }
+
+  &:last-child img {
+    width: 40vw;
+  }
+
+  &__hover {
+    display: none;
+  }
 }
