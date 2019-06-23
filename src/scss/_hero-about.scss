@@ -7,7 +7,6 @@
   margin: 0 auto 50%;
   background-color: $black;
   color: $white;
-  text-align: center;
 
   &__title {
     padding-top: 15vh;
@@ -40,33 +39,38 @@
   }
 }
 
-//only to about section
-.about {
-  text-align: center;
-}
 
 //some common style to hero and about
-.about__wrap {
-  display: flex;
-  justify-content: space-between;
+.hero, .about {
+  text-align: center;
 
-  &--item {
-    width: 50%;
+  .about__wrap {
+    display: flex;
+    justify-content: space-between;
 
-    h2 {
-      font-family: $font-empha;
-      @include font_vw(47);
-      @include pcSize {
-        font-size: 70px;
+    &--item {
+      width: 50%;
+
+      h2 {
+        font-family: $font-empha;
+        @include font_vw(47);
+        @include pcSize {
+          font-size: 70px;
+        }
       }
-    }
 
-    & > p {
-      text-align: left;
-    }
+      & > p {
+        @include font_vw(11);
+        @include pcSize {
+          font-size: 15px;
+        }
+        line-height: 1.5;
+        text-align: left;
+      }
 
-    &:last-child {
-      margin-top: 10vh;
+      &:last-child {
+        margin-top: 10vh;
+      }
     }
   }
 }
