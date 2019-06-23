@@ -25,6 +25,10 @@ main {
 
 section {
   margin: 5% 0;
+
+  & > .section__title {
+    text-align: center;
+  }
 }
 
 //common fonts style
