@@ -24,22 +24,28 @@
   height: 65px;
   background-color: $black;
   color: $white;
-  padding-top: 5%;
+  padding-top: 4vh;
   transition: position 3s;
 
-  img {
+  &__logo {
     position: absolute;
     top: 0;
     left: 0;
+    width: 5px;
+    height: 5px;
+
+    img {
+      width: 10vw;
+    }
   }
 
   &__flex {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    margin-left: 20%;
+    margin-left: 5vw;
 
-    //only for mobile
+    //global menu only for mobile
     a {
       color: $white;
 
@@ -47,11 +53,24 @@
         @include font_vw(14);
       }
     }
+  }
+}
+
+@include pcSize {
+  .header {
+    height: 100px;
+    padding-top: 30px;
 
     //only for pc and tablet
     &__flex--right {
+      width: 20vw;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+
       li {
         font-size: 18px;
+        margin: 0 2vw;
       }
     }
   }
