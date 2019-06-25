@@ -1,4 +1,4 @@
-@import "color";
+@import "color", "mixin";
 
 .values {
   position: relative;
@@ -11,7 +11,9 @@
   h1 {
     position: absolute;
     top: -5vh;
-    left: 14vw;
+    left: 0;
+    right: 0;
+    margin: auto;
     background-color: $white;
     padding: 0 5%;
     z-index: 2;
@@ -35,6 +37,32 @@
 
         .values__item--flex-icon {
           padding-right: 13px;
+        }
+      }
+    }
+  }
+}
+
+@include pcSize {
+  .values {
+    width: 40vw;
+    height: 80vh;
+    padding: 8% 5%;
+
+    &__item--flex {
+      margin-bottom: 10vh;
+
+      &:first-child {
+        .values__item--flex-icon {
+          padding-right: 13px;
+        }
+      }
+
+      &:last-child {
+        margin-bottom: 0;
+
+        .values__item--flex-icon {
+          width: 15vw;
         }
       }
     }
