@@ -11,11 +11,13 @@ window.addEventListener('scroll', function(){
     const breakPointTotal = breakPoint + objectTop;
 
     const headerShow = document.getElementById('js-header');
+    const addMargin = document.getElementById('js-margin');
 
     if(scrollTotal > breakPointTotal) {
         headerShow.classList.add('is-show');
+        addMargin.classList.add('add-margin');
     }else {
         headerShow.classList.remove('is-show');
+        addMargin.classList.remove('add-margin');
     }
 });
-

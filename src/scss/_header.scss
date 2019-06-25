@@ -20,6 +20,7 @@
 }
 
 .header {
+  position: fixed;
   width: 100vw;
   height: 65px;
   background-color: $black;
@@ -70,7 +71,7 @@
 
       li {
         font-size: 18px;
-        margin: 0 2vw;
+        padding: 0 2vw;
       }
     }
   }
@@ -98,7 +99,6 @@
 
 //fixed to header --> handle by js
 .is-show {
-  position: fixed;
   top: 0;
   left: 0;
   z-index: 10;
@@ -111,5 +111,12 @@
   }
   100% {
     transform: translateY(0);
+  }
+}
+
+.add-margin {
+  margin-top: 65px;
+  @include pcSize {
+    margin-top: 100px;
   }
 }
