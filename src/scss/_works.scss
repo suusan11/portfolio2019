@@ -36,3 +36,25 @@
     display: none;
   }
 }
+
+@include pcSize {
+  .works__flex {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    flex-wrap: wrap;
+  }
+
+  .work {
+    width: 35vw;
+    margin: 5%;
+
+    img {
+      width: 100%;
+    }
+
+    &:last-child img {
+      width: 45%;
+    }
+  }
+}
