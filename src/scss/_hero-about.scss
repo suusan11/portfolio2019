@@ -30,12 +30,28 @@
   &__img {
     position: absolute;
     top: 85vh;
-    left: 20vw;
+    left: 0;
+    right: 0;
     width: 217px;
     height: 217px;
     border-radius: 50%;
     background-color: $white;
     z-index: 2;
+    margin: auto;
+  }
+  @include pcSize {
+    &__img {
+      top: 700px;
+      width: 280px;
+      height: 280px;
+    }
+  }
+  @include middleSize {
+    &__img {
+      top: 700px;
+      width: 250px;
+      height: 250px;
+    }
   }
 }
 
