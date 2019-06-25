@@ -11,10 +11,22 @@
   h1 {
     position: absolute;
     top: -5vh;
-    left: 13vw;
+    //left: 13vw;
+    left: 0;
+    right: 0;
+    margin: auto;
     background-color: $white;
     padding: 0 5%;
     z-index: 2;
+
+    &::before {
+      @include sideLine;
+      left: 0;
+    }
+    &::after {
+      @include sideLine;
+      right: 0;
+    }
   }
 
   &__item {
@@ -47,9 +59,9 @@
     height: 80vh;
     padding: 8% 5%;
 
-    h1 {
-      left: 8.8vw;
-    }
+    //h1 {
+    //  left: 8.8vw;
+    //}
 
     &__item--flex {
       margin-bottom: 10vh;
