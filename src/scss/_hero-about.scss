@@ -114,13 +114,13 @@
     &:first-child::after {
       @include line(-20deg, 20vw, 5vh, $white);
       @include pcSize {
-        @include line(-30deg, 15vw, 11vh, $white);
+        @include line(-30deg, 18vw, 17vh, $white);
       }
     }
     &:last-child::after {
       @include line(20deg, 10vw, -2vh, $white);
       @include pcSize {
-        @include line(40deg, 2vw, -7vh, $white);
+        @include line(40deg, 0, -4vh, $white);
       }
     }
   }
@@ -130,7 +130,7 @@
 .about__wrap.bottom {
   margin-top: -13vh;
   @include pcSize {
-    margin-top: -60vh;
+    margin-top: -80vh;
   }
 
   .about__wrap--item {
@@ -138,14 +138,14 @@
       @include line(10deg, 23vw, -3vh, $black);
       margin-top: -15vh;
       @include pcSize {
-        @include line(30deg, 18vw, -13vh, $black);
+        @include line(40deg, 18vw, -21vh, $black);
       }
     }
     &:last-child::before {
       @include line(-10deg, 15vw, 1vh, $black);
       margin-top: -10vh;
       @include pcSize {
-        @include line(-15deg, 5vw, 1vh, $black);
+        @include line(-40deg, 2vw, 7vh, $black);
         margin-top: -15vh;
       }
     }
