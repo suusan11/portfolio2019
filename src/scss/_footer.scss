@@ -6,6 +6,9 @@ footer {
   background-color: $black;
   padding: 20% 0;
   text-align: center;
+  @include pcSize {
+    padding: 5% 0;
+  }
 
   .footer__flex {
     display: flex;
@@ -17,6 +20,10 @@ footer {
       height: 6vw;
       stroke-width: 0;
       fill: $white;
+      @include pcSize {
+        width: 5vw;
+        height: 2vw;
+      }
     }
   }
 
@@ -25,5 +32,9 @@ footer {
     @include font_vw(9);
     font-weight: $font-weight-light;
     margin-top: 8%;
+    @include pcSize {
+      font-size: 13px;
+      margin-top: 3%;
+    }
   }
 }
