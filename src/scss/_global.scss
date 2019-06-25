@@ -46,6 +46,9 @@ h3 {
   @include pcSize {
     font-size: 23px;
   }
+  @include middleSize {
+    font-size: 23px;
+  }
 }
 p {
   @include font_vw(12);

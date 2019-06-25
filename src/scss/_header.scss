@@ -76,6 +76,26 @@
   }
 }
 
+@include middleSize {
+  .header {
+    height: 100px;
+    padding-top: 5vh;
+
+    //only for pc and tablet
+    &__flex--right {
+      width: 20vw;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+
+      li {
+        font-size: 18px;
+        margin: 0 2vw;
+      }
+    }
+  }
+}
+
 //fixed to header --> handle by js
 .is-show {
   position: fixed;
