@@ -11,9 +11,7 @@
   h1 {
     position: absolute;
     top: -5vh;
-    left: 0;
-    right: 0;
-    margin: auto;
+    left: 13vw;
     background-color: $white;
     padding: 0 5%;
     z-index: 2;
@@ -48,6 +46,10 @@
     width: 40vw;
     height: 80vh;
     padding: 8% 5%;
+
+    h1 {
+      left: 8.8vw;
+    }
 
     &__item--flex {
       margin-bottom: 10vh;
