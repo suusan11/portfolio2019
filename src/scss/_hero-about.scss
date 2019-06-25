@@ -70,6 +70,10 @@
 
     &--item {
       width: 50%;
+      @include pcSize {
+        width: 30%;
+        margin: 0 8vw;
+      }
 
       h2 {
         font-family: $font-empha;
@@ -102,13 +106,22 @@
   .about__wrap--item {
     h2 {
       margin-bottom: 6%;
+      @include pcSize {
+        margin-bottom: 3%;
+      }
     }
 
     &:first-child::after {
       @include line(-20deg, 20vw, 5vh, $white);
+      @include pcSize {
+        @include line(-30deg, 15vw, 11vh, $white);
+      }
     }
     &:last-child::after {
       @include line(20deg, 10vw, -2vh, $white);
+      @include pcSize {
+        @include line(40deg, 2vw, -7vh, $white);
+      }
     }
   }
 }
@@ -116,15 +129,25 @@
 //only to about__wrap bottom
 .about__wrap.bottom {
   margin-top: -13vh;
+  @include pcSize {
+    margin-top: -60vh;
+  }
 
   .about__wrap--item {
     &:first-child::before {
       @include line(10deg, 23vw, -3vh, $black);
       margin-top: -15vh;
+      @include pcSize {
+        @include line(30deg, 18vw, -13vh, $black);
+      }
     }
     &:last-child::before {
       @include line(-10deg, 15vw, 1vh, $black);
       margin-top: -10vh;
+      @include pcSize {
+        @include line(-15deg, 5vw, 1vh, $black);
+        margin-top: -15vh;
+      }
     }
   }
 }
