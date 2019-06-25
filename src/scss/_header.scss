@@ -24,7 +24,7 @@
   height: 65px;
   background-color: $black;
   color: $white;
-  padding-top: 4vh;
+  padding-top: 3vh;
   transition: position 3s;
 
   &__logo {
@@ -59,7 +59,7 @@
 @include pcSize {
   .header {
     height: 100px;
-    padding-top: 30px;
+    padding-top: 5vh;
 
     //only for pc and tablet
     &__flex--right {
