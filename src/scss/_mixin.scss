@@ -51,12 +51,12 @@
 }
 
 //side line to values title h1 {
-@mixin sideLine() {
+@mixin sideLine($top) {
     display: block;
     content: "";
     border: 3px solid $border;
     width: 15%;
     position: absolute;
-    top: 4.25vh;
+    top: $top;
     z-index: 3;
 }

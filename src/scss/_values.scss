@@ -11,7 +11,6 @@
   h1 {
     position: absolute;
     top: -5vh;
-    //left: 13vw;
     left: 0;
     right: 0;
     margin: auto;
@@ -20,12 +19,23 @@
     z-index: 2;
 
     &::before {
-      @include sideLine;
-      left: 0;
+      @include sideLine(4vh);
+      left: -1.5vw;
     }
     &::after {
-      @include sideLine;
-      right: 0;
+      @include sideLine(4vh);
+      right: -1.6vw;
+    }
+
+    @include pcSize {
+      &::before {
+        @include sideLine(4vh);
+        left: -0.45vw;
+      }
+      &::after {
+        @include sideLine(4vh);
+        right: -0.45vw;
+      }
     }
   }
 
