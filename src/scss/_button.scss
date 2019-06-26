@@ -1,3 +1,5 @@
+@import "color", "mixin";
+
 button {
   display: block;
   position: relative;
@@ -25,7 +27,7 @@ button {
     height: 100%;
     position: absolute;
     top: 2vh;
-    left: -2.5vw;
+    left: -2vw;
     z-index: -1;
     background:repeating-linear-gradient(-30deg, $pink 0, $pink 5px, $white 5px, $white 10px);
     transition: all ease-out .3s;
