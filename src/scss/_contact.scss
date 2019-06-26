@@ -39,6 +39,10 @@
       width: 28vw;
       padding: 2%;
     }
+    @include middleSize {
+      width: 35vw;
+      padding: 3% 8%;
+    }
 
     a {
       @include font_vw(14);
