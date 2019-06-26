@@ -26,10 +26,16 @@
 
   img {
     width: 80vw;
+    @include middleSize {
+      width: 50vw;
+    }
   }
 
   &:last-child img {
     width: 40vw;
+    @include middleSize {
+      width: 25vw;
+    }
   }
 
   &__hover {
