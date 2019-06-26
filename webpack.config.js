@@ -65,6 +65,11 @@ module.exports = {
                     name: './font/[name].[ext]'
                 }
             },
+            {
+                test: /\.(gif|png|jpg|eot|wof|woff|woff2|ttf|svg)$/,
+                // 画像をBase64として取り込む
+                loader: "url-loader"
+            }
         ],
     },
 };
