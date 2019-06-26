@@ -21,6 +21,10 @@
         font-size: 18px;
         line-height: 2;
       }
+      @include middleSize {
+        font-size: 18px;
+        line-height: 2;
+      }
     }
   }
 
@@ -39,6 +43,9 @@
     a {
       @include font_vw(14);
       @include pcSize {
+        font-size: 20px;
+      }
+      @include middleSize {
         font-size: 20px;
       }
     }

@@ -17,11 +17,17 @@
       @include pcSize {
         font-size: 160px;
       }
+      @include middleSize {
+        font-size: 160px;
+      }
     }
     p {
       @include font_vw(18);
       font-weight: $font-weight-light;
       @include pcSize {
+        font-size: 26px;
+      }
+      @include middleSize {
         font-size: 26px;
       }
     }
@@ -81,11 +87,17 @@
         @include pcSize {
           font-size: 70px;
         }
+        @include middleSize {
+          font-size: 70px;
+        }
       }
 
       & > p {
         @include font_vw(11);
         @include pcSize {
+          font-size: 15px;
+        }
+        @include middleSize {
           font-size: 15px;
         }
         line-height: 1.5;

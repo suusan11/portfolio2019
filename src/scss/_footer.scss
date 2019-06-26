@@ -36,5 +36,9 @@ footer {
       font-size: 13px;
       margin-top: 3%;
     }
+    @include middleSize {
+      font-size: 13px;
+      margin-top: 3%;
+    }
   }
 }

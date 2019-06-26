@@ -40,6 +40,9 @@ h1.section__title {
   @include pcSize {
     font-size: 70px;
   }
+  @include middleSize {
+    font-size: 70px;
+  }
 }
 h3 {
   @include font_vw(17);
@@ -53,6 +56,9 @@ h3 {
 p {
   @include font_vw(12);
   @include pcSize {
+    font-size: 18px;
+  }
+  @include middleSize {
     font-size: 18px;
   }
   span {
