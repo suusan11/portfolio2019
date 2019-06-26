@@ -19,21 +19,21 @@
     z-index: 2;
 
     &::before {
-      @include sideLine(4vh);
+      @include sideLine;
       left: -1.5vw;
     }
     &::after {
-      @include sideLine(4vh);
+      @include sideLine;
       right: -1.6vw;
     }
 
     @include pcSize {
       &::before {
-        @include sideLine(4vh);
+        @include sideLine;
         left: -0.45vw;
       }
       &::after {
-        @include sideLine(4vh);
+        @include sideLine;
         right: -0.45vw;
       }
     }
