@@ -27,31 +27,4 @@
       }
     }
   }
-
-  button {
-    display: block;
-    width: 55vw;
-    background-color: $white;
-    border: 3px solid $black;
-    padding: 5% 10%;
-    margin: 5vh auto 0;
-    @include pcSize {
-      width: 28vw;
-      padding: 2%;
-    }
-    @include middleSize {
-      width: 35vw;
-      padding: 3% 8%;
-    }
-
-    a {
-      @include font_vw(14);
-      @include pcSize {
-        font-size: 20px;
-      }
-      @include middleSize {
-        font-size: 20px;
-      }
-    }
-  }
 }
