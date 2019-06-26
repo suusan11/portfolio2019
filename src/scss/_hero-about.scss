@@ -121,6 +121,9 @@
       @include pcSize {
         margin-bottom: 3%;
       }
+      @include middleSize {
+        margin-bottom: 3%;
+      }
     }
 
     &:first-child::after {
@@ -128,11 +131,17 @@
       @include pcSize {
         @include line(-30deg, 22vw, 18vh, $white);
       }
+      @include middleSize {
+        @include line(-20deg, 27vw, 10vh, $white);
+      }
     }
     &:last-child::after {
       @include line(20deg, 10vw, -2vh, $white);
       @include pcSize {
         @include line(50deg, -5vw, 2vh, $white);
+      }
+      @include middleSize {
+        @include line(30deg, 7vw, -6vh, $white);
       }
     }
   }
@@ -144,6 +153,9 @@
   @include pcSize {
     margin: -70vh 7vw 0 7vw;
   }
+  @include middleSize {
+    margin: -40vh 7vw 0 7vw;
+  }
 
   .about__wrap--item {
     &:first-child::before {
@@ -152,12 +164,19 @@
       @include pcSize {
         @include line(20deg, 15vw, -6vh, $black);
       }
+      @include middleSize {
+        @include line(20deg, 25vw, -10vh, $black);
+      }
     }
     &:last-child::before {
       @include line(-10deg, 15vw, 1vh, $black);
       margin-top: -10vh;
       @include pcSize {
         @include line(-20deg, 2vw, 2vh, $black);
+        margin-top: -15vh;
+      }
+      @include middleSize {
+        @include line(-20deg, 10vw, 4vh, $black);
         margin-top: -15vh;
       }
     }
