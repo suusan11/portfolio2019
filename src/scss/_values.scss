@@ -26,17 +26,6 @@
       @include sideLine;
       right: -1.6vw;
     }
-
-    @include pcSize {
-      &::before {
-        @include sideLine;
-        left: -0.45vw;
-      }
-      &::after {
-        @include sideLine;
-        right: -0.45vw;
-      }
-    }
   }
 
   &__item {
@@ -69,9 +58,53 @@
     height: 80vh;
     padding: 8% 5%;
 
-    //h1 {
-    //  left: 8.8vw;
-    //}
+    h1 {
+        &::before {
+          @include sideLine;
+          left: -0.45vw;
+        }
+        &::after {
+          @include sideLine;
+          right: -0.45vw;
+        }
+    }
+
+    &__item--flex {
+      margin-bottom: 12vh;
+
+      &:first-child {
+        .values__item--flex-icon {
+          padding-right: 13px;
+        }
+      }
+
+      &:last-child {
+        margin-bottom: 0;
+
+        .values__item--flex-icon {
+          width: 15vw;
+        }
+      }
+    }
+  }
+}
+
+@include middleSize {
+  .values {
+    width: 60vw;
+    height: 70vh;
+    padding: 8% 5%;
+
+    h1 {
+        &::before {
+          @include sideLine;
+          left: -0.65vw;
+        }
+        &::after {
+          @include sideLine;
+          right: -0.65vw;
+        }
+      }
 
     &__item--flex {
       margin-bottom: 10vh;
