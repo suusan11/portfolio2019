@@ -113,10 +113,3 @@
     transform: translateY(0);
   }
 }
-
-.add-margin {
-  margin-top: 65px;
-  @include pcSize {
-    margin-top: 100px;
-  }
-}

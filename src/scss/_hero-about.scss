@@ -9,7 +9,7 @@
   color: $white;
 
   &__title {
-    padding-top: 15vh;
+    padding-top: 30vh;
 
     h1 {
       font-family: $font-empha;
@@ -114,13 +114,13 @@
     &:first-child::after {
       @include line(-20deg, 20vw, 5vh, $white);
       @include pcSize {
-        @include line(-30deg, 18vw, 17vh, $white);
+        @include line(-30deg, 22vw, 18vh, $white);
       }
     }
     &:last-child::after {
       @include line(20deg, 10vw, -2vh, $white);
       @include pcSize {
-        @include line(40deg, 0, -4vh, $white);
+        @include line(50deg, -5vw, 2vh, $white);
       }
     }
   }
@@ -128,9 +128,9 @@
 
 //only to about__wrap bottom
 .about__wrap.bottom {
-  margin-top: -13vh;
+  margin: -35vh 5vw 0 5vw;
   @include pcSize {
-    margin-top: -80vh;
+    margin: -70vh 7vw 0 7vw;
   }
 
   .about__wrap--item {
@@ -138,16 +138,25 @@
       @include line(10deg, 23vw, -3vh, $black);
       margin-top: -15vh;
       @include pcSize {
-        @include line(40deg, 18vw, -21vh, $black);
+        @include line(20deg, 15vw, -6vh, $black);
       }
     }
     &:last-child::before {
       @include line(-10deg, 15vw, 1vh, $black);
       margin-top: -10vh;
       @include pcSize {
-        @include line(-40deg, 2vw, 7vh, $black);
+        @include line(-20deg, 2vw, 2vh, $black);
         margin-top: -15vh;
       }
     }
   }
 }
+
+
+//if header will be fixed
+//.add-margin {
+//  margin-top: 65px;
+//  @include pcSize {
+//    margin-top: 100px;
+//  }
+//}
