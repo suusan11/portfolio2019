@@ -20,7 +20,6 @@
 }
 
 .header {
-  position: fixed;
   width: 100vw;
   height: 65px;
   background-color: $black;
@@ -99,6 +98,7 @@
 
 //fixed to header --> handle by js
 .is-show {
+  position: fixed;
   top: 0;
   left: 0;
   z-index: 10;
@@ -112,4 +112,12 @@
   100% {
     transform: translateY(0);
   }
+}
+
+//header for work page
+.work__header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10;
 }
