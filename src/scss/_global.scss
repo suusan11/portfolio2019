@@ -50,6 +50,7 @@ h1.section__title {
   }
 }
 h3 {
+  margin-bottom: 1.5vh;
   @include font_vw(17);
   @include pcSize {
     font-size: 23px;

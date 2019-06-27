@@ -71,3 +71,37 @@
   position: absolute;
   z-index: -1;
 }
+
+//color box to work page color section
+@mixin colorBox($color) {
+  width: 18vw;
+  height: 7vh;
+  border: 3px solid $color;
+  @include font_vw(12);
+  @include pcSize {
+    font-size: 18px;
+  }
+  @include middleSize {
+    font-size: 18px;
+  }
+  color: $color;
+  line-height: 7vh;
+  margin-right: 1.5vw;
+}
+
+//flex to to work page color section
+@mixin flexColorBox {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 2vh;
+}
+
+//absolute position to color box above image
+@mixin absoluteColorBox {
+  position: absolute;
+  top: 90px;
+  left: 20vw;
+  z-index: 2;
+}

@@ -1,0 +1,78 @@
+@import "typography";
+
+.work__color {
+  text-align: left;
+
+  &--item {
+    margin-bottom: 5vh;
+
+    p {
+      font-weight: $font-weight-light;
+    }
+
+    &--flex-top {
+      @include flexColorBox;
+      .color--box {
+        &:nth-child(1) {
+          @include colorBox(#C6FFDD);
+        }
+        &:nth-child(2) {
+          @include colorBox(#FBD786);
+        }
+        &:nth-child(3) {
+          @include colorBox(#F7797D);
+        }
+      }
+    }
+
+
+    &--flex-middle {
+      @include flexColorBox;
+
+      .flex--item {
+        width: 40vw;
+        margin-bottom: 7vh;
+        position: relative;
+
+        img {
+          width: 26vw;
+        }
+
+        &:nth-child(1) .color--box {
+          @include absoluteColorBox;
+          @include colorBox(#E59948);
+        }
+        &:nth-child(2) .color--box {
+          @include absoluteColorBox;
+          @include colorBox(#46509F);
+        }
+        &:nth-child(3) .color--box {
+            @include absoluteColorBox;
+            @include colorBox(#938BFF);
+        }
+        &:nth-child(4) .color--box {
+            @include absoluteColorBox;
+            @include colorBox(#B77388);
+        }
+      }
+    }
+
+    &--flex-bottom {
+      @include flexColorBox;
+      .color--box {
+        &:nth-child(1) {
+          @include colorBox(#B0272C);
+        }
+        &:nth-child(2) {
+          @include colorBox(#3B91A6);
+        }
+        &:nth-child(3) {
+          @include colorBox(#FECC35);
+        }
+        &:nth-child(4) {
+          @include colorBox(#9FA9A2);
+        }
+      }
+    }
+  }
+}
