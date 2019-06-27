@@ -50,13 +50,22 @@ h1.section__title {
   }
 }
 h3 {
-  margin-bottom: 1.5vh;
   @include font_vw(17);
   @include pcSize {
     font-size: 23px;
   }
   @include middleSize {
     font-size: 23px;
+  }
+}
+h4 {
+  margin-bottom: 1.5vh;
+  @include font_vw(14);
+  @include pcSize {
+    font-size: 19px;
+  }
+  @include middleSize {
+    font-size: 19px;
   }
 }
 p {
