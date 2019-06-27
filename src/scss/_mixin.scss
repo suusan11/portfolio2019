@@ -60,3 +60,14 @@
     top: 4vh;
     z-index: 3;
 }
+
+//background image to work intro
+@mixin bgCircle($url) {
+  display: block;
+  content: '';
+  background: $url no-repeat;
+  width: 350px;
+  height: 350px;
+  position: absolute;
+  z-index: -1;
+}

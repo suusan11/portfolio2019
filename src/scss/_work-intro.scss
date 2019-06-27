@@ -1,0 +1,110 @@
+@import "typography", "color", "mixin";
+
+.work__intro {
+  margin: 20vh auto 5vh;
+
+  &--wrap {
+    &::before {
+      @include bgCircle(url("http://localhost:8080/images/shape1.png"));
+      top: -30px;
+      left: -30px;
+    }
+    &::after {
+      @include bgCircle(url("http://localhost:8080/images/shape2.png"));
+      bottom: -30px;
+      right: -50px;
+    }
+
+    &-top {
+      img {
+        width: 80vw;
+      }
+
+      h1 {
+        @include font_vw(28);
+        font-weight: $font-weight-medium;
+        @include pcSize {
+          font-size: 34px;
+        }
+        @include middleSize {
+          font-size: 34px;
+        }
+        margin-top: 5vw;
+      }
+    }
+
+    &-bottom {
+      text-align: left;
+      width: 60vw;
+      border-left: 3px solid $pink;
+      padding-left: 2vw;
+      margin: 10vh 0 10vh auto;
+
+      p {
+        line-height: 2;
+
+        &:nth-child(2) {
+          line-height: 1.4;
+        }
+      }
+    }
+  }
+
+  &--description {
+    width: 100vw;
+    height: 60vh;
+    background-color: $black;
+    padding: 7vh 10vw;
+    margin-top: 20vh;
+
+    h2 {
+      color: $white;
+      @include font_vw(18);
+      font-weight: $font-weight-medium;
+      @include pcSize {
+        font-size: 28px;
+      }
+      @include middleSize {
+        font-size: 28px;
+      }
+    }
+
+    p {
+      color: $white;
+      line-height: 1.5;
+      margin-top: 5vh;
+    }
+
+    button.button__white {
+      width: 55vw;
+      height: 8vh;
+      background-color: $black;
+      border: 3px solid $white;
+      color: $white;
+      margin: 5vh auto 0;
+      @include pcSize {
+        width: 28vw;
+        height: 10vh;
+        padding: 2%;
+      }
+      @include middleSize {
+        width: 35vw;
+        height: 9vh;
+        padding: 3% 8%;
+      }
+
+      a {
+        height: 100%;
+        padding: 0 auto;
+        color: $white;
+        @include font_vw(14);
+        @include pcSize {
+          font-size: 20px;
+        }
+        @include middleSize {
+          font-size: 20px;
+        }
+      }
+    }
+  }
+}
