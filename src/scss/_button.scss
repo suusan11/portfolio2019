@@ -4,10 +4,9 @@ button {
   display: block;
   position: relative;
   width: 55vw;
-  height: 7vh;
+  height: 8vh;
   background-color: $white;
   border: 3px solid $black;
-  padding: 5% 10%;
   margin: 5vh auto 0;
   @include pcSize {
     width: 28vw;
@@ -45,6 +44,7 @@ button {
 
   a {
     height: 100%;
+    padding: 0 auto;
     @include font_vw(14);
     @include pcSize {
       font-size: 20px;
