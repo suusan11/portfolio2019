@@ -1,0 +1,40 @@
+@import 'typography', 'mixin';
+.work__font {
+
+  &--item {
+    margin-top: 5vh;
+
+    &-each {
+      display: inline-block;
+
+      img {
+        width: 38vw;
+      }
+
+      p {
+        font-weight: $font-weight-light;
+        padding-left: 2vw;
+        margin-top: -2vh;
+      }
+    }
+
+    &:last-child {
+
+      h4 {
+        margin-bottom: 1.5vh;
+      }
+      p.description__p {
+        padding-left: 0;
+      }
+      p {
+        font-weight: $font-weight-light;
+        padding-left: 8.5vw;
+      }
+      img.photo-frame {
+        width: 30vw;
+        margin: 4vh 2vw 0;
+        transform: rotate(-20deg);
+      }
+    }
+  }
+}
