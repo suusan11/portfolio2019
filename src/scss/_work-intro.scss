@@ -11,8 +11,8 @@
 
     &::before {
       @include bgCircle(url("http://localhost:8080/images/shape1.png"));
-      top: -60px;
-      left: -70px;
+      top: -30px;
+      left: -50px;
       @include pcSize {
         top: 100px;
         left: -20px;
@@ -20,8 +20,8 @@
     }
     &::after {
       @include bgCircle(url("http://localhost:8080/images/shape2.png"));
-      bottom: -160px;
-      right: -100px;
+      bottom: -270px;
+      right: 0;
       @include pcSize {
         bottom: -350px;
         right: 20px;
