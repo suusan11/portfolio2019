@@ -2,11 +2,18 @@
 
 .work__logo {
   margin: 7vh auto;
+  @include middleSize {
+    margin: 8vh auto;
+  }
 
   p {
     font-weight: $font-weight-light;
     @include pcSize {
       width: 500px;
+      line-height: 1.3;
+    }
+    @include middleSize {
+      width: 70vw;
       line-height: 1.3;
     }
   }
@@ -16,6 +23,9 @@
     margin: 0 auto;
     @include pcSize {
       width: 240px;
+    }
+    @include middleSize {
+      width: 260px;
     }
   }
 
