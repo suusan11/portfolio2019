@@ -17,6 +17,10 @@
         top: 100px;
         left: -20px;
       }
+      @include middleSize {
+        top: 200px;
+        left: 25px;
+      }
     }
     &::after {
       @include bgCircle(url("http://localhost:8080/images/shape2.png"));
@@ -25,6 +29,9 @@
       @include pcSize {
         bottom: -350px;
         right: 20px;
+      }
+      @include middleSize {
+        bottom: -330px;
       }
     }
     img {
@@ -35,19 +42,26 @@
         height: 240px;
         margin: 0 auto;
       }
+      @include middleSize {
+        display: block;
+        width: 70vw;
+        margin: 0 auto;
+      }
     }
 
     h1 {
       @include font_vw(28);
       font-weight: $font-weight-medium;
+      margin-top: 5vw;
       @include pcSize {
         font-size: 34px;
         margin-left: 7vw;
       }
       @include middleSize {
         font-size: 34px;
+        margin-left: 15vw;
       }
-      margin-top: 5vw;
+
     }
   }
 
@@ -60,10 +74,13 @@
     @include pcSize {
       width: 30vw;
     }
+    @include middleSize {
+      width: 40vw;
+      margin-right: 15vw;
+    }
 
     p {
       line-height: 2;
-
       &:nth-child(2) {
         line-height: 1.4;
       }
