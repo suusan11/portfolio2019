@@ -1,18 +1,20 @@
 @import "typography", "color", "mixin";
 
 .work__intro {
-  margin: 20vh auto 5vh;
+  margin: 20vh auto 20vh;
 
   &--wrap {
+    position: relative;
+
     &::before {
       @include bgCircle(url("http://localhost:8080/images/shape1.png"));
-      top: -30px;
-      left: -30px;
+      top: -60px;
+      left: -70px;
     }
     &::after {
       @include bgCircle(url("http://localhost:8080/images/shape2.png"));
-      bottom: -30px;
-      right: -50px;
+      bottom: -160px;
+      right: -100px;
     }
 
     &-top {
