@@ -10,6 +10,7 @@
       font-weight: $font-weight-light;
       @include pcSize {
         width: 500px;
+        margin-top: 1.5%;
       }
     }
 

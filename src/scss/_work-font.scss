@@ -9,12 +9,18 @@
 
       img {
         width: 38vw;
+        @include pcSize {
+          width: 160px;
+        }
       }
 
       p {
         font-weight: $font-weight-light;
         padding-left: 2vw;
         margin-top: -2vh;
+        @include pcSize {
+          padding-left: 12px;
+        }
       }
     }
 
@@ -29,12 +35,26 @@
       p {
         font-weight: $font-weight-light;
         padding-left: 8.5vw;
+        @include pcSize {
+          padding-left: 40px;
+        }
       }
       img.photo-frame {
         width: 30vw;
         margin: 4vh 2vw 0;
         transform: rotate(-20deg);
+        @include pcSize {
+          width: 184px;
+        }
       }
+    }
+  }
+
+  @include pcSize {
+    &.column__scroll {
+      width: 50vw;
+      padding-right: 5vw;
+      margin-right: 0;
     }
   }
 }
