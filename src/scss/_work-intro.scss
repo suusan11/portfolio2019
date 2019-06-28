@@ -3,77 +3,87 @@
 .work__intro {
   margin: 20vh auto 5vh;
   @include pcSize {
-    margin-top: 12.5vh;
+    margin-top: 25vh;
   }
 
-  &--wrap {
+  &-top {
+    position: relative;
 
-    &-top {
-      position: relative;
-
-      &::before {
-        @include bgCircle(url("http://localhost:8080/images/shape1.png"));
-        top: -60px;
-        left: -70px;
-        @include pcSize {
-          top: 100px;
-          left: -20px;
-        }
-      }
-      &::after {
-        @include bgCircle(url("http://localhost:8080/images/shape2.png"));
-        bottom: -160px;
-        right: -100px;
-        @include pcSize {
-          bottom: -350px;
-          right: 20px;
-        }
-      }
-      img {
-        width: 80vw;
-        @include pcSize {
-          display: block;
-          width: 432px;
-          height: 240px;
-          margin: 0 auto;
-        }
-      }
-
-      h1 {
-        @include font_vw(28);
-        font-weight: $font-weight-medium;
-        @include pcSize {
-          font-size: 34px;
-          margin-left: 7vw;
-        }
-        @include middleSize {
-          font-size: 34px;
-        }
-        margin-top: 5vw;
-      }
-    }
-
-    &-bottom {
-      text-align: left;
-      width: 60vw;
-      border-left: 3px solid $pink;
-      padding-left: 2vw;
-      margin: 10vh 0 10vh auto;
+    &::before {
+      @include bgCircle(url("http://localhost:8080/images/shape1.png"));
+      top: -60px;
+      left: -70px;
       @include pcSize {
-        width: 30vw;
+        top: 100px;
+        left: -20px;
       }
+    }
+    &::after {
+      @include bgCircle(url("http://localhost:8080/images/shape2.png"));
+      bottom: -160px;
+      right: -100px;
+      @include pcSize {
+        bottom: -350px;
+        right: 20px;
+      }
+    }
+    img {
+      width: 80vw;
+      @include pcSize {
+        display: block;
+        width: 432px;
+        height: 240px;
+        margin: 0 auto;
+      }
+    }
 
-      p {
-        line-height: 2;
+    h1 {
+      @include font_vw(28);
+      font-weight: $font-weight-medium;
+      @include pcSize {
+        font-size: 34px;
+        margin-left: 7vw;
+      }
+      @include middleSize {
+        font-size: 34px;
+      }
+      margin-top: 5vw;
+    }
+  }
 
-        &:nth-child(2) {
-          line-height: 1.4;
-        }
+  &-bottom {
+    text-align: left;
+    width: 60vw;
+    border-left: 3px solid $pink;
+    padding-left: 2vw;
+    margin: 10vh 0 10vh auto;
+    @include pcSize {
+      width: 30vw;
+    }
+
+    p {
+      line-height: 2;
+
+      &:nth-child(2) {
+        line-height: 1.4;
       }
     }
   }
 
-  &--description {
+  //only to pc
+  @include pcSize {
+    &.sticky {
+      position: sticky;
+      top: 200px;
+      width: 50vw;
+      height: 100%;
+      min-height: 700px;
+      margin-bottom: 20vh;
+    }
+  }
+}
+
+  .work__intro--black {
     width: 100vw;
     height: 60vh;
     background-color: $black;
@@ -132,11 +142,11 @@
 
     //only to pc
     @include pcSize {
-      &.column__scroll {
-        width: 50vw;
-        padding: 20vh 10vw;
-        margin-right: 0;
+      &.scroll__item {
+        width: 100%;
+        min-height: 700px;
+        margin-top: 12vh;
+        padding-top: 20vh;
       }
     }
   }
-}
