@@ -8,6 +8,9 @@
 
     p {
       font-weight: $font-weight-light;
+      @include pcSize {
+        width: 500px;
+      }
     }
 
     &--flex-top {
@@ -33,9 +36,16 @@
         width: 40vw;
         margin-bottom: 7vh;
         position: relative;
+        @include pcSize {
+          width: 200px;
+          margin-right: 10%;
+        }
 
         img {
           width: 26vw;
+          @include pcSize {
+            width: 144px;
+          }
         }
 
         &:nth-child(1) .color--box {
@@ -73,6 +83,14 @@
           @include colorBox(#9FA9A2);
         }
       }
+    }
+  }
+
+  @include pcSize {
+    &.column__scroll {
+      width: 50vw;
+      padding-right: 5vw;
+      margin-right: 0;
     }
   }
 }

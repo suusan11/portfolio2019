@@ -80,6 +80,11 @@
   @include font_vw(12);
   @include pcSize {
     font-size: 18px;
+    width: 100px;
+    height: 68px;
+    line-height: 68px;
+    padding-left: 9px;
+    margin-bottom: 5px;
   }
   @include middleSize {
     font-size: 18px;
@@ -104,4 +109,8 @@
   top: 90px;
   left: 20vw;
   z-index: 2;
+  @include pcSize {
+    top: 140px;
+    left: 110px;
+  }
 }

@@ -56,6 +56,7 @@ h4 {
   @include font_vw(14);
   @include pcSize {
     font-size: 19px;
+    margin-bottom: 1.5%;
   }
   @include middleSize {
     font-size: 19px;
