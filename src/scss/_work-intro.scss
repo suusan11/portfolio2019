@@ -7,7 +7,6 @@
   }
 
   &--wrap {
-    position: relative;
 
     &-top {
       position: relative;
@@ -34,7 +33,8 @@
         width: 80vw;
         @include pcSize {
           display: block;
-          width: 30vw;
+          width: 432px;
+          height: 240px;
           margin: 0 auto;
         }
       }
