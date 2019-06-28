@@ -35,12 +35,12 @@
       }
     }
     img {
+      display: block;
       width: 80vw;
+      margin: 0 auto;
 
       @include pcSize {
-        display: block;
         width: 500px;
-        margin: 0 auto;
       }
       @include middleSize {
         width: 70vw;
@@ -57,7 +57,7 @@
       }
       @include middleSize {
         font-size: 34px;
-        margin-left: 0;
+        margin-left: 5vw;
       }
 
     }
@@ -105,6 +105,10 @@
     background-color: $black;
     padding: 7vh 10vw;
     margin-top: 20vh;
+    @include middleSize {
+      padding: 10vh 20vw;
+      margin-bottom: 10vh;
+    }
 
     h2 {
       color: $white;
@@ -137,9 +141,9 @@
         padding: 2%;
       }
       @include middleSize {
-        width: 35vw;
+        width: 25vw;
         height: 9vh;
-        padding: 3% 8%;
+        padding: 3% 0;
       }
 
       a {
