@@ -13,6 +13,11 @@
         line-height: 1.3;
         margin-top: 1.5%;
       }
+      @include middleSize {
+        width: 70vw;
+        line-height: 1.3;
+        margin-top: 1.5%;
+      }
     }
 
     &--flex-top {
@@ -47,6 +52,9 @@
           width: 26vw;
           @include pcSize {
             width: 144px;
+          }
+          @include middleSize {
+            width: 175px;
           }
         }
 
