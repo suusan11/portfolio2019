@@ -1,4 +1,5 @@
 @import 'typography', 'mixin';
+
 .work__font {
 
   &--item {
@@ -12,6 +13,9 @@
         @include pcSize {
           width: 160px;
         }
+        @include middleSize {
+          width: 180px;
+        }
       }
 
       p {
@@ -20,6 +24,9 @@
         margin-top: -2vh;
         @include pcSize {
           padding-left: 12px;
+        }
+        @include middleSize {
+          padding-left: 10px;
         }
       }
     }
@@ -38,13 +45,21 @@
         @include pcSize {
           padding-left: 40px;
         }
+        @include middleSize {
+          padding-left: 43px;
+        }
       }
       img.photo-frame {
         width: 30vw;
         margin: 4vh 2vw 0;
+        filter: drop-shadow(-10px 10px 7px #9e9e9e);
         transform: rotate(-20deg);
         @include pcSize {
           width: 184px;
+        }
+        @include middleSize {
+          width: 200px;
+          margin-top: 55px;
         }
       }
     }
