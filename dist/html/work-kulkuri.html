@@ -23,112 +23,122 @@
         </div>
     </header>
 
-    <!--introduction of work-->
-    <section class="work__intro">
-        <div class="work__intro--wrap column__fixed container">
-            <div class="work__intro--wrap-top">
-                <img src="../images/kulkuri/thumbnail.jpg" alt="kulkuri thumbnail">
-                <h1>kulkuri</h1>
-            </div>
-            <div class="work__intro--wrap-bottom">
-                <p>#Web Design #Web Development</p>
-                <p>HTML5, SASS, JavaScript, XD, Illustrator, Photoshop</p>
-                <p>Dec. 2018</p>
-            </div>
-        </div>
-        <div class="work__intro--description column__scroll">
-            <h2>kulkuri</h2>
-            <p>‘kulkuri’ means freedom traveller in Finnish.<br>
-                This is a gallery site of my trip.
-                I have introduced eight countries that have three contents about “attraction”, “food” and “scenery”.
-                To show the photos with effect, using CSS Grid and assign theme color for each country.
-            </p>
-            <button class="button__white"><a href="https://kulkuriworld.com/">Visit a Website</a></button>
-        </div>
+    <!--sticky container for pc-->
+    <div class="sticky__container">
 
-    </section>
+            <!--introduction of work-->
+            <section class="work__intro sticky">
+                <div class="work__intro-top">
+                    <img src="../images/kulkuri/thumbnail.jpg" alt="kulkuri thumbnail">
+                    <h1>kulkuri</h1>
+                </div>
+                <div class="work__intro-bottom">
+                    <p>#Web Design #Web Development</p>
+                    <p>HTML5, SASS, JavaScript, XD, Illustrator, Photoshop</p>
+                    <p>Dec. 2018</p>
+                </div>
+            </section>
 
-    <!--introduction of color-->
-    <section class="work__color container column__scroll">
-        <h1 class="section__title work__h1">Colors</h1>
-        <div class="work__color--item">
-            <h4>Theme color</h4>
-            <p>Expressed a new world that I can meet on a trip.
-                Blue is the sea, orange is the sun, and red is the warmth of people.
-            </p>
-            <div class="work__color--item--flex-top">
-                <div class="color--box">#C6FFDD</div>
-                <div class="color--box">#FBD786</div>
-                <div class="color--box">#F7797D</div>
-            </div>
-        </div>
-        <div class="work__color--item">
-            <h4>Countries color</h4>
-            <div class="work__color--item--flex-middle">
-                <div class="flex--item">
-                    <img src="../images/kulkuri/german.jpg" alt="german color image">
-                    <div class="color--box">#E59948</div>
-                </div>
-                <div class="flex--item">
-                    <img src="../images/kulkuri/australia.jpg" alt="german color image">
-                    <div class="color--box">#46509F</div>
-                </div>
-                <div class="flex--item">
-                    <img src="../images/kulkuri/malaysia.jpg" alt="german color image">
-                    <div class="color--box">#938BFF</div>
-                </div>
-                <div class="flex--item">
-                    <img src="../images/kulkuri/taiwan.jpg" alt="german color image">
-                    <div class="color--box">#B77388</div>
-                </div>
-            </div>
-            <div class="work__color--item--flex-bottom">
-                <div class="color--box">#B0272C</div>
-                <div class="color--box">#3B91A6</div>
-                <div class="color--box">#FECC35</div>
-                <div class="color--box">#9FA9A2</div>
-            </div>
-        </div>
-    </section>
 
-    <!--introduction of fonts-->
-    <section class="work__font container column__scroll">
-        <h1 class="section__title work__h1">Fonts</h1>
-        <div class="work__font--item">
-            <h4>Base - Mukta</h4>
-            <div class="work__font--item-each">
-                <img src="../images/kulkuri/fontMuktaLight.png" alt="font Mukta Light">
-                <p>Light</p>
-            </div>
-            <div class="work__font--item-each">
-                <img src="../images/kulkuri/fontMuktaRegular.png" alt="font Mukta Regular">
-                <p>Regular</p>
-            </div>
-        </div>
-        <div class="work__font--item">
-            <h4>Heading  - Signika Negative</h4>
-            <div class="work__font--item-each">
-                <img src="../images/kulkuri/fontSignikaRegular.png" alt="font Signika Regular">
-                <p>Regular</p>
-            </div>
-        </div>
-        <div class="work__font--item">
-            <h4>Country name on photo - Amatic SC</h4>
-            <p class="description__p">Imagined a handmade album and made it look like handwriting.</p>
-            <img class="photo-frame" src="../images/kulkuri/font-image.jpg" alt="font image">
-            <div class="work__font--item-each">
-                <img src="../images/kulkuri/fontAmaticRegular.png" alt="font Amatic Regular">
-                <p>Regular</p>
-            </div>
-        </div>
-    </section>
+        <!--right section available to scroll-->
+        <div class="scroll__container">
 
-    <!--introduction of logo-->
-    <section class="work__logo container column__scroll">
-        <h1 class="section__title work__h1">Logo</h1>
-        <p>The rectangle represents the frame of the photo and expresses a memory that can not fit into the photo.</p>
-        <img src="../images/kulkuri/logo.svg" alt="kulkuri logo">
-    </section>
+            <section class="work__intro--black container scroll__item">
+                <h2>kulkuri</h2>
+                <p>‘kulkuri’ means freedom traveller in Finnish.<br>
+                    This is a gallery site of my trip.
+                    I have introduced eight countries that have three contents about “attraction”, “food” and “scenery”.
+                    To show the photos with effect, using CSS Grid and assign theme color for each country.
+                </p>
+                <button class="button__white"><a href="https://kulkuriworld.com/">Visit a Website</a></button>
+            </section>
+
+            <!--introduction of color-->
+            <section class="work__color container scroll__item">
+                <h1 class="section__title work__h1">Colors</h1>
+                <div class="work__color--item">
+                    <h4>Theme color</h4>
+                    <p>Expressed a new world that I can meet on a trip.
+                        Blue is the sea, orange is the sun, and red is the warmth of people.
+                    </p>
+                    <div class="work__color--item--flex-top">
+                        <div class="color--box">#C6FFDD</div>
+                        <div class="color--box">#FBD786</div>
+                        <div class="color--box">#F7797D</div>
+                    </div>
+                </div>
+                <div class="work__color--item">
+                    <h4>Countries color</h4>
+                    <div class="work__color--item--flex-middle">
+                        <div class="flex--item">
+                            <img src="../images/kulkuri/german.jpg" alt="german color image">
+                            <div class="color--box">#E59948</div>
+                        </div>
+                        <div class="flex--item">
+                            <img src="../images/kulkuri/australia.jpg" alt="german color image">
+                            <div class="color--box">#46509F</div>
+                        </div>
+                        <div class="flex--item">
+                            <img src="../images/kulkuri/malaysia.jpg" alt="german color image">
+                            <div class="color--box">#938BFF</div>
+                        </div>
+                        <div class="flex--item">
+                            <img src="../images/kulkuri/taiwan.jpg" alt="german color image">
+                            <div class="color--box">#B77388</div>
+                        </div>
+                    </div>
+                    <div class="work__color--item--flex-bottom">
+                        <div class="color--box">#B0272C</div>
+                        <div class="color--box">#3B91A6</div>
+                        <div class="color--box">#FECC35</div>
+                        <div class="color--box">#9FA9A2</div>
+                    </div>
+                </div>
+            </section>
+
+            <!--introduction of fonts-->
+            <section class="work__font container scroll__item">
+                <h1 class="section__title work__h1">Fonts</h1>
+                <div class="work__font--item">
+                    <h4>Base - Mukta</h4>
+                    <div class="work__font--item-each">
+                        <img src="../images/kulkuri/fontMuktaLight.png" alt="font Mukta Light">
+                        <p>Light</p>
+                    </div>
+                    <div class="work__font--item-each">
+                        <img src="../images/kulkuri/fontMuktaRegular.png" alt="font Mukta Regular">
+                        <p>Regular</p>
+                    </div>
+                </div>
+                <div class="work__font--item">
+                    <h4>Heading  - Signika Negative</h4>
+                    <div class="work__font--item-each">
+                        <img src="../images/kulkuri/fontSignikaRegular.png" alt="font Signika Regular">
+                        <p>Regular</p>
+                    </div>
+                </div>
+                <div class="work__font--item">
+                    <h4>Country name on photo - Amatic SC</h4>
+                    <p class="description__p">Imagined a handmade album and made it look like handwriting.</p>
+                    <img class="photo-frame" src="../images/kulkuri/font-image.jpg" alt="font image">
+                    <div class="work__font--item-each">
+                        <img src="../images/kulkuri/fontAmaticRegular.png" alt="font Amatic Regular">
+                        <p>Regular</p>
+                    </div>
+                </div>
+            </section>
+
+            <!--introduction of logo-->
+            <section class="work__logo container scroll__item">
+                <h1 class="section__title work__h1">Logo</h1>
+                <p>The rectangle represents the frame of the photo and expresses a memory that can not fit into the photo.</p>
+                <img src="../images/kulkuri/logo.svg" alt="kulkuri logo">
+            </section>
+        </div>
+        <!--right section available to scroll-->
+    </div>
+    <!--sticky container for pc-->
+
 
     <!--work image and link to Website-->
     <section class="work__link">

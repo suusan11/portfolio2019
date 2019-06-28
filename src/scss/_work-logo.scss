@@ -18,11 +18,10 @@
     }
   }
 
+  //only to pc
   @include pcSize {
-    &.column__scroll {
-      width: 50vw;
-      padding-right: 5vw;
-      margin-right: 0;
+    &.scroll__item {
+      width: 100%;
     }
   }
 }
