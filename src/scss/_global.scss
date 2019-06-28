@@ -7,21 +7,15 @@
 
 html {
   box-sizing: border-box;
-  -ms-overflow-style: scrollbar;
-  -webkit-tap-highlight-color: rgba(0,0,0,0);
+  overflow: auto;
 }
 
 body {
-  -webkit-font-smoothing: subpixel-antialiased;
-  -moz-osx-font-smoothing: auto;
   background-color: $white;
   width: 100%;
+  overflow: hidden;
 }
 
-// For IE Hack
-main {
-  display: block;
-}
 
 section {
   margin: 5% 0;
