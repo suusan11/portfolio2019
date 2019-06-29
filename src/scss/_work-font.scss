@@ -69,6 +69,7 @@
   @include pcSize {
     &.scroll__item {
       width: 100%;
+      margin-left: 5vw;
     }
   }
 }

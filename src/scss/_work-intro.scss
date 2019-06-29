@@ -25,7 +25,7 @@
     &::after {
       @include bgCircle(url("http://localhost:8080/images/shape2.png"));
       bottom: -270px;
-      right: -10vw;
+      right: -8vw;
       @include pcSize {
         bottom: -300px;
         right: 20px;
