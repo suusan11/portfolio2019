@@ -10,6 +10,12 @@
 
     img {
       width: 80vw;
+      @include pcSize {
+        width: 1100px;
+      }
+      @include middleSize {
+        width: 800px;
+      }
 
       &:nth-child(1) {
         transform: rotate(-10deg);
@@ -57,13 +63,13 @@
       width: 280px;
       height: 9vh;
       padding: 0;
-      margin-top: 28vh;
+      margin-top: 50px;
     }
     @include middleSize {
       width: 250px;
       height: 9vh;
       padding: 2% 0;
-      margin-top: 32vh;
+      margin-top: 50px;
     }
 
   }
