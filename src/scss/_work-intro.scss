@@ -136,12 +136,12 @@
       color: $white;
       margin: 5vh auto 0;
       @include pcSize {
-        width: 23vw;
+        width: 280px;
         height: 10vh;
         padding: 2%;
       }
       @include middleSize {
-        width: 25vw;
+        width: 250px;
         height: 9vh;
         padding: 3% 0;
       }
