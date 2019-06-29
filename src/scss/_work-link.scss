@@ -19,6 +19,12 @@
         position: absolute;
         top: 40vh;
         left: 15vw;
+        @include pcSize {
+          top: 100vh;
+        }
+        @include middleSize {
+          top: 80vh;
+        }
       }
     }
 
@@ -31,7 +37,35 @@
       width: 50vw;
       height: 25vh;
       background: url("http://localhost:8080/images/dotted.png") no-repeat;
+      @include pcSize {
+        top: -120px;
+        left: 900px;
+        width: 350px;
+        height: 350px;
+      }
+      @include middleSize {
+        top: -75px;
+        right: 0;
+        width: 350px;
+        height: 350px;
+      }
     }
+  }
+
+  button.button__work--bottom {
+    @include pcSize {
+      width: 280px;
+      height: 9vh;
+      padding: 0;
+      margin-top: 28vh;
+    }
+    @include middleSize {
+      width: 250px;
+      height: 9vh;
+      padding: 2% 0;
+      margin-top: 32vh;
+    }
+
   }
 
   .pagenation {
