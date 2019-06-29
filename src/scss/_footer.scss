@@ -7,7 +7,11 @@ footer {
   padding: 20% 0;
   text-align: center;
   @include pcSize {
-    padding: 5% 0;
+    height: 250px;
+    padding: 130px 0 180px;
+  }
+  @include middleSize {
+    padding: 10% 0 15%;
   }
 
   .footer__flex {
@@ -21,12 +25,12 @@ footer {
       stroke-width: 0;
       fill: $white;
       @include pcSize {
-        width: 5vw;
-        height: 2vw;
+        width: 70px;
+        height: 28px;
       }
       @include middleSize {
-        width: 7vw;
-        height: 3vw;
+        width: 58px;
+        height: 24px;
       }
     }
   }
