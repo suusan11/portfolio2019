@@ -20,12 +20,15 @@
 }
 
 .header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10;
   width: 100vw;
   height: 65px;
   background-color: $black;
   color: $white;
   padding-top: 3vh;
-  transition: position 3s;
 
   &__logo {
     position: absolute;
@@ -93,23 +96,5 @@
         margin: 0 2vw;
       }
     }
-  }
-}
-
-//fixed to header --> handle by js
-.is-show {
-  position: fixed;
-  top: 0;
-  left: 0;
-  z-index: 10;
-  animation: smoothScroll 0.4s ease-in forwards;
-}
-
-@keyframes smoothScroll {
-  0% {
-    transform: translateY(-50px);
-  }
-  100% {
-    transform: translateY(0);
   }
 }
