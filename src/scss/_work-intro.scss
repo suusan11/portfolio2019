@@ -1,0 +1,172 @@
+@import "typography", "color", "mixin";
+
+.work__intro {
+  margin: 20vh auto 5vh;
+  @include pcSize {
+    margin-top: 25vh;
+  }
+
+  &-top {
+    position: relative;
+
+    &::before {
+      @include bgCircle(url("http://localhost:8080/images/shape1.png"));
+      top: -30px;
+      left: -50px;
+      @include pcSize {
+        top: 100px;
+        left: -20px;
+      }
+      @include middleSize {
+        top: 200px;
+        left: -100px;
+      }
+    }
+    &::after {
+      @include bgCircle(url("http://localhost:8080/images/shape2.png"));
+      bottom: -270px;
+      right: -8vw;
+      @include pcSize {
+        bottom: -300px;
+        right: 20px;
+      }
+      @include middleSize {
+        bottom: -330px;
+      }
+    }
+    img {
+      display: block;
+      width: 80vw;
+      margin: 0 auto;
+
+      @include pcSize {
+        width: 500px;
+      }
+      @include middleSize {
+        width: 70vw;
+      }
+    }
+
+    h1 {
+      @include font_vw(28);
+      font-weight: $font-weight-medium;
+      margin-top: 5vw;
+      @include pcSize {
+        font-size: 34px;
+        margin-left: 7.5vw;
+      }
+      @include middleSize {
+        font-size: 34px;
+        margin-left: 5vw;
+      }
+
+    }
+  }
+
+  &-bottom {
+    text-align: left;
+    width: 60vw;
+    border-left: 3px solid $pink;
+    padding-left: 2vw;
+    margin: 10vh 0 10vh auto;
+    @include pcSize {
+      width: 30vw;
+      margin-top: 5vh;
+    }
+    @include middleSize {
+      width: 40vw;
+      margin-right: 5vw;
+    }
+
+    p {
+      line-height: 2;
+      &:nth-child(2) {
+        line-height: 1.4;
+      }
+    }
+  }
+
+  //only to pc
+  @include pcSize {
+    &.sticky {
+      position: sticky;
+      top: 200px;
+      width: 50vw;
+      height: 100%;
+      min-height: 700px;
+      margin-bottom: 20vh;
+    }
+  }
+}
+
+  .work__intro--black {
+    width: 100vw;
+    height: 60vh;
+    background-color: $black;
+    padding: 7vh 10vw;
+    margin-top: 20vh;
+    @include middleSize {
+      padding: 10vh 20vw;
+      margin-bottom: 10vh;
+    }
+
+    h2 {
+      color: $white;
+      @include font_vw(18);
+      font-weight: $font-weight-medium;
+      @include pcSize {
+        font-size: 28px;
+      }
+      @include middleSize {
+        font-size: 28px;
+      }
+    }
+
+    p {
+      color: $white;
+      line-height: 1.5;
+      margin-top: 5vh;
+    }
+
+    button.button__white {
+      width: 55vw;
+      height: 8vh;
+      background-color: $black;
+      border: 3px solid $white;
+      color: $white;
+      margin: 5vh auto 0;
+      @include pcSize {
+        width: 280px;
+        height: 10vh;
+        padding: 2%;
+      }
+      @include middleSize {
+        width: 250px;
+        height: 9vh;
+        padding: 3% 0;
+      }
+
+      a {
+        height: 100%;
+        padding: 0 auto;
+        color: $white;
+        @include font_vw(14);
+        @include pcSize {
+          font-size: 20px;
+        }
+        @include middleSize {
+          font-size: 20px;
+        }
+      }
+    }
+
+    //only to pc
+    @include pcSize {
+      &.scroll__item {
+        width: 100%;
+        min-height: 700px;
+        margin-top: 12vh;
+        padding-top: 20vh;
+      }
+    }
+  }

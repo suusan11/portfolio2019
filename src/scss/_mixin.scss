@@ -1,0 +1,125 @@
+@import "color";
+
+//break point
+@mixin pcSize {
+  @media (min-width: (1000px)) {
+    @content;
+  }
+}
+@mixin middleSize {
+  @media (min-width: 640px) and (max-width: 999px) {
+    @content;
+  }
+}
+@mixin mobileSize {
+  @media (max-width: 639px) {
+    @content;
+  }
+}
+
+//font calc
+@function get_vw($size, $viewport: 320) {
+  $rate: 100 / $viewport;
+  @return $rate * $size * 1vw;
+}
+@mixin font_vw($font-size: 10) {
+  font-size: $font-size * 1px;
+  font-size: get_vw($font-size);
+}
+
+//line to about detail from profile img
+@mixin line($rotate, $x, $y, $color) {
+  display: block;
+  content: '';
+  width: 2px;
+  height: 300px;
+  border-radius: 30px;
+  transform: rotate($rotate) translateX($x) translateY($y);
+  background-color: $color;
+}
+
+//background line to works section
+@mixin bgLine($left) {
+  position: absolute;
+  top: 0;
+  left: $left;
+  display: block;
+  content: "";
+  width: 1px;
+  height: 100%;
+  background-color: $bgLine;
+}
+
+//side line to values title h1 {
+@mixin sideLine {
+    display: block;
+    content: "";
+    border: 3px solid $border;
+    width: 15%;
+    position: absolute;
+    top: 4vh;
+    z-index: 3;
+}
+
+//background image to work intro
+@mixin bgCircle($url) {
+  display: block;
+  content: '';
+  background: $url no-repeat;
+  width: 300px;
+  height: 300px;
+  position: absolute;
+  z-index: -1;
+}
+
+//color box to work page color section
+@mixin colorBox($color) {
+  width: 18vw;
+  height: 7vh;
+  border: 3px solid $color;
+  @include font_vw(12);
+  @include pcSize {
+    font-size: 18px;
+    width: 100px;
+    height: 68px;
+    line-height: 68px;
+    padding-left: 9px;
+    margin-bottom: 5px;
+  }
+  @include middleSize {
+    font-size: 18px;
+    width: 100px;
+    height: 68px;
+    line-height: 68px;
+    padding-left: 9px;
+    margin-bottom: 5px;
+  }
+  color: $color;
+  line-height: 7vh;
+  margin-right: 1.5vw;
+}
+
+//flex to to work page color section
+@mixin flexColorBox {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 2vh;
+}
+
+//absolute position to color box above image
+@mixin absoluteColorBox {
+  position: absolute;
+  top: 90px;
+  left: 20vw;
+  z-index: 2;
+  @include pcSize {
+    top: 140px;
+    left: 110px;
+  }
+  @include middleSize {
+    top: 170px;
+    left: 160px;
+  }
+}

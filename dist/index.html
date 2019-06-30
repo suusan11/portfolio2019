@@ -5,137 +5,208 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Mie Suzuki | Front-End Designer / Developer</title>
-    <script src="main.js"></script>
+    <script src="./main.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/barba.js/1.0.0/barba.min.js"></script>
+    <script src="http://code.jquery.com/jquery-3.3.1.min.js"></script>
 </head>
 <body>
-    <!--header for mobile-->
-    <header>
-        <img src="" alt="logo">
-        <div>
-            <h3>Mie Suzuki</h3>
-            <a href=""><p>MENU</p></a>
-        </div>
-    </header>
 
-    <!--header for web browser-->
-    <header>
-        <img src="" alt="logo">
-        <div>
-            <div>
-                <h3>Mie Suzuki</h3>
-            </div>
-            <ul>
-                <li>ABOUT</li>
+    <!--header-->
+    <header class="header">
+        <a class="header__logo" href=""><img src="./images/logo-brown.png" alt="logo"></a>
+        <div class="header__flex">
+            <h3>Mie Suzuki</h3>
+            <ul class="header__flex--right">
+                <li><a class="page__link" href="">ABOUT</a></li>
                 <li>WORKS</li>
                 <li>CONTACT</li>
             </ul>
+            <a class="global__menu" href=""><p>MENU</p></a>
         </div>
     </header>
 
-    <!--hero and about section-->
-    <section class="hero-about">
-        <div class="hero__title">
-            <h1>I'm Mie.</h1>
-            <p>Based on Vancouver</p>
-        </div>
-        <img class="hero__img" src="" alt="my image">
-        <div class="about">
-            <h2>Design</h2>
-            <p>A keen eye for <span>pixel-perfect details</span> for user-friendly. Believe that design is a means of problem-solving.</p>
-        </div>
-        <div class="about">
-            <h2>Coding</h2>
-            <p>Highly motivated <span>Front-end developer</span>. Willing to create a dynamic website.</p>
-        </div>
-        <div class="about">
-            <h2>Foodie</h2>
-            <p>A delicious meal is a day’s pleasure. Always following the trend.</p>
-        </div>
-        <div class="about">
-            <h2>Traveler</h2>
-            <p>Travel around the world looking for gourmets and beautiful views of the world.</p>
-        </div>
-    </section>
+    <div id="barba-wrapper">
+        <div class="barba-container">
 
-    <!--values section-->
-    <section class="values">
-        <h1 class="section__title">Values</h1>
-        <div class="values__item">
-            <div class="values__item-flex">
-                <p>Design and development <span>with a keen eye and attention to detail</span> is my strength. Working with caution that an error of 1px will change the impression of the website.</p>
-            </div>
-            <div class="values__item-flex">
-                <p>To <span>clarify the target and the concept</span>, and proceed with the design so that the axis does not move. The presence of an axis prevents directional blurring when making corrections.</p>
-            </div>
-            <div class="values__item-flex">
-                <p><span>Coding is part of the design</span> and trying to keep the clear and clean code.</p>
-            </div>
-        </div>
-    </section>
+            <!--hero and about section-->
+            <section class="hero">
+                <div class="container">
+                    <div class="hero__title">
+                        <h1>I'm Mie.</h1>
+                        <p>Based on Vancouver</p>
+                    </div>
+                    <img class="hero__img" src="./images/sample.jpg" alt="my image">
+                    <div class="about__wrap top">
+                        <div class="about__wrap--item">
+                            <h2>Design</h2>
+                            <p>A keen eye for <span>pixel-perfect details</span>. Believe that design is a means of problem-solving.</p>
+                        </div>
+                        <div class="about__wrap--item">
+                            <h2>Coding</h2>
+                            <p>Highly motivated <span>Front-end developer</span>. Willing to create a dynamic website.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="about container">
+                <div class="about__wrap bottom">
+                    <div class="about__wrap--item">
+                        <h2>Foodie</h2>
+                        <p>A delicious meal is a day’s pleasure. Always following the trend.</p>
+                    </div>
+                    <div class="about__wrap--item">
+                        <h2>Traveler</h2>
+                        <p>Travel around the world looking for gourmets and beautiful views of the world.</p>
+                    </div>
+                </div>
+            </section>
 
-    <!--works section-->
-    <section class="works">
-        <h1 class="section__title">Works</h1>
-        <div class="work">
-            <img src="./images/kulkuri/thumbnail.png" alt="thumbnail kulkuri">
-            <div>
-                <p>Jump to case study</p>
-            </div>
-        </div>
-        <div class="work">
-            <img src="./images/mogu/thumbnail.png" alt="thumbnail mogu">
-            <div>
-                <p>Jump to case study</p>
-            </div>
-        </div>
-        <div class="work">
-            <img src="./images/wordsworth/thumbnail.png" alt="thumbnail wordsworth">
-            <div>
-                <p>Jump to case study</p>
-            </div>
-        </div>
-        <div class="work">
-            <img src="./images/ui/thumbnail.jpg" alt="thumbnail ui">
-            <div>
-                <p>Jump to case study</p>
-            </div>
-        </div>
-    </section>
+            <!--values section-->
+            <section class="values container">
+                <h1 class="section__title">Values</h1>
+                <div class="values__item">
+                    <div class="values__item--flex">
+                        <svg class="values__item--flex-icon icon-eye" width="35vw" height="5vh"><use xlink:href="#icon-eye">
+                            <symbol id="icon-eye" viewBox="0 0 32 32">
+                                <title>eye</title>
+                                <path d="M16 6c-6.979 0-13.028 4.064-16 10 2.972 5.936 9.021 10 16 10s13.027-4.064 16-10c-2.972-5.936-9.021-10-16-10zM23.889 11.303c1.88 1.199 3.473 2.805 4.67 4.697-1.197 1.891-2.79 3.498-4.67 4.697-2.362 1.507-5.090 2.303-7.889 2.303s-5.527-0.796-7.889-2.303c-1.88-1.199-3.473-2.805-4.67-4.697 1.197-1.891 2.79-3.498 4.67-4.697 0.122-0.078 0.246-0.154 0.371-0.228-0.311 0.854-0.482 1.776-0.482 2.737 0 4.418 3.582 8 8 8s8-3.582 8-8c0-0.962-0.17-1.883-0.482-2.737 0.124 0.074 0.248 0.15 0.371 0.228v0zM16 13c0 1.657-1.343 3-3 3s-3-1.343-3-3 1.343-3 3-3 3 1.343 3 3z"></path>
+                            </symbol></use>
+                        </svg>
+                        <p>Design and development <span>with a keen eye and attention to detail</span> is my strength. Working with caution that an error of 1px will change the impression of the website.</p>
+                    </div>
+                    <div class="values__item--flex">
+                        <svg class="values__item--flex-icon icon-pen" width="35vw" height="5vh"><use xlink:href="#icon-pen">
+                            <symbol id="icon-pen" viewBox="0 0 32 32">
+                                <title>pen</title>
+                                <path d="M31.818 9.122l-8.939-8.939c-0.292-0.292-0.676-0.226-0.855 0.146l-1.199 2.497 8.35 8.35 2.497-1.199c0.372-0.178 0.438-0.563 0.146-0.855z"></path>
+                                <path d="M19.231 4.231l-8.231 0.686c-0.547 0.068-1.002 0.184-1.159 0.899-0 0.001-0 0.001-0.001 0.002-2.232 10.721-9.84 21.183-9.84 21.183l1.793 1.793 8.5-8.5c-0.187-0.392-0.293-0.83-0.293-1.293 0-1.657 1.343-3 3-3s3 1.343 3 3-1.343 3-3 3c-0.463 0-0.902-0.105-1.293-0.293l-8.5 8.5 1.793 1.793c0 0 10.462-7.608 21.183-9.84 0.001-0 0.001-0 0.002-0.001 0.714-0.157 0.831-0.612 0.898-1.159l0.686-8.231-8.538-8.539z"></path>
+                            </symbol></use>
+                        </svg>
+                        <p>To <span>clarify the target and the concept</span>, and proceed with the design so that the axis does not move. The presence of an axis prevents directional blurring when making corrections.</p>
+                    </div>
+                    <div class="values__item--flex">
+                        <svg class="values__item--flex-icon icon-embed2" width="20vw" height="5vh"><use xlink:href="#icon-embed2">
+                            <symbol id="icon-embed2" viewBox="0 0 40 32">
+                                <title>embed2</title>
+                                <path d="M26 23l3 3 10-10-10-10-3 3 7 7z"></path>
+                                <path d="M14 9l-3-3-10 10 10 10 3-3-7-7z"></path>
+                                <path d="M21.916 4.704l2.171 0.592-6 22.001-2.171-0.592 6-22.001z"></path>
+                            </symbol></use>
+                        </svg>
+                        <p><span>Coding is part of the design</span> and trying to keep the clear and clean code.</p>
+                    </div>
+                </div>
+            </section>
 
-    <!--contact section-->
-    <section>
-        <h1 class="section__title">Contact</h1>
-        <p>I am seeking a job as a
-            <span>Front-End Designer / Developer</span>.
-            If you are interested me,
-            please send an email to me.
-        </p>
-        <button><a href="">Send an E-mail</a></button>
-    </section>
+            <!--works section-->
+            <section class="works container">
+                <h1 class="section__title">Works</h1>
+                <div class="works__flex">
+                    <div class="work">
+                        <a class="page__link" href="./html/work-kulkuri.html"><img src="images/kulkuri/thumbnail.jpg" alt="thumbnail kulkuri"></a>
+                        <div class="work__hover">
+                            <p>Jump to case study</p>
+                        </div>
+                    </div>
+                    <div class="work">
+                        <a class="page__link" href=""><img src="images/mogu/thumbnail.jpg" alt="thumbnail mogu"></a>
+                        <div class="work__hover">
+                            <p>Jump to case study</p>
+                        </div>
+                    </div>
+                    <div class="work">
+                        <a class="page__link" href=""><img src="images/wordsworth/thumbnail.jpg" alt="thumbnail wordsworth"></a>
+                        <div class="work__hover">
+                            <p>Jump to case study</p>
+                        </div>
+                    </div>
+                    <div class="work">
+                        <a class="page__link" href=""><img src="images/ui/thumbnail.jpg" alt="thumbnail ui"></a>
+                        <div class="work__hover">
+                            <p>Jump to case study</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!--contact section-->
+            <section class="contact container">
+                <h1 class="section__title">Contact</h1>
+                <div class="contact__info">
+                    <p>I am seeking a job as a
+                        <span>Front-End Designer / Developer</span>.
+                        <br>If you are interested me,
+                        please send an email to me.
+                    </p>
+                </div>
+                <button><a href="mailto:gawow11@gmail.com">Send an E-mail</a></button>
+            </section>
+        </div>
+    </div>
+
 
     <!--footer-->
     <footer>
-        <a href="https://www.linkedin.com/in/mie-suzuki-079644161/" target="_blank"><svg class="icon icon-linkedin2"><use xlink:href="#icon-linkedin2"><symbol id="icon-linkedin2" viewBox="0 0 32 32">
-            <title>linkedin2</title>
-            <path d="M12 12h5.535v2.837h0.079c0.77-1.381 2.655-2.837 5.464-2.837 5.842 0 6.922 3.637 6.922 8.367v9.633h-5.769v-8.54c0-2.037-0.042-4.657-3.001-4.657-3.005 0-3.463 2.218-3.463 4.509v8.688h-5.767v-18z"></path>
-            <path d="M2 12h6v18h-6v-18z"></path>
-            <path d="M8 7c0 1.657-1.343 3-3 3s-3-1.343-3-3c0-1.657 1.343-3 3-3s3 1.343 3 3z"></path>
-        </symbol></use></svg></a>
-        <a href="https://github.com/suusan11" target="_blank"><svg class="icon icon-github"><use xlink:href="#icon-github"><symbol id="icon-github" viewBox="0 0 24 24">
-            <title>github</title>
-            <path d="M22.5 8.5c0-1.5-0.5-2.8-1.4-4 0.3-1.3 0.2-2.7-0.3-3.9-0.1-0.3-0.3-0.5-0.6-0.6-0.4-0.1-1.7-0.3-4.4 1.4-2.2-0.5-4.5-0.5-6.6 0-2.7-1.7-4-1.5-4.4-1.4-0.3 0.1-0.5 0.3-0.6 0.6-0.6 1.3-0.7 2.6-0.3 3.9-0.9 1.2-1.4 2.6-1.4 4 0 5.4 3 7.1 5.8 7.7-0.2 0.7-0.3 1.3-0.3 1.9v0.1c-2.1 0.4-2.8-0.4-3.6-1.5-0.5-0.7-1.1-1.5-2.2-1.7-0.5-0.1-1.1 0.2-1.2 0.7s0.2 1.1 0.7 1.2c0.3 0.1 0.7 0.5 1.1 1 0.9 1.2 2.2 2.8 5.2 2.4v1.7c0 0.6 0.4 1 1 1s1-0.4 1-1v-2.9c0 0 0-0.1 0-0.1v-0.9c0-0.7 0.2-1.3 0.7-1.8 0.3-0.3 0.4-0.7 0.2-1-0.1-0.4-0.4-0.6-0.8-0.7-2.9-0.4-5.6-1.3-5.6-6 0-1.2 0.4-2.2 1.2-3.1 0.3-0.3 0.3-0.7 0.2-1-0.3-0.9-0.3-1.7-0.1-2.5 0.5 0.1 1.4 0.4 2.6 1.3 0.3 0.2 0.6 0.2 0.9 0.1 2.1-0.6 4.4-0.6 6.5 0 0.3 0.1 0.6 0 0.8-0.1 1.3-0.9 2.2-1.2 2.6-1.3 0.2 0.8 0.2 1.6-0.1 2.4-0.1 0.4-0.1 0.8 0.2 1 0.8 0.8 1.2 1.9 1.2 3.1 0 4.7-2.7 5.7-5.6 6-0.4 0-0.7 0.3-0.8 0.7s0 0.8 0.2 1c0.5 0.5 0.7 1.2 0.7 1.9v3.9c0 0.6 0.4 1 1 1s1-0.4 1-1v-3.8c0.1-0.7 0-1.3-0.3-1.9 2.4-0.5 5.8-2.1 5.8-7.8z"></path>
-        </symbol></use></svg></a>
-        <a href="https://dribbble.com/suusan1228" target="_blank"><svg class="icon icon-dribbble"><use xlink:href="#icon-dribbble"><symbol id="icon-dribbble" viewBox="0 0 32 32">
-            <title>dribbble</title>
-            <path d="M16 32c-8.825 0-16-7.175-16-16s7.175-16 16-16c8.825 0 16 7.175 16 16s-7.175 16-16 16v0zM29.494 18.188c-0.469-0.15-4.231-1.269-8.512-0.581 1.788 4.912 2.512 8.912 2.656 9.744 3.063-2.075 5.25-5.356 5.856-9.163v0zM21.337 28.6c-0.206-1.2-0.994-5.375-2.913-10.363-0.031 0.012-0.063 0.019-0.087 0.031-7.713 2.688-10.481 8.031-10.725 8.531 2.319 1.806 5.231 2.887 8.387 2.887 1.894 0 3.7-0.387 5.338-1.087v0zM5.844 25.156c0.313-0.531 4.063-6.738 11.106-9.019 0.175-0.056 0.356-0.113 0.538-0.162-0.344-0.775-0.719-1.556-1.106-2.319-6.819 2.044-13.444 1.956-14.044 1.95-0.006 0.137-0.006 0.275-0.006 0.419 0 3.506 1.331 6.712 3.512 9.131v0zM2.625 13.219c0.612 0.006 6.244 0.031 12.637-1.662-2.262-4.025-4.706-7.412-5.069-7.906-3.825 1.806-6.688 5.331-7.569 9.569v0zM12.8 2.731c0.375 0.506 2.863 3.888 5.1 8 4.863-1.819 6.919-4.588 7.163-4.938-2.413-2.144-5.587-3.444-9.063-3.444-1.1 0.006-2.175 0.138-3.2 0.381v0zM26.581 7.381c-0.288 0.388-2.581 3.325-7.631 5.388 0.319 0.65 0.625 1.313 0.906 1.981 0.1 0.238 0.2 0.469 0.294 0.706 4.55-0.569 9.069 0.344 9.519 0.438-0.031-3.225-1.188-6.188-3.087-8.512v0z"></path>
-        </symbol></use></svg></a>
-        <a href="https://www.instagram.com/miiiiiiiiiiie.55/" target="_blank"><svg class="icon icon-instagram"><use xlink:href="#icon-instagram"><symbol id="icon-instagram" viewBox="0 0 32 32">
-            <title>instagram</title>
-            <path d="M16 2.881c4.275 0 4.781 0.019 6.462 0.094 1.563 0.069 2.406 0.331 2.969 0.55 0.744 0.288 1.281 0.638 1.837 1.194 0.563 0.563 0.906 1.094 1.2 1.838 0.219 0.563 0.481 1.412 0.55 2.969 0.075 1.688 0.094 2.194 0.094 6.463s-0.019 4.781-0.094 6.463c-0.069 1.563-0.331 2.406-0.55 2.969-0.288 0.744-0.637 1.281-1.194 1.837-0.563 0.563-1.094 0.906-1.837 1.2-0.563 0.219-1.413 0.481-2.969 0.55-1.688 0.075-2.194 0.094-6.463 0.094s-4.781-0.019-6.463-0.094c-1.563-0.069-2.406-0.331-2.969-0.55-0.744-0.288-1.281-0.637-1.838-1.194-0.563-0.563-0.906-1.094-1.2-1.837-0.219-0.563-0.481-1.413-0.55-2.969-0.075-1.688-0.094-2.194-0.094-6.463s0.019-4.781 0.094-6.463c0.069-1.563 0.331-2.406 0.55-2.969 0.288-0.744 0.638-1.281 1.194-1.838 0.563-0.563 1.094-0.906 1.838-1.2 0.563-0.219 1.412-0.481 2.969-0.55 1.681-0.075 2.188-0.094 6.463-0.094zM16 0c-4.344 0-4.887 0.019-6.594 0.094-1.7 0.075-2.869 0.35-3.881 0.744-1.056 0.412-1.95 0.956-2.837 1.85-0.894 0.888-1.438 1.781-1.85 2.831-0.394 1.019-0.669 2.181-0.744 3.881-0.075 1.713-0.094 2.256-0.094 6.6s0.019 4.887 0.094 6.594c0.075 1.7 0.35 2.869 0.744 3.881 0.413 1.056 0.956 1.95 1.85 2.837 0.887 0.887 1.781 1.438 2.831 1.844 1.019 0.394 2.181 0.669 3.881 0.744 1.706 0.075 2.25 0.094 6.594 0.094s4.888-0.019 6.594-0.094c1.7-0.075 2.869-0.35 3.881-0.744 1.050-0.406 1.944-0.956 2.831-1.844s1.438-1.781 1.844-2.831c0.394-1.019 0.669-2.181 0.744-3.881 0.075-1.706 0.094-2.25 0.094-6.594s-0.019-4.887-0.094-6.594c-0.075-1.7-0.35-2.869-0.744-3.881-0.394-1.063-0.938-1.956-1.831-2.844-0.887-0.887-1.781-1.438-2.831-1.844-1.019-0.394-2.181-0.669-3.881-0.744-1.712-0.081-2.256-0.1-6.6-0.1v0z"></path>
-            <path d="M16 7.781c-4.537 0-8.219 3.681-8.219 8.219s3.681 8.219 8.219 8.219 8.219-3.681 8.219-8.219c0-4.537-3.681-8.219-8.219-8.219zM16 21.331c-2.944 0-5.331-2.387-5.331-5.331s2.387-5.331 5.331-5.331c2.944 0 5.331 2.387 5.331 5.331s-2.387 5.331-5.331 5.331z"></path>
-            <path d="M26.462 7.456c0 1.060-0.859 1.919-1.919 1.919s-1.919-0.859-1.919-1.919c0-1.060 0.859-1.919 1.919-1.919s1.919 0.859 1.919 1.919z"></path>
-        </symbol></use></svg></a>
+        <div class="footer__flex">
+            <a href="https://www.linkedin.com/in/mie-suzuki-079644161/" target="_blank"><svg class="icon icon-linkedin2"><use xlink:href="#icon-linkedin2"><symbol id="icon-linkedin2" viewBox="0 0 32 32">
+                <title>linkedin2</title>
+                <path d="M12 12h5.535v2.837h0.079c0.77-1.381 2.655-2.837 5.464-2.837 5.842 0 6.922 3.637 6.922 8.367v9.633h-5.769v-8.54c0-2.037-0.042-4.657-3.001-4.657-3.005 0-3.463 2.218-3.463 4.509v8.688h-5.767v-18z"></path>
+                <path d="M2 12h6v18h-6v-18z"></path>
+                <path d="M8 7c0 1.657-1.343 3-3 3s-3-1.343-3-3c0-1.657 1.343-3 3-3s3 1.343 3 3z"></path>
+            </symbol></use></svg></a>
+            <a href="https://github.com/suusan11" target="_blank"><svg class="icon icon-github"><use xlink:href="#icon-github"><symbol id="icon-github" viewBox="0 0 24 24">
+                <title>github</title>
+                <path d="M22.5 8.5c0-1.5-0.5-2.8-1.4-4 0.3-1.3 0.2-2.7-0.3-3.9-0.1-0.3-0.3-0.5-0.6-0.6-0.4-0.1-1.7-0.3-4.4 1.4-2.2-0.5-4.5-0.5-6.6 0-2.7-1.7-4-1.5-4.4-1.4-0.3 0.1-0.5 0.3-0.6 0.6-0.6 1.3-0.7 2.6-0.3 3.9-0.9 1.2-1.4 2.6-1.4 4 0 5.4 3 7.1 5.8 7.7-0.2 0.7-0.3 1.3-0.3 1.9v0.1c-2.1 0.4-2.8-0.4-3.6-1.5-0.5-0.7-1.1-1.5-2.2-1.7-0.5-0.1-1.1 0.2-1.2 0.7s0.2 1.1 0.7 1.2c0.3 0.1 0.7 0.5 1.1 1 0.9 1.2 2.2 2.8 5.2 2.4v1.7c0 0.6 0.4 1 1 1s1-0.4 1-1v-2.9c0 0 0-0.1 0-0.1v-0.9c0-0.7 0.2-1.3 0.7-1.8 0.3-0.3 0.4-0.7 0.2-1-0.1-0.4-0.4-0.6-0.8-0.7-2.9-0.4-5.6-1.3-5.6-6 0-1.2 0.4-2.2 1.2-3.1 0.3-0.3 0.3-0.7 0.2-1-0.3-0.9-0.3-1.7-0.1-2.5 0.5 0.1 1.4 0.4 2.6 1.3 0.3 0.2 0.6 0.2 0.9 0.1 2.1-0.6 4.4-0.6 6.5 0 0.3 0.1 0.6 0 0.8-0.1 1.3-0.9 2.2-1.2 2.6-1.3 0.2 0.8 0.2 1.6-0.1 2.4-0.1 0.4-0.1 0.8 0.2 1 0.8 0.8 1.2 1.9 1.2 3.1 0 4.7-2.7 5.7-5.6 6-0.4 0-0.7 0.3-0.8 0.7s0 0.8 0.2 1c0.5 0.5 0.7 1.2 0.7 1.9v3.9c0 0.6 0.4 1 1 1s1-0.4 1-1v-3.8c0.1-0.7 0-1.3-0.3-1.9 2.4-0.5 5.8-2.1 5.8-7.8z"></path>
+            </symbol></use></svg></a>
+            <a href="https://dribbble.com/suusan1228" target="_blank"><svg class="icon icon-dribbble"><use xlink:href="#icon-dribbble"><symbol id="icon-dribbble" viewBox="0 0 32 32">
+                <title>dribbble</title>
+                <path d="M16 32c-8.825 0-16-7.175-16-16s7.175-16 16-16c8.825 0 16 7.175 16 16s-7.175 16-16 16v0zM29.494 18.188c-0.469-0.15-4.231-1.269-8.512-0.581 1.788 4.912 2.512 8.912 2.656 9.744 3.063-2.075 5.25-5.356 5.856-9.163v0zM21.337 28.6c-0.206-1.2-0.994-5.375-2.913-10.363-0.031 0.012-0.063 0.019-0.087 0.031-7.713 2.688-10.481 8.031-10.725 8.531 2.319 1.806 5.231 2.887 8.387 2.887 1.894 0 3.7-0.387 5.338-1.087v0zM5.844 25.156c0.313-0.531 4.063-6.738 11.106-9.019 0.175-0.056 0.356-0.113 0.538-0.162-0.344-0.775-0.719-1.556-1.106-2.319-6.819 2.044-13.444 1.956-14.044 1.95-0.006 0.137-0.006 0.275-0.006 0.419 0 3.506 1.331 6.712 3.512 9.131v0zM2.625 13.219c0.612 0.006 6.244 0.031 12.637-1.662-2.262-4.025-4.706-7.412-5.069-7.906-3.825 1.806-6.688 5.331-7.569 9.569v0zM12.8 2.731c0.375 0.506 2.863 3.888 5.1 8 4.863-1.819 6.919-4.588 7.163-4.938-2.413-2.144-5.587-3.444-9.063-3.444-1.1 0.006-2.175 0.138-3.2 0.381v0zM26.581 7.381c-0.288 0.388-2.581 3.325-7.631 5.388 0.319 0.65 0.625 1.313 0.906 1.981 0.1 0.238 0.2 0.469 0.294 0.706 4.55-0.569 9.069 0.344 9.519 0.438-0.031-3.225-1.188-6.188-3.087-8.512v0z"></path>
+            </symbol></use></svg></a>
+            <a href="https://www.instagram.com/miiiiiiiiiiie.55/" target="_blank"><svg class="icon icon-instagram"><use xlink:href="#icon-instagram"><symbol id="icon-instagram" viewBox="0 0 32 32">
+                <title>instagram</title>
+                <path d="M16 2.881c4.275 0 4.781 0.019 6.462 0.094 1.563 0.069 2.406 0.331 2.969 0.55 0.744 0.288 1.281 0.638 1.837 1.194 0.563 0.563 0.906 1.094 1.2 1.838 0.219 0.563 0.481 1.412 0.55 2.969 0.075 1.688 0.094 2.194 0.094 6.463s-0.019 4.781-0.094 6.463c-0.069 1.563-0.331 2.406-0.55 2.969-0.288 0.744-0.637 1.281-1.194 1.837-0.563 0.563-1.094 0.906-1.837 1.2-0.563 0.219-1.413 0.481-2.969 0.55-1.688 0.075-2.194 0.094-6.463 0.094s-4.781-0.019-6.463-0.094c-1.563-0.069-2.406-0.331-2.969-0.55-0.744-0.288-1.281-0.637-1.838-1.194-0.563-0.563-0.906-1.094-1.2-1.837-0.219-0.563-0.481-1.413-0.55-2.969-0.075-1.688-0.094-2.194-0.094-6.463s0.019-4.781 0.094-6.463c0.069-1.563 0.331-2.406 0.55-2.969 0.288-0.744 0.638-1.281 1.194-1.838 0.563-0.563 1.094-0.906 1.838-1.2 0.563-0.219 1.412-0.481 2.969-0.55 1.681-0.075 2.188-0.094 6.463-0.094zM16 0c-4.344 0-4.887 0.019-6.594 0.094-1.7 0.075-2.869 0.35-3.881 0.744-1.056 0.412-1.95 0.956-2.837 1.85-0.894 0.888-1.438 1.781-1.85 2.831-0.394 1.019-0.669 2.181-0.744 3.881-0.075 1.713-0.094 2.256-0.094 6.6s0.019 4.887 0.094 6.594c0.075 1.7 0.35 2.869 0.744 3.881 0.413 1.056 0.956 1.95 1.85 2.837 0.887 0.887 1.781 1.438 2.831 1.844 1.019 0.394 2.181 0.669 3.881 0.744 1.706 0.075 2.25 0.094 6.594 0.094s4.888-0.019 6.594-0.094c1.7-0.075 2.869-0.35 3.881-0.744 1.050-0.406 1.944-0.956 2.831-1.844s1.438-1.781 1.844-2.831c0.394-1.019 0.669-2.181 0.744-3.881 0.075-1.706 0.094-2.25 0.094-6.594s-0.019-4.887-0.094-6.594c-0.075-1.7-0.35-2.869-0.744-3.881-0.394-1.063-0.938-1.956-1.831-2.844-0.887-0.887-1.781-1.438-2.831-1.844-1.019-0.394-2.181-0.669-3.881-0.744-1.712-0.081-2.256-0.1-6.6-0.1v0z"></path>
+                <path d="M16 7.781c-4.537 0-8.219 3.681-8.219 8.219s3.681 8.219 8.219 8.219 8.219-3.681 8.219-8.219c0-4.537-3.681-8.219-8.219-8.219zM16 21.331c-2.944 0-5.331-2.387-5.331-5.331s2.387-5.331 5.331-5.331c2.944 0 5.331 2.387 5.331 5.331s-2.387 5.331-5.331 5.331z"></path>
+                <path d="M26.462 7.456c0 1.060-0.859 1.919-1.919 1.919s-1.919-0.859-1.919-1.919c0-1.060 0.859-1.919 1.919-1.919s1.919 0.859 1.919 1.919z"></path>
+            </symbol></use></svg></a>
+        </div>
         <p>&copy;2019 MIE SUZUKI developed by &hearts;</p>
     </footer>
+
+    <script>
+        Barba.Pjax.init();
+        var FadeTransition = Barba.BaseTransition.extend({
+            start: function() {
+
+                Promise
+                    .all([this.newContainerLoading, this.fadeOut()])
+                    .then(this.fadeIn.bind(this));
+            },
+
+            fadeOut: function() {
+                return $(this.oldContainer).animate({ opacity: 0 }).promise();
+            },
+
+            fadeIn: function() {
+
+                var _this = this;
+                var $el = $(this.newContainer);
+
+                $(this.oldContainer).hide();
+
+                $el.css({
+                    visibility : 'visible',
+                    opacity : 0
+                });
+
+                $el.animate({ opacity: 1 }, 400, function() {
+                    _this.done();
+                });
+            }
+        });
+
+        Barba.Pjax.getTransition = function() {
+            return FadeTransition;
+        };
+    </script>
 </body>
 </html>

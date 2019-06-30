@@ -1,0 +1,67 @@
+@import "color", "mixin";
+
+.works {
+  position: relative;
+  width: 100vw;
+  background-color: $gray;
+  padding: 10% 0;
+  text-align: center;
+
+  h1 {
+    margin-bottom: 5vh;
+  }
+
+  &::before {
+    @include bgLine(33vw);
+  }
+  &::after {
+    @include bgLine(66vw);
+  }
+}
+
+.work {
+  position: relative;
+  margin: 15vh 0;
+  z-index: 2;
+
+  img {
+    width: 80vw;
+    @include middleSize {
+      width: 50vw;
+    }
+  }
+
+  &:last-child img {
+    width: 40vw;
+    @include middleSize {
+      width: 25vw;
+    }
+  }
+
+  &__hover {
+    display: none;
+  }
+}
+
+@include pcSize {
+  .works__flex {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    margin: 0 5%;
+  }
+
+  .work {
+    width: 30vw;
+    margin: 5%;
+
+    img {
+      width: 100%;
+    }
+
+    &:last-child img {
+      width: 45%;
+    }
+  }
+}

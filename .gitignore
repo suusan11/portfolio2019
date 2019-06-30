@@ -2,4 +2,13 @@
 portfolio.xd
 Styleguide.xd
 
+//modules
+node_modules/
+package-lock.json
+
+dist/main.js.map
+
 .idea/
+
+dist/images/sample.jpg
+dist/images/logo-brown.png

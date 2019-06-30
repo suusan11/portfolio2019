@@ -1,0 +1,100 @@
+@import "color", "mixin";
+
+//browser for web and tablet
+@include pcSize {
+  .global__menu {
+    display: none;
+  }
+}
+@include middleSize {
+  .global__menu {
+    display: none;
+  }
+}
+
+//browser for mobile
+@include mobileSize {
+  .header__flex--right {
+    display: none;
+  }
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  width: 100vw;
+  height: 65px;
+  background-color: $black;
+  color: $white;
+  padding-top: 3vh;
+
+  &__logo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 5px;
+    height: 5px;
+
+    img {
+      width: 10vw;
+    }
+  }
+
+  &__flex {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-left: 5vw;
+
+    //global menu only for mobile
+    a {
+      color: $white;
+
+      p {
+        @include font_vw(14);
+      }
+    }
+  }
+}
+
+@include pcSize {
+  .header {
+    height: 100px;
+    padding-top: 5vh;
+
+    //only for pc and tablet
+    &__flex--right {
+      width: 20vw;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+
+      li {
+        font-size: 18px;
+        padding: 0 2vw;
+      }
+    }
+  }
+}
+
+@include middleSize {
+  .header {
+    height: 100px;
+    padding-top: 5vh;
+
+    //only for pc and tablet
+    &__flex--right {
+      width: 20vw;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+
+      li {
+        font-size: 18px;
+        margin: 0 2vw;
+      }
+    }
+  }
+}

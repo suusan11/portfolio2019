@@ -1,0 +1,30 @@
+@import "color", "mixin";
+
+.contact {
+  margin: 15vh auto;
+  text-align: center;
+
+  &__info{
+    width: 70vw;
+    padding: 0 5vw;
+    margin: 7% auto 0;
+    @include pcSize {
+      margin: 3% auto 0;
+    }
+
+    p {
+      display: inline-block;
+      text-align: left;
+      line-height: 1.7;
+      @include font_vw(14);
+      @include pcSize {
+        font-size: 18px;
+        line-height: 2;
+      }
+      @include middleSize {
+        font-size: 18px;
+        line-height: 2;
+      }
+    }
+  }
+}

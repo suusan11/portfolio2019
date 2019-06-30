@@ -1,0 +1,52 @@
+@import "color", "mixin", "typography";
+
+footer {
+  width: 100vw;
+  height: 200px;
+  background-color: $black;
+  padding: 20% 0;
+  text-align: center;
+  @include pcSize {
+    height: 250px;
+    padding: 130px 0 180px;
+  }
+  @include middleSize {
+    padding: 10% 0 15%;
+  }
+
+  .footer__flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .icon {
+      width: 12vw;
+      height: 6vw;
+      stroke-width: 0;
+      fill: $white;
+      @include pcSize {
+        width: 70px;
+        height: 28px;
+      }
+      @include middleSize {
+        width: 58px;
+        height: 24px;
+      }
+    }
+  }
+
+  p {
+    color: $white;
+    @include font_vw(9);
+    font-weight: $font-weight-light;
+    margin-top: 8%;
+    @include pcSize {
+      font-size: 13px;
+      margin-top: 3%;
+    }
+    @include middleSize {
+      font-size: 13px;
+      margin-top: 3%;
+    }
+  }
+}
