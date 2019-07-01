@@ -9,13 +9,23 @@
       display: inline-block;
       margin-right: 2vw;
 
-      img {
+      img.font-kulkuri {
         width: 38vw;
         @include pcSize {
           width: 160px;
         }
         @include middleSize {
           width: 180px;
+        }
+      }
+
+      img.font-mogu {
+        width: 45vw;
+        @include pcSize {
+          width: 250px;
+        }
+        @include middleSize {
+          width: 270px;
         }
       }
 
