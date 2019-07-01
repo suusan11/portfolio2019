@@ -56,6 +56,51 @@
         height: 350px;
       }
     }
+
+    //only to wordworth
+    &.wordworth {
+      img:nth-child(1) {
+        transform: rotate(10deg);
+      }
+      img:nth-child(2) {
+        transform: rotate(-5deg);
+        position: relative;
+        top: 0;
+      }
+      img:nth-child(3) {
+        transform: rotate(5deg);
+        position: relative;
+        left: 10vw;
+        @include pcSize {
+          left: 5vw;
+        }
+        @include middleSize {
+          left: 5vw;
+        }
+      }
+
+      &::before {
+        display: block;
+        content: '';
+        position: absolute;
+        top: -7vh;
+        left: 0;
+        width: 50vw;
+        height: 25vh;
+        background: url("http://localhost:8080/images/dotted.png") no-repeat;
+        @include pcSize {
+          top: -150px;
+          width: 350px;
+          height: 350px;
+        }
+        @include middleSize {
+          top: -55px;
+          left: 0;
+          width: 350px;
+          height: 350px;
+        }
+      }
+    }
   }
 
   button.button__work--bottom {
