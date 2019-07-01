@@ -94,7 +94,17 @@
         }
       }
     }
+
+    //color only to mogu
+    &--flex-top.mogu-color {
+      @include flexColorBox;
+      .color--box {
+        @include colorBox(#B4061F);
+      }
+    }
   }
+
+
 
   //only to pc
   @include pcSize {
