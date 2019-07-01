@@ -19,24 +19,24 @@
         margin-top: 1.5%;
       }
     }
+  }
 
-    &--flex-top {
+  //color only to kulkuri
+  .work__color--item {
+    &--flex-top.kulkuri-color {
       @include flexColorBox;
-      .color--box {
-        &:nth-child(1) {
-          @include colorBox(#C6FFDD);
-        }
-        &:nth-child(2) {
-          @include colorBox(#FBD786);
-        }
-        &:nth-child(3) {
-          @include colorBox(#F7797D);
-        }
+      &:nth-child(1) {
+        @include colorBox(#C6FFDD);
+      }
+      &:nth-child(2) {
+        @include colorBox(#FBD786);
+      }
+      &:nth-child(3) {
+        @include colorBox(#F7797D);
       }
     }
 
-
-    &--flex-middle {
+    &--flex-middle.kulkuri-color {
       @include flexColorBox;
 
       .flex--item {
@@ -77,7 +77,7 @@
       }
     }
 
-    &--flex-bottom {
+    &--flex-bottom.kulkuri-color {
       @include flexColorBox;
       .color--box {
         &:nth-child(1) {
