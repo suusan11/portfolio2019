@@ -102,6 +102,55 @@
         @include colorBox(#B4061F);
       }
     }
+
+    //color only to wordworth
+    &--flex-top.wordworth-color {
+      @include flexColorBox;
+      .color--box {
+        &:nth-child(1) {
+          @include colorBox(#BFAE8E);
+        }
+        &:nth-child(2) {
+          @include colorBox(#552F65);
+        }
+        &:nth-child(3) {
+          @include colorBox(#F1F1F1);
+        }
+      }
+
+      p.color__component {
+        margin: 3vh 0;
+
+        &.gold span{
+          color: #BFAE8E;
+          font-weight: $font-weight-bold;
+        }
+        &.purple span {
+          color: #552F65;
+          font-weight: $font-weight-bold;
+        }
+      }
+
+      img {
+        width: 20vw;
+        margin-right: 3vw;
+        @include pcSize {
+          width: 130px;
+        }
+        @include middleSize {
+          width: 100px;
+        }
+      }
+      img:last-child {
+        width: 60vw;
+        @include pcSize {
+          width: 350px;
+        }
+        @include middleSize {
+          width: 300px;
+        }
+      }
+    }
   }
 
 
