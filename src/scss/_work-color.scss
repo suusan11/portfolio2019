@@ -25,14 +25,16 @@
   .work__color--item {
     &--flex-top.kulkuri-color {
       @include flexColorBox;
-      &:nth-child(1) {
-        @include colorBox(#C6FFDD);
-      }
-      &:nth-child(2) {
-        @include colorBox(#FBD786);
-      }
-      &:nth-child(3) {
-        @include colorBox(#F7797D);
+      .color--box {
+        &:nth-child(1) {
+          @include colorBox(#C6FFDD);
+        }
+        &:nth-child(2) {
+          @include colorBox(#FBD786);
+        }
+        &:nth-child(3) {
+          @include colorBox(#F7797D);
+        }
       }
     }
 
