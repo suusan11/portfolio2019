@@ -74,9 +74,13 @@
 
 //color box to work page color section
 @mixin colorBox($color) {
-  width: 18vw;
+  width: 20vw;
   height: 7vh;
   border: 3px solid $color;
+  color: $color;
+  line-height: 7vh;
+  margin-right: 1.5vw;
+  padding-left: 1.2vw;
   @include font_vw(12);
   @include pcSize {
     font-size: 18px;
@@ -94,9 +98,6 @@
     padding-left: 9px;
     margin-bottom: 5px;
   }
-  color: $color;
-  line-height: 7vh;
-  margin-right: 1.5vw;
 }
 
 //flex to to work page color section
