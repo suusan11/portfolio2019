@@ -32,8 +32,8 @@
         height: 350px;
       }
       @include middleSize {
-        top: -75px;
-        right: 0;
+        top: 150px;
+        left: -50vw;
         width: 350px;
         height: 350px;
       }
@@ -55,11 +55,26 @@
     }
 
     img {
+      display: block;
       width: 80vw;
       margin: 0 auto;
       @include pcSize {
         width: 485px;
         margin-top: 3vh;
+      }
+      @include middleSize {
+        width: 450px;
+      }
+    }
+
+    img.work__img--small {
+      width: 60vw;
+      @include pcSize {
+        width: 350px;
+        margin-top: 3vh;
+      }
+      @include middleSize {
+        width: 350px;
       }
     }
   }
@@ -124,6 +139,10 @@
         width: 60vw;
         margin-left: -4vw;
         @include pcSize {
+          width: 250px;
+          margin-left: 0;
+        }
+        @include middleSize {
           width: 250px;
           margin-left: 0;
         }
