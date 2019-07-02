@@ -99,74 +99,110 @@
   }
 }
 
-  .work__intro--black {
-    width: 100vw;
-    height: 60vh;
-    background-color: $black;
-    padding: 7vh 10vw;
-    margin-top: 20vh;
-    @include middleSize {
-      padding: 10vh 20vw;
-      margin-bottom: 10vh;
-    }
+.work__intro--black {
+  width: 100vw;
+  height: 60vh;
+  background-color: $black;
+  padding: 7vh 10vw;
+  margin-top: 20vh;
+  @include middleSize {
+    padding: 10vh 20vw;
+    margin-bottom: 10vh;
+  }
 
-    h2 {
-      color: $white;
-      @include font_vw(18);
-      font-weight: $font-weight-medium;
-      @include pcSize {
-        font-size: 28px;
-      }
-      @include middleSize {
-        font-size: 28px;
-      }
-    }
-
-    p {
-      color: $white;
-      line-height: 1.5;
-      margin-top: 5vh;
-    }
-
-    button.button__white {
-      width: 55vw;
-      height: 8vh;
-      background-color: $black;
-      border: 3px solid $white;
-      color: $white;
-      margin: 5vh auto 0;
-      @include pcSize {
-        width: 280px;
-        height: 10vh;
-        padding: 2%;
-      }
-      @include middleSize {
-        width: 250px;
-        height: 9vh;
-        padding: 3% 0;
-      }
-
-      a {
-        height: 100%;
-        padding: 0 auto;
-        color: $white;
-        @include font_vw(14);
-        @include pcSize {
-          font-size: 20px;
-        }
-        @include middleSize {
-          font-size: 20px;
-        }
-      }
-    }
-
-    //only to pc
+  h2 {
+    color: $white;
+    @include font_vw(18);
+    font-weight: $font-weight-medium;
     @include pcSize {
-      &.scroll__item {
-        width: 100%;
-        min-height: 720px;
-        margin-top: 12vh;
-        padding-top: 20vh;
+      font-size: 28px;
+    }
+    @include middleSize {
+      font-size: 28px;
+    }
+  }
+
+  p {
+    color: $white;
+    line-height: 1.5;
+    margin-top: 5vh;
+  }
+
+  button.button__white {
+    width: 55vw;
+    height: 8vh;
+    background-color: $black;
+    border: 3px solid $white;
+    color: $white;
+    margin: 5vh auto 0;
+    @include pcSize {
+      width: 280px;
+      height: 10vh;
+      padding: 2%;
+    }
+    @include middleSize {
+      width: 250px;
+      height: 9vh;
+      padding: 3% 0;
+    }
+
+    a {
+      height: 100%;
+      padding: 0 auto;
+      color: $white;
+      @include font_vw(14);
+      @include pcSize {
+        font-size: 20px;
+      }
+      @include middleSize {
+        font-size: 20px;
       }
     }
   }
+
+  //only to pc
+  @include pcSize {
+    &.scroll__item {
+      width: 100%;
+      min-height: 720px;
+      margin-top: 12vh;
+      padding-top: 20vh;
+    }
+  }
+}
+
+//only to uidesign page
+.work__intro.ui {
+  img {
+    width: 50vw;
+    margin: 0 auto 5vh;
+    @include middleSize {
+      width: 25vw;
+    }
+  }
+
+}
+.work__intro--black.ui {
+  height: 35vh;
+}
+@include pcSize {
+  .work__intro--flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .work__intro {
+      width: 50vw;
+
+      img {
+        width: 170px;
+      }
+    }
+    .work__intro--black {
+      width: 50vw;
+      min-height: 720px;
+      margin-top: 5vh;
+      padding: 30vh 10vw;
+    }
+  }
+}
