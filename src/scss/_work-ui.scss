@@ -2,9 +2,17 @@
 
 .work__ui {
   margin-top: 5vh;
+  @include pcSize {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+  }
 
   .work__description {
     position: relative;
+    @include pcSize {
+      width: 50vw;
+    }
 
     &::before {
       display: block;
@@ -18,8 +26,8 @@
       opacity: .5;
       background: url("http://localhost:8080/images/dotted.png") no-repeat;
       @include pcSize {
-        top: -120px;
-        left: 60vw;
+        top: 200px;
+        left: -30vw;
         width: 350px;
         height: 350px;
       }
@@ -49,10 +57,20 @@
     img {
       width: 80vw;
       margin: 0 auto;
+      @include pcSize {
+        width: 485px;
+        margin-top: 3vh;
+      }
     }
   }
 
   .work__color {
+    @include pcSize {
+      width: 50vw;
+      margin-top: 9vh;
+      margin-left: 10vw;
+    }
+
     &--item {
       margin: 2vh auto 0;
       &:last-child {
@@ -61,6 +79,11 @@
 
       &--flex-top.ui-color {
         margin-bottom: 0;
+        @include pcSize {
+          display: flex;
+          justify-content: flex-start;
+          align-items: center;
+        }
 
         @include flexColorBox;
         .color--box {
@@ -100,6 +123,10 @@
       img {
         width: 60vw;
         margin-left: -4vw;
+        @include pcSize {
+          width: 250px;
+          margin-left: 0;
+        }
       }
     }
   }
