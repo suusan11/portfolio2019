@@ -56,7 +56,7 @@
     &--item {
       margin: 2vh auto 0;
       &:last-child {
-        margin-bottom: 5vh;
+        margin-bottom: 10vh;
       }
 
       &--flex-top.ui-color {
@@ -81,6 +81,18 @@
           }
           &:nth-child(2) {
             @include colorBox(#D5413D);
+          }
+        }
+      }
+
+      &--flex.ui-color {
+        @include flexColorBox;
+        .color--box {
+          &:nth-child(1) {
+            @include colorBox(#160F73);
+          }
+          &:nth-child(2) {
+            @include colorBox(#A5E5ED);
           }
         }
       }
