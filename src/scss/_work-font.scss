@@ -66,12 +66,12 @@
       }
       p {
         font-weight: $font-weight-light;
-        padding-left: 8.5vw;
+        padding-left: 44vw;
         @include pcSize {
-          padding-left: 40px;
+          padding-left: 270px;
         }
         @include middleSize {
-          padding-left: 43px;
+          padding-left: 280px;
         }
       }
       img.photo-frame {
