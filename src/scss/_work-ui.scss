@@ -58,6 +58,7 @@
       display: block;
       width: 80vw;
       margin: 0 auto;
+      filter: drop-shadow(-3px 5px 10px $black__opacity);
       @include pcSize {
         width: 485px;
         margin-top: 3vh;

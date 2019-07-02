@@ -10,12 +10,7 @@
 
     img {
       width: 80vw;
-      @include pcSize {
-        width: 90vw;
-      }
-      @include middleSize {
-        width: 90vw;
-      }
+      filter: drop-shadow(-3px 5px 10px $black__opacity);
 
       &:nth-child(1) {
         transform: rotate(-10deg);
@@ -26,7 +21,7 @@
         top: 40vh;
         left: 8vw;
         @include pcSize {
-          top: 100vh;
+          top: 80vh;
         }
         @include middleSize {
           top: 80vh;
