@@ -33,6 +33,34 @@ section {
   scroll-behavior: smooth;
 }
 
+#js-page-top {
+  position: fixed;
+  bottom: 250px;
+  right: 10px;
+  width: 50px;
+  height: 50px;
+  border: 1px solid $white;
+  border-radius: 50px;
+  background-color: $black__opacity;
+  z-index: 10;
+
+  a {
+    position: relative;
+    width: 50px;
+    height: 50px;
+    color: $white;
+    font-size: 18px;
+
+    &:before {
+      display: block;
+      content: '↑';
+      position: absolute;
+      top: 17px;
+      left: 20px;
+    }
+  }
+}
+
 //common fonts style
 h1.section__title {
   @include font_vw(47);
