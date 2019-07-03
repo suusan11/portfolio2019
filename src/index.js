@@ -17,4 +17,10 @@ window.addEventListener('scroll', function() {
     }else {
         buttonShow.classList.remove('is__show');
     }
-})
+});
+
+//global menu for mobile device
+
+//stop scroll
+// document.addEventListener('touchmove', function(e) {e.preventDefault();}, {passive: false});
+
