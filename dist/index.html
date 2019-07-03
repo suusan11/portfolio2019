@@ -28,7 +28,7 @@
     <div id="barba-wrapper">
         <div class="barba-container">
 
-            <section class="hero">
+            <section id="js-breakPoint" class="hero">
                 <div class="container">
                     <div class="hero__title">
                         <h1>I'm Mie.</h1>
@@ -175,9 +175,11 @@
         <p>&copy;2019 MIE SUZUKI developed by &hearts;</p>
     </footer>
     
-    <div id="js-page-top"><a href="#"></a></div>
+    <div id="js-topButton"><a href="#"></a></div>
+    <!--button to transit page top-->
 
     <script>
+        //page transition effect
         Barba.Pjax.init();
         var FadeTransition = Barba.BaseTransition.extend({
             start: function() {
