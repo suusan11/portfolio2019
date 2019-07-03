@@ -21,10 +21,10 @@
                 <li><a href="#works">WORKS</a></li>
                 <li><a href="#contact">CONTACT</a></li>
             </ul>
-            <div class="global__menu">
-                <a href="">MENU</a>
-                <ul class="click__open">
-                    <a class="close" href="">×</a>
+            <div id="hi" class="global__menu">
+                <a id="js-open-menu" href="#">MENU</a>
+                <ul id="js-global-menu" class="click__open">
+                    <a id="js-close-menu" class="close" href="">×</a>
                     <li><a href="#home">HOME</a></li>
                     <li><a href="#about">ABOUT</a></li>
                     <li><a href="#works">WORKS</a></li>
@@ -225,6 +225,20 @@
         Barba.Pjax.getTransition = function() {
             return FadeTransition;
         };
+
+        //global menu for mobile device
+        const openButton = document.getElementById('js-open-menu');
+        const closeButton = document.getElementById('js-close-menu');
+        const globalMenu = document.getElementById('js-global-menu');
+
+        openButton.addEventListener('click', function () {
+            globalMenu.classList.add('active');
+            globalMenu.classList.remove('remove');
+        });
+        closeButton.addEventListener('click', function () {
+            globalMenu.classList.remove('active');
+            globalMenu.classList.add('remove');
+        });
     </script>
 </body>
 </html>

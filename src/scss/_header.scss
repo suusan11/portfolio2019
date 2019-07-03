@@ -51,6 +51,7 @@
 
   //global menu only for mobile
   .global__menu {
+    //touch-action: none;
     a {
       color: $white;
       @include font_vw(14);
@@ -87,6 +88,10 @@
       &.active {
         display: block;
       }
+      &.remove {
+        display: block;
+        animation: slideOut .6s ease-in forwards;
+      }
     }
     @keyframes slideIn {
       0% {
@@ -94,6 +99,14 @@
       }
       100% {
         transform: translateX(0);
+      }
+    }
+    @keyframes slideOut {
+      0% {
+        transform: translateX(0);
+      }
+      100% {
+        transform: translateX(100vw);
       }
     }
   }
