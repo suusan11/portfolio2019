@@ -44,6 +44,9 @@ section {
   border-radius: 50px;
   background-color: $black__opacity;
   z-index: 10;
+  @include mobileSize {
+    bottom: 200px;
+  }
 
   a {
     position: relative;
