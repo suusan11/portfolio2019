@@ -7,6 +7,7 @@
 
 html {
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -27,6 +28,59 @@ section {
     margin: 3vh 0;
   }
 }
+
+.scroll__smooth {
+  scroll-behavior: smooth;
+}
+
+#js-topButton {
+  display: none;
+  position: fixed;
+  bottom: 250px;
+  right: 10px;
+  width: 50px;
+  height: 50px;
+  border: 1px solid $white;
+  border-radius: 50px;
+  background-color: $black__opacity;
+  z-index: 10;
+  @include mobileSize {
+    bottom: 200px;
+  }
+
+  a {
+    position: relative;
+    width: 50px;
+    height: 50px;
+    color: $white;
+    font-size: 18px;
+
+    &:before {
+      display: block;
+      content: '↑';
+      position: absolute;
+      top: 17px;
+      left: 20px;
+    }
+  }
+
+  &.is__show {
+    display: block;
+    animation: opacity .2s ease-in forwards;
+  }
+  @keyframes opacity {
+    0% {
+      opacity: 0;
+    }
+    50% {
+      opacity: .5;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+}
+
 
 //common fonts style
 h1.section__title {

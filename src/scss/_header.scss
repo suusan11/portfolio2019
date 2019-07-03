@@ -1,4 +1,4 @@
-@import "color", "mixin";
+@import "color", "typography", "mixin";
 
 //browser for web and tablet
 @include pcSize {
@@ -44,16 +44,69 @@
 
   &__flex {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
-    margin-left: 5vw;
+    margin: 0 5vw 0 15vw;
+  }
 
-    //global menu only for mobile
+  //global menu only for mobile
+  .global__menu {
+    //touch-action: none;
     a {
       color: $white;
+      @include font_vw(14);
+    }
+    .click__open {
+      display: none;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100vh;
+      background-color: $white;
+      text-align: center;
+      padding: 30vw;
+      animation: slideIn .6s ease-in forwards;
 
-      p {
-        @include font_vw(14);
+      a {
+        color: $black;
+        @include font_vw(18);
+        font-weight: $font-weight-light;
+      }
+      a.close {
+        @include font_vw(30);
+        font-weight: normal;
+        position: absolute;
+        top: 5vh;
+        right: 10vw;
+      }
+
+      li {
+        margin-bottom: 10vh;
+      }
+
+      &.active {
+        display: block;
+      }
+      &.remove {
+        display: block;
+        animation: slideOut .6s ease-in forwards;
+      }
+    }
+    @keyframes slideIn {
+      0% {
+        transform: translateX(100vw);
+      }
+      100% {
+        transform: translateX(0);
+      }
+    }
+    @keyframes slideOut {
+      0% {
+        transform: translateX(0);
+      }
+      100% {
+        transform: translateX(100vw);
       }
     }
   }

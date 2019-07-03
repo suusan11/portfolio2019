@@ -7,7 +7,7 @@
     <title>Mie Suzuki | Front-End Designer / Developer</title>
     <script src="../main.js"></script>
 </head>
-<body class="bodyfadein">
+<body>
 
     <!--header-->
     <header class="header">
@@ -15,9 +15,9 @@
         <div class="header__flex">
             <h3>Mie Suzuki</h3>
             <ul class="header__flex--right">
-                <li>ABOUT</li>
-                <li>WORKS</li>
-                <li>CONTACT</li>
+                <li><a href="../index.html#about">ABOUT</a></li>
+                <li><a href="../index.html#works">WORKS</a></li>
+                <li><a href="../index.html#contact">CONTACT</a></li>
             </ul>
             <a class="global__menu" href=""><p>MENU</p></a>
         </div>
@@ -44,7 +44,7 @@
 
                 <div class="scroll__container">
 
-                    <section class="work__intro--black container scroll__item">
+                    <section id="js-breakPoint" class="work__intro--black container scroll__item">
                         <h2>kulkuri</h2>
                         <p>‘kulkuri’ means freedom traveller in Finnish.<br>
                             This is a gallery site of my trip.
@@ -61,7 +61,7 @@
                             <p>Expressed a new world that I can meet on a trip.
                                 Blue is the sea, orange is the sun, and red is the warmth of people.
                             </p>
-                            <div class="work__color--item--flex-top">
+                            <div class="work__color--item--flex-top kulkuri-color">
                                 <div class="color--box">#C6FFDD</div>
                                 <div class="color--box">#FBD786</div>
                                 <div class="color--box">#F7797D</div>
@@ -69,7 +69,7 @@
                         </div>
                         <div class="work__color--item">
                             <h4>Countries color</h4>
-                            <div class="work__color--item--flex-middle">
+                            <div class="work__color--item--flex-middle kulkuri-color">
                                 <div class="flex--item">
                                     <img src="../images/kulkuri/german.jpg" alt="german color image">
                                     <div class="color--box">#E59948</div>
@@ -87,7 +87,7 @@
                                     <div class="color--box">#B77388</div>
                                 </div>
                             </div>
-                            <div class="work__color--item--flex-bottom">
+                            <div class="work__color--item--flex-bottom kulkuri-color">
                                 <div class="color--box">#B0272C</div>
                                 <div class="color--box">#3B91A6</div>
                                 <div class="color--box">#FECC35</div>
@@ -102,27 +102,27 @@
                         <div class="work__font--item">
                             <h4>Base - Mukta</h4>
                             <div class="work__font--item-each">
-                                <img src="../images/kulkuri/fontMuktaLight.png" alt="font Mukta Light">
+                                <img class="font-kulkuri" src="../images/kulkuri/fontMuktaLight.png" alt="font Mukta Light">
                                 <p>Light</p>
                             </div>
                             <div class="work__font--item-each">
-                                <img src="../images/kulkuri/fontMuktaRegular.png" alt="font Mukta Regular">
+                                <img class="font-kulkuri" src="../images/kulkuri/fontMuktaRegular.png" alt="font Mukta Regular">
                                 <p>Regular</p>
                             </div>
                         </div>
                         <div class="work__font--item">
                             <h4>Heading  - Signika Negative</h4>
                             <div class="work__font--item-each">
-                                <img src="../images/kulkuri/fontSignikaRegular.png" alt="font Signika Regular">
+                                <img class="font-kulkuri" src="../images/kulkuri/fontSignikaRegular.png" alt="font Signika Regular">
                                 <p>Regular</p>
                             </div>
                         </div>
-                        <div class="work__font--item">
+                        <div class="work__font--item kulkuri__last">
                             <h4>Country name on photo - Amatic SC</h4>
                             <p class="description__p">Imagined a handmade album and made it look like handwriting.</p>
-                            <img class="photo-frame" src="../images/kulkuri/font-image.jpg" alt="font image">
                             <div class="work__font--item-each">
-                                <img src="../images/kulkuri/fontAmaticRegular.png" alt="font Amatic Regular">
+                                <img class="photo-frame" src="../images/kulkuri/font-image.jpg" alt="font image">
+                                <img class="font-kulkuri" src="../images/kulkuri/fontAmaticRegular.png" alt="font Amatic Regular">
                                 <p>Regular</p>
                             </div>
                         </div>
@@ -132,7 +132,7 @@
                     <section class="work__logo container scroll__item">
                         <h1 class="section__title work__h1">Logo</h1>
                         <p>The rectangle represents the frame of the photo and expresses a memory that can not fit into the photo.</p>
-                        <img src="../images/kulkuri/logo.svg" alt="kulkuri logo">
+                        <img class="logo-kulkuri" src="../images/kulkuri/logo.svg" alt="kulkuri logo">
                     </section>
                     <!--introduction of logo-->
 
@@ -149,8 +149,8 @@
                 </div>
                 <button class="button__work--bottom"><a href="https://kulkuriworld.com/">Visit a Website</a></button>
                 <div class="pagenation container">
-                    <h4 class="prev"><a href="">previous</a></h4>
-                    <h4 class="next"><a href="">next</a></h4>
+                    <h4 class="prev"><a href="work-uidesign.html">previous</a></h4>
+                    <h4 class="next"><a href="work-mogu.html">next</a></h4>
                 </div>
             </section>
             <!--work image and link to Website-->
@@ -186,6 +186,9 @@
         </div>
         <p>&copy;2019 MIE SUZUKI developed by &hearts;</p>
     </footer>
+
+    <div id="js-topButton"><a href="#"></a></div>
+    <!--button to transit page top-->
 
 </body>
 </html>

@@ -1,0 +1,153 @@
+@import "typography", "color", "mixin";
+
+.work__ui {
+  margin-top: 5vh;
+  @include pcSize {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+  }
+
+  .work__description {
+    position: relative;
+    @include pcSize {
+      width: 50vw;
+    }
+
+    &::before {
+      display: block;
+      content: '';
+      position: absolute;
+      top: 20vh;
+      left: -45vw;
+      z-index: -1;
+      width: 50vw;
+      height: 25vh;
+      opacity: .5;
+      background: url("http://localhost:8080/images/dotted.png") no-repeat;
+      @include pcSize {
+        top: 200px;
+        left: -30vw;
+        width: 350px;
+        height: 350px;
+      }
+      @include middleSize {
+        top: 150px;
+        left: -50vw;
+        width: 350px;
+        height: 350px;
+      }
+    }
+
+    p {
+      margin-top: 2vh;
+      font-weight: $font-weight-light;
+      @include pcSize {
+        width: 40vw;
+        line-height: 1.3;
+        margin-top: 1.5%;
+      }
+      @include middleSize {
+        width: 70vw;
+        line-height: 1.3;
+        margin-top: 1.5%;
+      }
+    }
+
+    img {
+      display: block;
+      width: 80vw;
+      margin: 0 auto;
+      filter: drop-shadow(-3px 5px 10px $black__opacity);
+      @include pcSize {
+        width: 485px;
+        margin-top: 3vh;
+      }
+      @include middleSize {
+        width: 450px;
+      }
+    }
+
+    img.work__img--small {
+      width: 60vw;
+      @include pcSize {
+        width: 350px;
+        margin-top: 3vh;
+      }
+      @include middleSize {
+        width: 350px;
+      }
+    }
+  }
+
+  .work__color {
+    @include pcSize {
+      width: 50vw;
+      margin-top: 9vh;
+      margin-left: 10vw;
+    }
+
+    &--item {
+      margin: 2vh auto 0;
+      &:last-child {
+        margin-bottom: 10vh;
+      }
+
+      &--flex-top.ui-color {
+        margin-bottom: 0;
+        @include pcSize {
+          display: flex;
+          justify-content: flex-start;
+          align-items: center;
+        }
+
+        @include flexColorBox;
+        .color--box {
+          &:nth-child(1) {
+            @include colorBox(#BADFB7);
+          }
+          &:nth-child(2) {
+            @include colorBox(#45D274);
+          }
+        }
+      }
+
+      &--flex-bottom.ui-color {
+        @include flexColorBox;
+        .color--box {
+          &:nth-child(1) {
+            @include colorBox(#FDC0B7);
+          }
+          &:nth-child(2) {
+            @include colorBox(#D5413D);
+          }
+        }
+      }
+
+      &--flex.ui-color {
+        @include flexColorBox;
+        .color--box {
+          &:nth-child(1) {
+            @include colorBox(#160F73);
+          }
+          &:nth-child(2) {
+            @include colorBox(#A5E5ED);
+          }
+        }
+      }
+
+      img {
+        width: 60vw;
+        margin-left: -4vw;
+        @include pcSize {
+          width: 250px;
+          margin-left: 0;
+        }
+        @include middleSize {
+          width: 250px;
+          margin-left: 0;
+        }
+      }
+    }
+  }
+}
