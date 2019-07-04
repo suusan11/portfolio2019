@@ -37,11 +37,6 @@ button {
     left: 0;
   }
 
-  &:active {
-    background-color: $pink;
-    transform: translateY(3px);
-  }
-
   a {
     height: 100%;
     padding: 0 auto;
