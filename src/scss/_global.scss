@@ -81,6 +81,12 @@ section {
   }
 }
 
+.scroll-prevent {
+  position: fixed;
+  z-index: -1;
+  width: 100vw;
+  height: 100vh;
+}
 
 //common fonts style
 h1.section__title {

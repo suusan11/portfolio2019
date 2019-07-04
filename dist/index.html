@@ -25,10 +25,10 @@
                 <a id="js-open-menu" href="#">MENU</a>
                 <ul id="js-global-menu" class="click__open">
                     <a id="js-close-menu" class="close" href="">×</a>
-                    <li><a href="#home">HOME</a></li>
-                    <li><a href="#about">ABOUT</a></li>
-                    <li><a href="#works">WORKS</a></li>
-                    <li><a href="#contact">CONTACT</a></li>
+                    <li class="js-link-menu"><a href="#home">HOME</a></li>
+                    <li class="js-link-menu"><a href="#about">ABOUT</a></li>
+                    <li class="js-link-menu"><a href="#works">WORKS</a></li>
+                    <li class="js-link-menu"><a href="#contact">CONTACT</a></li>
                 </ul>
             </div>
         </div>
@@ -229,15 +229,20 @@
         //global menu for mobile device
         const openButton = document.getElementById('js-open-menu');
         const closeButton = document.getElementById('js-close-menu');
+        // const linkButton = document.getElementsByClassName('js-link-menu');
         const globalMenu = document.getElementById('js-global-menu');
+        const scrollControl = document.documentElement;
+
 
         openButton.addEventListener('click', function () {
             globalMenu.classList.add('active');
             globalMenu.classList.remove('remove');
+            scrollControl.classList.add('scroll-prevent');
         });
         closeButton.addEventListener('click', function () {
             globalMenu.classList.remove('active');
             globalMenu.classList.add('remove');
+            scrollControl.classList.add('scroll-prevent');
         });
     </script>
 </body>
