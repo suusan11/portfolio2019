@@ -5,19 +5,14 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&display=swap');
 @font-face {
   font-family: 'emmeline';
-  src: url('../font/emmeline-regular-webfont.woff') format('woff'),
-       url('../font/emmeline-regular-webfont.woff2') format('woff2');
+  src: url('http://localhost:8080/font/emmeline-regular-webfont.woff') format('woff'),
+       url('http://localhost:8080/font/emmeline-regular-webfont.woff2') format('woff2');
   font-weight: normal;
   font-style: normal;
 }
 
 $font-base: 'Roboto', sans-serif;
 $font-empha: 'emmeline', serif;
-
-//font size
-//$font-size-base: 13px;
-//$font-size-h1: 3.846rem; //50px
-//$font-size-h3: 1.538rem; //20px
 
 //font-weight
 $font-weight-thin: 100;
@@ -36,9 +31,3 @@ html {
   font-variant-ligatures: common-ligatures;
   color: $black;
 }
-
-//@include pcSize {
-//  html {
-//    font-size: $font-size-base * 0.3;
-//  }
-//}
