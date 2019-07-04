@@ -42,6 +42,10 @@
     }
   }
 
+  a {
+    color: $white;
+  }
+
   &__flex {
     display: flex;
     justify-content: space-between;
@@ -51,7 +55,6 @@
 
   //global menu only for mobile
   .global__menu {
-    //touch-action: none;
     a {
       color: $white;
       @include font_vw(14);
@@ -123,6 +126,7 @@
       display: flex;
       justify-content: space-around;
       align-items: center;
+      margin-right: 3vw;
 
       li {
         font-size: 18px;
@@ -143,6 +147,7 @@
       display: flex;
       justify-content: space-around;
       align-items: center;
+      margin-right: 10vw;
 
       li {
         font-size: 18px;
