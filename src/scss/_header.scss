@@ -112,6 +112,27 @@
         transform: translateX(100vw);
       }
     }
+
+    .sns__flex {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      .icon {
+        width: 12vw;
+        height: 6vw;
+        stroke-width: 0;
+        fill: $black;
+        @include pcSize {
+          width: 70px;
+          height: 28px;
+        }
+        @include middleSize {
+          width: 58px;
+          height: 24px;
+        }
+      }
+    }
   }
 }
 
