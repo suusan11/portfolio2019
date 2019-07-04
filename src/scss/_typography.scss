@@ -5,8 +5,8 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&display=swap');
 @font-face {
   font-family: 'emmeline';
-  src: url('http://localhost:8080/font/emmeline-regular-webfont.woff') format('woff'),
-       url('http://localhost:8080/font/emmeline-regular-webfont.woff2') format('woff2');
+  src: url('../font/emmeline-regular-webfont.woff') format('woff'),
+       url('../font/emmeline-regular-webfont.woff2') format('woff2');
   font-weight: normal;
   font-style: normal;
 }
@@ -24,7 +24,6 @@ $font-weight-black: 900;
 
 html {
   font-family: $font-base;
-  //font-size: $font-size-base;
   line-height: 1.2;
   font-weight: $font-weight-regular;
   -webkit-font-smoothing: subpixel-antialiased;
