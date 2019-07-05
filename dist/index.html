@@ -205,7 +205,7 @@
         </div>
         <p>&copy;2019 MIE SUZUKI developed by &hearts;</p>
     </footer>
-    
+
     <div id="js-topButton"><a href="#"></a></div>
     <!--button to transit page top-->
 
@@ -247,6 +247,33 @@
         Barba.Pjax.getTransition = function() {
             return FadeTransition;
         };
+
+        // to revew meta data
+        Barba.Dispatcher.on('newPageReady', function( currentStatus, oldStatus, container, newPageRawHTML ) {
+
+            if ( Barba.HistoryManager.history.length === 1 ) {  // ファーストビュー
+                return;
+            }
+            var $newPageHead = $( '<head />' ).html(
+                $.parseHTML(
+                    newPageRawHTML.match( /<head[^>]*>([\s\S.]*)<\/head>/i )[ 0 ],
+                    document,
+                    true
+                )
+            );
+            var headTags = [
+                "meta[name='keywords']",
+                "meta[name='description']",
+                "meta[property^='og']",
+                "meta[name^='twitter']",
+                "meta[itemprop]",
+            ].join( ',' );
+            $( 'head' ).find( headTags ).remove(); // タグを削除
+            $newPageHead.find( headTags ).appendTo( 'head' ); // タグを追加
+
+            return false;
+
+        });
 
         //global menu for mobile device
         const openButton = document.getElementById('js-open-menu');
