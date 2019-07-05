@@ -102,12 +102,13 @@ h1.section__title {
   }
 }
 h3 {
-  @include font_vw(17);
+  @include font_vw(20);
+  font-family: $font-empha;
   @include pcSize {
-    font-size: 23px;
+    font-size: 30px;
   }
   @include middleSize {
-    font-size: 23px;
+    font-size: 30px;
   }
 }
 h4 {

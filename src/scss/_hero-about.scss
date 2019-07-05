@@ -13,12 +13,12 @@
 
     h1 {
       font-family: $font-empha;
-      @include font_vw(94);
+      @include font_vw(74);
       @include pcSize {
-        font-size: 160px;
+        font-size: 130px;
       }
       @include middleSize {
-        font-size: 160px;
+        font-size: 130px;
       }
     }
     p {
@@ -83,12 +83,12 @@
 
       h2 {
         font-family: $font-empha;
-        @include font_vw(47);
+        @include font_vw(27);
         @include pcSize {
-          font-size: 70px;
+          font-size: 45px;
         }
         @include middleSize {
-          font-size: 70px;
+          font-size: 45px;
         }
       }
 
