@@ -39,6 +39,20 @@ module.exports = {
                             importLoaders: 2
                         },
                     },
+                    {
+                        loader: "postcss-loader",
+                        options: {
+                            // PostCSS側でもソースマップを有効にする
+                            sourceMap: true,
+                            plugins: [
+                                // Autoprefixerを有効化
+                                // ベンダープレフィックスを自動付与する
+                                require("autoprefixer")({
+                                    grid: true
+                                })
+                            ]
+                        }
+                    },
                     // Sassをバンドルするための機能
                     {
                         loader: 'sass-loader',
@@ -50,19 +64,16 @@ module.exports = {
                 ],
             },
             {
+                test: /\.(wof|woff|woff2|ttf)$/,
+                loader: "url-loader"
+            },
+            {
                 // 対象となるファイルの拡張子
                 test: /\.(gif|png|jpg|eot|wof|woff|ttf|svg)$/,
                 // 画像を埋め込まず任意のフォルダに保存する
                 loader: 'file-loader',
                 options: {
                     name: './images/[name].[ext]'
-                }
-            },
-            {
-                test: /\.(eot|otf|ttf|woff2?|svg)(\?.+)?$/,
-                loader: 'file-loader',
-                options: {
-                    name: './font/[name].[ext]'
                 }
             },
         ],
