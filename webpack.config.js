@@ -10,6 +10,11 @@ module.exports = {
     // development に設定するとソースマップ有効でJSファイルが出力される
     mode: MODE,
 
+    devServer: {
+        contentBase: "dist",
+        open: true
+    },
+
     entry: './src/index.js',
     // ファイルの出力設定
     output: {
