@@ -76,7 +76,8 @@
         @include font_vw(18);
         font-weight: $font-weight-light;
       }
-      a.close {
+      .close__button {
+        color: $black;
         @include font_vw(30);
         font-weight: normal;
         position: absolute;
