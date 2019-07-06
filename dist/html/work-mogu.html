@@ -7,6 +7,12 @@
     <title>Mie Suzuki | Front-End Designer / Developer</title>
     <script src="../main.js"></script>
     <link rel="stylesheet" href="../style.css">
+    <!--animsition.css-->
+    <link rel="stylesheet" href="../css/animsition.min.css">
+    <!--jQuery-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <!--animsition.js-->
+    <script src="../js/animsition.min.js"></script>
 </head>
 <body>
 
@@ -54,6 +60,8 @@
             </div>
         </div>
     </header>
+
+    <div class="animsition">
 
             <div class="sticky__container">
                 <!--introduction of work-->
@@ -129,14 +137,14 @@
                 </div>
                 <button class="button__work--bottom"><a href="https://mogu0141.com/">Visit a Website</a></button>
                 <div class="pagenation container">
-                    <h4 class="prev"><a href="work-kulkuri.html">previous</a></h4>
-                    <h4 class="next"><a href="work-wordworth.html">next</a></h4>
+                    <h4 class="prev"><a class="animsition-link" href="work-kulkuri.html">previous</a></h4>
+                    <h4 class="next"><a class="animsition-link" href="work-wordworth.html">next</a></h4>
                 </div>
             </section>
             <!--work image and link to Website-->
+    </div>
+    <!--animsition-->
 
-
-    <!--footer-->
     <footer>
         <div class="footer__flex">
             <a href="https://www.linkedin.com/in/mie-suzuki-079644161/" target="_blank"><svg class="icon icon-linkedin2"><use xlink:href="#icon-linkedin2"><symbol id="icon-linkedin2" viewBox="0 0 32 32">
@@ -192,6 +200,31 @@
             globalMenu.classList.remove('active');
             globalMenu.classList.add('remove');
             scrollControl.classList.add('scroll-prevent');
+        });
+
+        $(document).ready(function() {
+            $(".animsition").animsition({
+                inClass: 'fade-in-down-sm',
+                outClass: 'fade-out-down-sm',
+                inDuration: 1000,
+                outDuration: 800,
+                linkElement: '.animsition-link',
+                // e.g. linkElement: 'a:not([target="_blank"]):not([href^="#"])'
+                loading: true,
+                loadingParentElement: 'body', //animsition wrapper element
+                loadingClass: 'animsition-loading',
+                loadingInner: '', // e.g '<img src="loading.svg" />'
+                timeout: false,
+                timeoutCountdown: 5000,
+                onLoadEvent: true,
+                browser: [ 'animation-duration', '-webkit-animation-duration'],
+                // "browser" option allows you to disable the "animsition" in case the css property in the array is not supported by your browser.
+                // The default setting is to disable the "animsition" in a browser that does not support "animation-duration".
+                overlay : false,
+                overlayClass : 'animsition-overlay-slide',
+                overlayParentElement : 'body',
+                transition: function(url){ window.location.href = url; }
+            });
         });
     </script>
 </body>
