@@ -6,8 +6,6 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Mie Suzuki | Front-End Designer / Developer</title>
     <script src="../main.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/barba.js/1.0.0/barba.min.js"></script>
-    <script src="http://code.jquery.com/jquery-3.3.1.min.js"></script>
 </head>
 <body>
 
@@ -215,89 +213,24 @@
     <!--button to transit page top-->
 
 <script>
-    //page transition effect
-    Barba.Pjax.start();
-    Barba.Prefetch.init();
-    var FadeTransition = Barba.BaseTransition.extend({
-        start: function() {
+    //global menu for mobile device
+    const openButton = document.getElementById('js-open-menu');
+    const closeButton = document.getElementById('js-close-menu');
+    // const linkButton = document.getElementsByClassName('js-link-menu');
+    const globalMenu = document.getElementById('js-global-menu');
+    const scrollControl = document.documentElement;
 
-            Promise
-                .all([this.newContainerLoading, this.fadeOut()])
-                .then(this.fadeIn.bind(this));
-        },
 
-        fadeOut: function() {
-            return $(this.oldContainer).animate({ opacity: 0 }, { duration: 150, easing: 'swing', }).promise();
-        },
-
-        fadeIn: function() {
-
-            $(document).scrollTop(0); //transition to position top
-            var _this = this;
-            var $el = $(this.newContainer);
-
-            $(this.oldContainer).hide();
-
-            $el.css({
-                visibility : 'visible',
-                opacity : 0
-            });
-
-            $el.animate({ opacity: 1 }, 5000, function() {
-                _this.done();
-            });
-        }
+    openButton.addEventListener('click', function () {
+        globalMenu.classList.add('active');
+        globalMenu.classList.remove('remove');
+        scrollControl.classList.add('scroll-prevent');
     });
-
-    Barba.Pjax.getTransition = function() {
-        return FadeTransition;
-    };
-
-    // to revew meta data
-    Barba.Dispatcher.on('newPageReady', function( currentStatus, oldStatus, container, newPageRawHTML ) {
-
-        if ( Barba.HistoryManager.history.length === 1 ) {
-            return;
-        }
-        var $newPageHead = $( '<head />' ).html(
-            $.parseHTML(
-                newPageRawHTML.match( /<head[^>]*>([\s\S.]*)<\/head>/i )[ 0 ],
-                document,
-                true
-            )
-        );
-        var headTags = [
-            "meta[name='keywords']",
-            "meta[name='description']",
-            "meta[property^='og']",
-            "meta[name^='twitter']",
-            "meta[itemprop]",
-        ].join( ',' );
-        $( 'head' ).find( headTags ).remove();
-        $newPageHead.find( headTags ).appendTo( 'head' );
-
-        return false;
-
+    closeButton.addEventListener('click', function () {
+        globalMenu.classList.remove('active');
+        globalMenu.classList.add('remove');
+        scrollControl.classList.add('scroll-prevent');
     });
-
-        //global menu for mobile device
-        const openButton = document.getElementById('js-open-menu');
-        const closeButton = document.getElementById('js-close-menu');
-        // const linkButton = document.getElementsByClassName('js-link-menu');
-        const globalMenu = document.getElementById('js-global-menu');
-        const scrollControl = document.documentElement;
-
-
-        openButton.addEventListener('click', function () {
-            globalMenu.classList.add('active');
-            globalMenu.classList.remove('remove');
-            scrollControl.classList.add('scroll-prevent');
-        });
-        closeButton.addEventListener('click', function () {
-            globalMenu.classList.remove('active');
-            globalMenu.classList.add('remove');
-            scrollControl.classList.add('scroll-prevent');
-        });
     </script>
 </body>
 </html>
