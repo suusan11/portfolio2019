@@ -20,7 +20,7 @@
                 <li><a href="../index.html#works">WORKS</a></li>
                 <li><a href="../index.html#contact">CONTACT</a></li>
             </ul>
-            <div id="hi" class="global__menu">
+            <div class="global__menu">
                 <a id="js-open-menu" href="#">MENU</a>
                 <ul id="js-global-menu" class="click__open">
                     <a id="js-close-menu" class="close" href="">×</a>
@@ -170,15 +170,23 @@
         //global menu for mobile device
         const openButton = document.getElementById('js-open-menu');
         const closeButton = document.getElementById('js-close-menu');
-        // const linkButton = document.getElementsByClassName('js-link-menu');
+        const linkButton = document.getElementById('js-global-menu').getElementsByTagName('li');
         const globalMenu = document.getElementById('js-global-menu');
         const scrollControl = document.documentElement;
-
 
         openButton.addEventListener('click', function () {
             globalMenu.classList.add('active');
             globalMenu.classList.remove('remove');
             scrollControl.classList.add('scroll-prevent');
+
+            for(let i = 0; i < linkButton.length; i++) {
+                linkButton[i].addEventListener('click', function() {
+                    globalMenu.classList.remove('active');
+                    globalMenu.classList.add('remove');
+                    scrollControl.classList.remove('scroll-prevent');
+                    linkButton.location.reload(true);
+                });
+            }
         });
         closeButton.addEventListener('click', function () {
             globalMenu.classList.remove('active');
