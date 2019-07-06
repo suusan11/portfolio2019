@@ -6,7 +6,12 @@
   background-color: $gray;
   padding: 20% 0 10%;
   text-align: center;
-
+  @include pcSize {
+    padding: 15% 0 10%;
+  }
+  @include middleSize {
+    padding: 10% 0;
+  }
   h1 {
     margin-bottom: 5vh;
   }
