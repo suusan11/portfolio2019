@@ -13,12 +13,12 @@
 
     h1 {
       font-family: $font-empha;
-      @include font_vw(74);
+      @include font_vw(94);
       @include pcSize {
-        font-size: 130px;
+        font-size: 160px;
       }
       @include middleSize {
-        font-size: 130px;
+        font-size: 160px;
       }
     }
     p {
@@ -83,12 +83,12 @@
 
       h2 {
         font-family: $font-empha;
-        @include font_vw(27);
+        @include font_vw(47);
         @include pcSize {
-          font-size: 45px;
+          font-size: 70px;
         }
         @include middleSize {
-          font-size: 45px;
+          font-size: 70px;
         }
       }
 
@@ -116,6 +116,7 @@
   margin-top: 6vh;
 
   .about__wrap--item {
+    position: relative;
     h2 {
       margin-bottom: 6%;
       @include pcSize {
@@ -162,7 +163,7 @@
       @include line(10deg, 23vw, -3vh, $black);
       margin-top: -15vh;
       @include pcSize {
-        @include line(20deg, 15vw, -6vh, $black);
+        @include line(30deg, 15vw, -13vh, $black);
       }
       @include middleSize {
         @include line(20deg, 25vw, -10vh, $black);
@@ -182,12 +183,3 @@
     }
   }
 }
-
-
-//if header will be fixed
-//.add-margin {
-//  margin-top: 65px;
-//  @include pcSize {
-//    margin-top: 100px;
-//  }
-//}

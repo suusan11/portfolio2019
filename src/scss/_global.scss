@@ -105,10 +105,10 @@ h3 {
   @include font_vw(20);
   font-family: $font-empha;
   @include pcSize {
-    font-size: 30px;
+    font-size: 55px;
   }
   @include middleSize {
-    font-size: 30px;
+    font-size: 55px;
   }
 }
 h4 {
