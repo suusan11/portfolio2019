@@ -105,7 +105,7 @@
       }
 
       &:last-child {
-        margin-top: 10vh;
+        margin-top: 5vh;
       }
     }
   }
@@ -138,7 +138,7 @@
     &:last-child::after {
       @include line(20deg, 10vw, -2vh, $white);
       @include pcSize {
-        @include line(50deg, -5vw, 2vh, $white);
+        @include line(20deg, 0, 2vh, $white);
       }
       @include middleSize {
         @include line(30deg, 7vw, -6vh, $white);
@@ -151,7 +151,7 @@
 .about__wrap.bottom {
   margin: -20vh 5vw 0 5vw;
   @include pcSize {
-    margin: -60vh 7vw 0 7vw;
+    margin: -65vh 7vw 0 7vw;
   }
   @include middleSize {
     margin: -40vh 7vw 0 7vw;
