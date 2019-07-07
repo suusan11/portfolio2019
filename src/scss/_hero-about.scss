@@ -22,8 +22,13 @@
       }
     }
     p {
+
+      width: 70vw;
       @include font_vw(18);
       font-weight: $font-weight-light;
+      letter-spacing: 2.5px;
+      line-height: 1.5;
+      margin: 0 auto;
       @include pcSize {
         font-size: 26px;
       }
