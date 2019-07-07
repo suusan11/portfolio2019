@@ -32,10 +32,11 @@
   display: block;
   content: '';
   width: 2px;
-  height: 300px;
+  height: 250px;
   border-radius: 30px;
   transform: rotate($rotate) translateX($x) translateY($y);
   background-color: $color;
+  opacity: .3;
 }
 
 //background line to works section

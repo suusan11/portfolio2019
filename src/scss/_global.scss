@@ -81,6 +81,12 @@ section {
   }
 }
 
+.scroll-prevent {
+  position: fixed;
+  z-index: -1;
+  width: 100vw;
+  height: 100vh;
+}
 
 //common fonts style
 h1.section__title {
@@ -96,12 +102,13 @@ h1.section__title {
   }
 }
 h3 {
-  @include font_vw(17);
+  @include font_vw(20);
+  font-family: $font-empha;
   @include pcSize {
-    font-size: 23px;
+    font-size: 55px;
   }
   @include middleSize {
-    font-size: 23px;
+    font-size: 55px;
   }
 }
 h4 {
