@@ -128,7 +128,6 @@
 @include pcSize {
   .header {
     height: 100px;
-    padding-top: 5vh;
 
     //only for pc and tablet
     &__flex--right {
@@ -149,7 +148,6 @@
 @include middleSize {
   .header {
     height: 100px;
-    padding-top: 5vh;
 
     //only for pc and tablet
     &__flex--right {
