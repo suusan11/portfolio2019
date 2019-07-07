@@ -30,18 +30,6 @@
   color: $white;
   padding-top: 3vh;
 
-  &__logo {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 5px;
-    height: 5px;
-
-    img {
-      width: 10vw;
-    }
-  }
-
   a {
     color: $white;
   }
@@ -50,7 +38,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 0 5vw 0 15vw;
+    margin: 0 5vw;
   }
 
   //global menu only for mobile
@@ -148,7 +136,7 @@
       display: flex;
       justify-content: space-around;
       align-items: center;
-      margin-right: 3vw;
+      margin-right: 2vw;
 
       li {
         font-size: 18px;
@@ -169,7 +157,7 @@
       display: flex;
       justify-content: space-around;
       align-items: center;
-      margin-right: 10vw;
+      margin-right: 7vw;
 
       li {
         font-size: 18px;
