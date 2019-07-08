@@ -28,13 +28,16 @@
 }
 
 //line to about detail from profile img
-@mixin line($rotate, $x, $y, $color) {
+@mixin line($rotate, $top, $left, $color) {
   display: block;
   content: '';
+  position: absolute;
+  top: $top;
+  left: $left;
   width: 2px;
-  height: 250px;
+  height: 200px;
   border-radius: 30px;
-  transform: rotate($rotate) translateX($x) translateY($y);
+  transform: rotate($rotate);
   background-color: $color;
   opacity: .3;
 }
