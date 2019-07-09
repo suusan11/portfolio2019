@@ -110,10 +110,10 @@
 
 .work__intro--black {
   width: 100vw;
-  height: 65vh;
+  height: 70vh;
   background-color: $black;
   padding: 7vh 10vw;
-  margin-top: 20vh;
+  margin-top: 25vh;
   @include middleSize {
     padding: 10vh 20vw;
     margin-bottom: 10vh;
@@ -182,7 +182,7 @@
 
 }
 .work__intro--black.ui {
-  height: 35vh;
+  height: 50vh;
 }
 @include pcSize {
   .work__intro--flex {
