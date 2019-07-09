@@ -52,7 +52,7 @@
     h1 {
       @include font_vw(28);
       font-weight: $font-weight-medium;
-      margin-top: 5vw;
+      margin-top: 8vw;
       @include pcSize {
         font-size: 34px;
         margin-left: 7.5vw;
@@ -65,10 +65,10 @@
 
     button.button__small {
       width: 55vw;
-      height: 8vh;
+      height: 9vh;
       background-color: $white;
       border: 3px solid $black;
-      margin: 5vh auto 0;
+      margin: 8vh auto 0;
       @include pcSize {
         width: 250px;
         height: 70px;
