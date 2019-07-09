@@ -27,17 +27,19 @@
       bottom: -270px;
       right: -8vw;
       @include pcSize {
-        bottom: -300px;
+        bottom: -100px;
         right: 20px;
       }
       @include middleSize {
-        bottom: -330px;
+        bottom: -150px;
       }
     }
+
     img {
       display: block;
       width: 80vw;
       margin: 0 auto;
+      filter: drop-shadow(5px 5px 7px $black__opacity);
 
       @include pcSize {
         width: 500px;
@@ -50,7 +52,7 @@
     h1 {
       @include font_vw(28);
       font-weight: $font-weight-medium;
-      margin-top: 5vw;
+      margin-top: 8vw;
       @include pcSize {
         font-size: 34px;
         margin-left: 7.5vw;
@@ -59,29 +61,36 @@
         font-size: 34px;
         margin-left: 5vw;
       }
-
-    }
-  }
-
-  &-bottom {
-    text-align: left;
-    width: 60vw;
-    border-left: 3px solid $pink;
-    padding-left: 2vw;
-    margin: 10vh 0 10vh auto;
-    @include pcSize {
-      width: 30vw;
-      margin-top: 5vh;
-    }
-    @include middleSize {
-      width: 40vw;
-      margin-right: 5vw;
     }
 
-    p {
-      line-height: 2;
-      &:nth-child(2) {
-        line-height: 1.4;
+    button.button__small {
+      width: 55vw;
+      height: 9vh;
+      background-color: $white;
+      border: 3px solid $black;
+      margin: 8vh auto 0;
+      @include pcSize {
+        width: 250px;
+        height: 70px;
+        padding: 2%;
+      }
+      @include middleSize {
+        width: 250px;
+        height: 9vh;
+        padding: 3% 0;
+      }
+
+      a {
+        height: 100%;
+        padding: 0 auto;
+        color: $black;
+        @include font_vw(14);
+        @include pcSize {
+          font-size: 20px;
+        }
+        @include middleSize {
+          font-size: 20px;
+        }
       }
     }
   }
@@ -101,10 +110,10 @@
 
 .work__intro--black {
   width: 100vw;
-  height: 60vh;
+  height: 70vh;
   background-color: $black;
   padding: 7vh 10vw;
-  margin-top: 20vh;
+  margin-top: 25vh;
   @include middleSize {
     padding: 10vh 20vw;
     margin-bottom: 10vh;
@@ -128,34 +137,24 @@
     margin-top: 5vh;
   }
 
-  button.button__white {
-    width: 55vw;
-    height: 8vh;
-    background-color: $black;
-    border: 3px solid $white;
-    color: $white;
-    margin: 5vh auto 0;
+  .detail-set {
+    text-align: left;
+    width: 60vw;
+    border-left: 3px solid $pink;
+    padding-left: 2vw;
+    margin-top: 5vh;
     @include pcSize {
-      width: 280px;
-      height: 10vh;
-      padding: 2%;
+      width: 30vw;
     }
     @include middleSize {
-      width: 250px;
-      height: 9vh;
-      padding: 3% 0;
+      width: 40vw;
     }
 
-    a {
-      height: 100%;
-      padding: 0 auto;
-      color: $white;
-      @include font_vw(14);
-      @include pcSize {
-        font-size: 20px;
-      }
-      @include middleSize {
-        font-size: 20px;
+    p {
+      margin-top: 0;
+      line-height: 2.5;
+      &:nth-child(2) {
+        line-height: 1.4;
       }
     }
   }
@@ -183,7 +182,7 @@
 
 }
 .work__intro--black.ui {
-  height: 35vh;
+  height: 50vh;
 }
 @include pcSize {
   .work__intro--flex {
@@ -200,7 +199,7 @@
     }
     .work__intro--black {
       width: 50vw;
-      min-height: 720px;
+      min-height: 770px;
       margin-top: 5vh;
       padding: 30vh 10vw;
     }

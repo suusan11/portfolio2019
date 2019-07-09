@@ -1,4 +1,4 @@
-@import "color", "mixin";
+@import "typography", "color", "mixin";
 
 .contact {
   margin: 10vh auto;
@@ -15,6 +15,7 @@
     p {
       display: inline-block;
       text-align: left;
+      font-weight: $font-weight-light;
       line-height: 1.7;
       @include font_vw(14);
       @include pcSize {
@@ -24,6 +25,10 @@
       @include middleSize {
         font-size: 18px;
         line-height: 2;
+      }
+
+      span {
+        letter-spacing: 1px;
       }
     }
   }

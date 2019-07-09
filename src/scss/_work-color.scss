@@ -81,18 +81,27 @@
 
     &--flex-bottom.kulkuri-color {
       @include flexColorBox;
-      .color--box {
-        &:nth-child(1) {
+      .name-set {
+        width: 20%;
+        margin: 1% 5%;
+        @include pcSize {
+          margin: 1% 2%;
+        }
+        &:nth-child(1) .color--box {
           @include colorBox(#B0272C);
         }
-        &:nth-child(2) {
+        &:nth-child(2) .color--box {
           @include colorBox(#3B91A6);
         }
-        &:nth-child(3) {
+        &:nth-child(3) .color--box {
           @include colorBox(#FECC35);
         }
-        &:nth-child(4) {
+        &:nth-child(4) .color--box {
           @include colorBox(#9FA9A2);
+        }
+
+        p {
+          padding-bottom: 2px;
         }
       }
     }
