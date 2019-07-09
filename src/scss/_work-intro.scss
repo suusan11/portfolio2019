@@ -27,11 +27,11 @@
       bottom: -270px;
       right: -8vw;
       @include pcSize {
-        bottom: -300px;
+        bottom: -100px;
         right: 20px;
       }
       @include middleSize {
-        bottom: -330px;
+        bottom: -150px;
       }
     }
 
