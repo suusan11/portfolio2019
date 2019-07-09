@@ -26,10 +26,16 @@ button {
     height: 100%;
     position: absolute;
     top: 2vh;
-    left: -1.2vw;
+    left: -3vw;
     z-index: -1;
     background:repeating-linear-gradient(-30deg, $pink 0, $pink 5px, $white 5px, $white 10px);
     transition: all ease-out .3s;
+    @include pcSize {
+      left: -1.2vw;
+    }
+    @include middleSize {
+      left: -1.8vw;
+    }
   }
 
   &:hover::before {
