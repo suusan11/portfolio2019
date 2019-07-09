@@ -20,7 +20,7 @@
 
   img.logo-kulkuri {
     display: block;
-    width: 50vw;
+    width: 40vw;
     margin: 0 auto;
     @include pcSize {
       width: 240px;
@@ -32,6 +32,21 @@
 
   img.logo-mogu {
     display: inline-block;
+    width: 30vw;
+    margin-right: 10vw;
+    @include pcSize {
+      width: 200px;
+      margin-top: 40px;
+    }
+
+    &:last-child {
+      width: 15vw;
+      @include pcSize {
+        width: 100px;
+        margin-top: 0;
+      }
+    }
+
   }
 
   //only to pc
