@@ -30,6 +30,7 @@ module.exports = {
             {
                 test: /\.scss/, // 対象となるファイルの拡張子
                 use: ExtractTextPlugin.extract({
+                    fallback: 'style-loader',
                     use: [
                         // CSSをバンドルするための機能
                         {
@@ -77,7 +78,7 @@ module.exports = {
             },
             {
                 // 対象となるファイルの拡張子
-                test: /\.(gif|png|jpg|eot|wof|woff|ttf|svg)$/,
+                test: /\.(gif|png|jpg|eot|svg)$/,
                 // 画像を埋め込まず任意のフォルダに保存する
                 loader: 'file-loader',
                 options: {
