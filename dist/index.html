@@ -201,7 +201,7 @@
         const closeButton = document.getElementById('js-close-menu');
         const linkButton = document.getElementById('js-global-menu').getElementsByTagName('li');
         const globalMenu = document.getElementById('js-global-menu');
-        const scrollControl = document.documentElement;
+        const scrollControl = document.documentElement.scrollTop;
 
         openButton.addEventListener('click', function () {
             globalMenu.classList.add('active');
