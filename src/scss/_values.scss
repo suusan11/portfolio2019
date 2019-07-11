@@ -6,6 +6,12 @@
   height: 70vh;
   border: 6px solid $border;
   margin: 20vh auto;
+  @include pcSize {
+    margin: 30vh auto;
+  }
+  @include middleSize {
+    margin: 30vh auto;
+  }
   padding: 15% 5%;
 
   h1 {

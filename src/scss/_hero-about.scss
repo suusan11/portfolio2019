@@ -10,7 +10,13 @@
   text-align: center;
 
   &__title {
-    padding-top: 30vh;
+    padding-top: 20vh;
+    @include pcSize {
+      padding-top: 25vh;
+    }
+    @include middleSize {
+      padding-top: 25vh;
+    }
     margin-bottom: 5vh;
 
     h1 {
@@ -26,7 +32,6 @@
     p {
       width: 70vw;
       @include font_vw(18);
-      font-weight: $font-weight-light;
       letter-spacing: 2.5px;
       line-height: 1.5;
       margin: 0 auto;
@@ -77,15 +82,30 @@
   p {
     @include font_vw(18);
     font-weight: $font-weight-light;
+    @include pcSize {
+      font-size: 26px;
+    }
+    @include middleSize {
+      font-size: 26px;
+    }
   }
 
   p.text__change--word {
     position: absolute;
     top: 5vh;
+    @include pcSize {
+      top: 2vh;
+    }
     left: 0;
     right: 0;
     margin: auto;
     @include font_vw(60);
+    @include pcSize {
+      font-size: 115px;
+    }
+    @include middleSize {
+      font-size: 115px;
+    }
     font-family: $font-empha;
     padding: 3%;
     opacity: 0;
@@ -106,6 +126,12 @@
 
     span {
       @include font_vw(35);
+      @include pcSize {
+        font-size: 80px;
+      }
+      @include middleSize {
+        font-size: 80px;
+      }
     }
   }
 }
