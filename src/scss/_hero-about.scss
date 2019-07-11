@@ -7,9 +7,10 @@
   margin: 0 auto 10vh;
   background-color: $black;
   color: $white;
+  text-align: center;
 
   &__title {
-    padding-top: 20vh;
+    padding-top: 30vh;
     margin-bottom: 5vh;
 
     h1 {
@@ -23,7 +24,6 @@
       }
     }
     p {
-
       width: 70vw;
       @include font_vw(18);
       font-weight: $font-weight-light;
@@ -50,6 +50,7 @@
     background-color: $white;
     z-index: 2;
     margin: auto;
+
   }
   @include pcSize {
     &__img {
@@ -67,129 +68,74 @@
   }
 }
 
-//only to about section
-.about {
-  margin-bottom: 10%;
-}
 
-//some common style to hero and about
-.hero, .about {
+.text__change {
+  position: relative;
+  width: 80%;
   text-align: center;
+  margin: 0 auto;
+  p {
+    @include font_vw(18);
+    font-weight: $font-weight-light;
+  }
 
-  .about__wrap {
-    display: flex;
-    justify-content: space-between;
+  p.text__change--word {
+    position: absolute;
+    top: 5vh;
+    left: 0;
+    right: 0;
+    margin: auto;
+    @include font_vw(60);
+    font-family: $font-empha;
+    padding: 3%;
+    opacity: 0;
+    overflow: hidden;
+    -webkit-animation: rotateText 20s linear infinite 0s;
+    -o-animation: rotateText 20s linear infinite 0s;
+    animation: rotateText 20s linear infinite 0s;
 
-    &--item {
-      width: 50%;
-      @include pcSize {
-        width: 50%;
-      }
+    &:nth-child(2) {
+      animation-delay: 5s;
+    }
+    &:nth-child(3) {
+      animation-delay: 10s;
+    }
+    &:nth-child(4) {
+      animation-delay: 15s;
+    }
 
-      &:first-child {
-        margin-right: 5vw;
-      }
-      &:last-child {
-        margin-left: 5vw;
-      }
-
-      h2 {
-        font-family: $font-empha;
-        @include font_vw(47);
-        @include pcSize {
-          font-size: 70px;
-        }
-        @include middleSize {
-          font-size: 70px;
-        }
-      }
-
-      & > p {
-        @include font_vw(11);
-        @include pcSize {
-          font-size: 18px;
-        }
-        @include middleSize {
-          font-size: 18px;
-        }
-        line-height: 1.5;
-        text-align: center;
-      }
+    span {
+      @include font_vw(35);
     }
   }
 }
 
-//only to about__wrap top
-.about__wrap.top {
-  margin-top: 20vh;
-
-  .about__wrap--item {
-    position: relative;
-    h2 {
-      margin-bottom: 6%;
-      @include pcSize {
-        margin-bottom: 3%;
-      }
-      @include middleSize {
-        margin-bottom: 3%;
-      }
-    }
-
-    &:first-child::after {
-      @include line(-30deg, 120px, 25vw, $white);
-      @include pcSize {
-        @include line(-30deg, 120px, 30vw, $white);
-      }
-      @include middleSize {
-        @include line(-30deg, 120px, 26vw, $white);
-      }
-    }
-    &:last-child::after {
-      @include line(30deg, 120px, 8.5vw, $white);
-      @include pcSize {
-        @include line(30deg, 120px, 5vw, $white);
-      }
-      @include middleSize {
-        @include line(30deg, 120px, 8.9vw, $white);
-      }
-    }
+@keyframes rotateText {
+  0% {
+    opacity: 0;
   }
-}
-
-//only to about__wrap bottom
-.about__wrap.bottom {
-  margin-top: 25vh;
-  @include pcSize {
-    margin-top: 23vh;
+  2% {
+    opacity: 0;
+    transform: translateY(-30px);
   }
-  @include middleSize {
-    margin-top: 25vh;
+  5% {
+    opacity: 1;
+    transform: translateY(0px);
   }
-
-  .about__wrap--item {
-    position: relative;
-
-    &:first-child::before {
-      @include line(30deg, -100px, 30vw, $black);
-      margin-top: -15vh;
-      @include pcSize {
-        @include line(30deg, -60px, 30vw, $black);
-      }
-      @include middleSize {
-        @include line(30deg, -100px, 25vw, $black);
-      }
-    }
-    &:last-child::before {
-      @include line(-30deg, -134px, 5vw, $black);
-      margin-top: -10vh;
-      @include pcSize {
-        @include line(-30deg, -60px, 5vw, $black);
-        margin-top: -15vh;
-      }
-      @include middleSize {
-        @include line(-30deg, -100px, 10vw, $black);
-        margin-top: -15vh;
-      }
-    }
+  17% {
+    opacity: 1;
+    -webkit-transform: translateY(0px);
+    transform: translateY(0px);
+  }
+  20% {
+    opacity: 0;
+    -webkit-transform: translateY(30px);
+    transform: translateY(30px);
+  }
+  80% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
   }
 }
