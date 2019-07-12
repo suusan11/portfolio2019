@@ -171,33 +171,6 @@
     <!--button to transit page top-->
 
     <script type="text/javascript">
-        //global menu for mobile device
-        const openButton = document.getElementById('js-open-menu');
-        const closeButton = document.getElementById('js-close-menu');
-        const linkButton = document.getElementById('js-global-menu').getElementsByTagName('li');
-        const globalMenu = document.getElementById('js-global-menu');
-        const scrollControl = document.documentElement;
-
-        openButton.addEventListener('click', function () {
-            globalMenu.classList.add('active');
-            globalMenu.classList.remove('remove');
-            scrollControl.classList.add('scroll-prevent');
-
-            for(let i = 0; i < linkButton.length; i++) {
-                linkButton[i].addEventListener('click', function() {
-                    globalMenu.classList.remove('active');
-                    globalMenu.classList.add('remove');
-                    scrollControl.classList.remove('scroll-prevent');
-                    linkButton.location.reload(true);
-                });
-            }
-        });
-        closeButton.addEventListener('click', function () {
-            globalMenu.classList.remove('active');
-            globalMenu.classList.add('remove');
-            scrollControl.classList.add('scroll-prevent');
-        });
-
         $(document).ready(function() {
             $(".animsition").animsition({
                 inClass: 'fade-in-down-sm',

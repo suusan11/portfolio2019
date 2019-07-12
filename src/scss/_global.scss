@@ -75,13 +75,6 @@ section {
   }
 }
 
-.scroll-prevent {
-  position: fixed;
-  z-index: -1;
-  width: 100vw;
-  height: 100vh;
-}
-
 //common fonts style
 h1.section__title {
   @include font_vw(47);
@@ -96,7 +89,7 @@ h1.section__title {
   }
 }
 h3 {
-  @include font_vw(30);
+  @include font_vw(25);
   font-family: $font-empha;
   @include pcSize {
     font-size: 55px;
