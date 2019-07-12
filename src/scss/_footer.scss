@@ -13,6 +13,9 @@ footer {
   @include lg {
     padding: 10% 0 15%;
   }
+  @include md {
+    padding: 13% 0;
+  }
 
   .footer__flex {
     display: flex;
@@ -21,7 +24,7 @@ footer {
 
     .icon {
       width: 12vw;
-      height: 6vw;
+      height: 3vh;
       stroke-width: 0;
       fill: $white;
       @include pc {
@@ -47,6 +50,9 @@ footer {
     @include lg {
       font-size: 13px;
       margin-top: 3%;
+    }
+    @include md {
+      font-size: 12px;
     }
   }
 }
