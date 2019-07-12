@@ -860,25 +860,31 @@ footer {
         font-size: 13px;
         margin-top: 3%; } }
 
-button {
+a.common__button {
   display: block;
   position: relative;
   width: 55vw;
   height: 8vh;
+  line-height: 7vh;
   background-color: #FFFFFF;
   border: 3px solid #2D3133;
-  margin: 5vh auto 0; }
+  margin: 5vh auto 0;
+  text-align: center;
+  font-size: 14px;
+  font-size: 4.375vw; }
   @media (min-width: 1000px) {
-    button {
+    a.common__button {
       width: 280px;
       height: 70px;
-      padding: 10px; } }
+      line-height: 64px;
+      font-size: 20px; } }
   @media (min-width: 640px) and (max-width: 999px) {
-    button {
+    a.common__button {
       width: 35vw;
       height: 9vh;
-      padding: 3% 8%; } }
-  button::before {
+      line-height: 8vh;
+      font-size: 20px; } }
+  a.common__button::before {
     display: block;
     content: '';
     width: 100%;
@@ -891,25 +897,14 @@ button {
     -webkit-transition: all ease-out .3s;
     transition: all ease-out .3s; }
     @media (min-width: 1000px) {
-      button::before {
+      a.common__button::before {
         left: -1.2vw; } }
     @media (min-width: 640px) and (max-width: 999px) {
-      button::before {
+      a.common__button::before {
         left: -1.8vw; } }
-  button:hover::before {
+  a.common__button:hover::before {
     top: 0;
     left: 0; }
-  button a {
-    height: 100%;
-    padding: 0 auto;
-    font-size: 14px;
-    font-size: 4.375vw; }
-    @media (min-width: 1000px) {
-      button a {
-        font-size: 20px; } }
-    @media (min-width: 640px) and (max-width: 999px) {
-      button a {
-        font-size: 20px; } }
 
 @font-face {
   font-family: 'emmeline';
@@ -993,34 +988,8 @@ html {
         .work__intro-top h1 {
           font-size: 34px;
           margin-left: 5vw; } }
-    .work__intro-top button.button__small {
-      width: 55vw;
-      height: 9vh;
-      background-color: #FFFFFF;
-      border: 3px solid #2D3133;
+    .work__intro-top a.button__small {
       margin: 8vh auto 0; }
-      @media (min-width: 1000px) {
-        .work__intro-top button.button__small {
-          width: 250px;
-          height: 70px;
-          padding: 2%; } }
-      @media (min-width: 640px) and (max-width: 999px) {
-        .work__intro-top button.button__small {
-          width: 250px;
-          height: 9vh;
-          padding: 3% 0; } }
-      .work__intro-top button.button__small a {
-        height: 100%;
-        padding: 0 auto;
-        color: #2D3133;
-        font-size: 14px;
-        font-size: 4.375vw; }
-        @media (min-width: 1000px) {
-          .work__intro-top button.button__small a {
-            font-size: 20px; } }
-        @media (min-width: 640px) and (max-width: 999px) {
-          .work__intro-top button.button__small a {
-            font-size: 20px; } }
   @media (min-width: 1000px) {
     .work__intro.sticky {
       position: -webkit-sticky;
@@ -1946,16 +1915,10 @@ html {
           width: 350px;
           height: 350px; } }
   @media (min-width: 1000px) {
-    .work__link button.button__work--bottom {
-      width: 280px;
-      height: 9vh;
-      padding: 0;
+    .work__link a.button__work--bottom {
       margin-top: 15vh; } }
   @media (min-width: 640px) and (max-width: 999px) {
-    .work__link button.button__work--bottom {
-      width: 250px;
-      height: 9vh;
-      padding: 2% 0;
+    .work__link a.button__work--bottom {
       margin-top: 28vh; } }
   .work__link .pagenation {
     display: -webkit-box;
