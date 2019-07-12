@@ -17,6 +17,9 @@
     @include lg {
       padding-top: 25vh;
     }
+    @include md {
+      padding-top: 25vh;
+    }
     margin-bottom: 5vh;
 
     h1 {
@@ -27,6 +30,9 @@
       }
       @include lg {
         font-size: 160px;
+      }
+      @include md {
+        font-size: 130px;
       }
     }
     p {
@@ -39,7 +45,12 @@
         font-size: 26px;
       }
       @include lg {
+        width: 356px;
         font-size: 26px;
+      }
+      @include md {
+        width: 300px;
+        font-size: 23px;
       }
     }
   }
@@ -49,8 +60,8 @@
     top: 90vh;
     left: 0;
     right: 0;
-    width: 180px;
-    height: 180px;
+    width: 200px;
+    height: 200px;
     border-radius: 50%;
     background-color: $white;
     z-index: 2;
@@ -71,6 +82,12 @@
       height: 250px;
     }
   }
+  @include md {
+    &__img {
+      width: 230px;
+      height: 230px;
+    }
+  }
 }
 
 
@@ -87,6 +104,9 @@
     }
     @include lg {
       font-size: 26px;
+    }
+    @include md {
+      font-size: 23px;
     }
   }
 
@@ -105,6 +125,9 @@
     }
     @include lg {
       font-size: 115px;
+    }
+    @include md {
+      font-size: 85px;
     }
     font-family: $font-empha;
     padding: 3%;
@@ -131,6 +154,9 @@
       }
       @include lg {
         font-size: 80px;
+      }
+      @include md {
+        font-size: 50px;
       }
     }
   }
