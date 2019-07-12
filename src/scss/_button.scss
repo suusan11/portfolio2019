@@ -18,10 +18,14 @@ a.common__button {
     font-size: 20px;
   }
   @include lg {
-    width: 35vw;
-    height: 9vh;
-    line-height: 8vh;
+    width: 245px;
+    height: 70px;
+    line-height: 64px;
     font-size: 20px;
+  }
+  @include md {
+    width: 40vw;
+    font-size: 18px;
   }
 
   &::before {
@@ -39,7 +43,10 @@ a.common__button {
       left: -1.2vw;
     }
     @include lg {
-      left: -1.8vw;
+      left: -2vw;
+    }
+    @include md {
+      left: -2.3vw;
     }
   }
 
