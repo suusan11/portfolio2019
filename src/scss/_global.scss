@@ -87,6 +87,9 @@ h1.section__title {
   @include lg {
     font-size: 70px;
   }
+  @include md {
+    font-size: 60px;
+  }
 }
 h3 {
   @include font_vw(25);

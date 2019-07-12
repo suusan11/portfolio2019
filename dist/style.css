@@ -169,6 +169,9 @@ p {
   @media (min-width: 600px) and (max-width: 999px) {
     p {
       font-size: 18px; } }
+  @media (min-width: 440px) and (max-width: 599px) {
+    p {
+      font-size: 16px; } }
   p span {
     color: #F28888;
     font-weight: 400; }
@@ -590,14 +593,8 @@ html {
   width: 80vw;
   height: 70vh;
   border: 6px solid #707070;
-  margin: 20vh auto;
+  margin: 30vh auto;
   padding: 15% 5%; }
-  @media (min-width: 1000px) {
-    .values {
-      margin: 30vh auto; } }
-  @media (min-width: 600px) and (max-width: 999px) {
-    .values {
-      margin: 30vh auto; } }
   .values h1 {
     position: absolute;
     top: -5vh;
@@ -679,8 +676,8 @@ html {
 
 @media (min-width: 600px) and (max-width: 999px) {
   .values {
-    width: 60vw;
-    height: 75vh;
+    width: 55vw;
+    height: 85vh;
     padding: 8% 5%; }
     .values h1::before {
       display: block;
@@ -708,6 +705,29 @@ html {
         margin-bottom: 0; }
         .values__item--flex:last-child .values__item--flex-icon {
           width: 15vw; } }
+
+@media (min-width: 440px) and (max-width: 599px) {
+  .values {
+    width: 65vw;
+    height: 70vh; }
+    .values h1::before {
+      display: block;
+      content: "";
+      border: 3px solid #707070;
+      width: 15%;
+      position: absolute;
+      top: 4vh;
+      z-index: 3;
+      left: -1vw; }
+    .values h1::after {
+      display: block;
+      content: "";
+      border: 3px solid #707070;
+      width: 15%;
+      position: absolute;
+      top: 4vh;
+      z-index: 3;
+      right: -1vw; } }
 
 .works {
   position: relative;
