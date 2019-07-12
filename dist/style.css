@@ -396,6 +396,9 @@ html {
     @media (min-width: 600px) and (max-width: 999px) {
       .hero__title {
         padding-top: 25vh; } }
+    @media (min-width: 440px) and (max-width: 599px) {
+      .hero__title {
+        padding-top: 25vh; } }
     .hero__title h1 {
       font-family: "emmeline", serif;
       font-size: 94px;
@@ -408,8 +411,7 @@ html {
           font-size: 160px; } }
       @media (min-width: 440px) and (max-width: 599px) {
         .hero__title h1 {
-          font-size: 70px;
-          font-size: 21.875vw; } }
+          font-size: 130px; } }
     .hero__title p {
       width: 70vw;
       font-size: 18px;
@@ -422,14 +424,19 @@ html {
           font-size: 26px; } }
       @media (min-width: 600px) and (max-width: 999px) {
         .hero__title p {
+          width: 356px;
           font-size: 26px; } }
+      @media (min-width: 440px) and (max-width: 599px) {
+        .hero__title p {
+          width: 300px;
+          font-size: 23px; } }
   .hero__img {
     position: absolute;
     top: 90vh;
     left: 0;
     right: 0;
-    width: 180px;
-    height: 180px;
+    width: 200px;
+    height: 200px;
     border-radius: 50%;
     background-color: #FFFFFF;
     z-index: 2;
@@ -444,6 +451,10 @@ html {
       top: 700px;
       width: 250px;
       height: 250px; } }
+  @media (min-width: 440px) and (max-width: 599px) {
+    .hero__img {
+      width: 230px;
+      height: 230px; } }
 
 .text__change {
   position: relative;
@@ -460,6 +471,9 @@ html {
     @media (min-width: 600px) and (max-width: 999px) {
       .text__change p {
         font-size: 26px; } }
+    @media (min-width: 440px) and (max-width: 599px) {
+      .text__change p {
+        font-size: 23px; } }
   .text__change p.text__change--word {
     position: absolute;
     top: 5vh;
@@ -483,6 +497,9 @@ html {
     @media (min-width: 600px) and (max-width: 999px) {
       .text__change p.text__change--word {
         font-size: 115px; } }
+    @media (min-width: 440px) and (max-width: 599px) {
+      .text__change p.text__change--word {
+        font-size: 85px; } }
     .text__change p.text__change--word:nth-child(2) {
       -webkit-animation-delay: 5s;
               animation-delay: 5s; }
@@ -501,6 +518,9 @@ html {
       @media (min-width: 600px) and (max-width: 999px) {
         .text__change p.text__change--word span {
           font-size: 80px; } }
+      @media (min-width: 440px) and (max-width: 599px) {
+        .text__change p.text__change--word span {
+          font-size: 50px; } }
 
 @-webkit-keyframes rotateText {
   0% {

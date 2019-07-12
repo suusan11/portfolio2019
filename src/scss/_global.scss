@@ -115,6 +115,9 @@ p {
   @include lg {
     font-size: 18px;
   }
+  @include md {
+    font-size: 16px;
+  }
   span {
     color: $pink;
     font-weight: $font-weight-regular;
