@@ -1,19 +1,19 @@
 @import "color", "typography", "mixin";
 
 //browser for web and tablet
-@include pcSize {
+@include pc {
   .global__menu {
     display: none;
   }
 }
-@include middleSize {
+@include lg {
   .global__menu {
     display: none;
   }
 }
 
 //browser for mobile
-@include mobileSize {
+@include lg {
   .header__flex--right {
     display: none;
   }
@@ -112,11 +112,11 @@
         height: 6vw;
         stroke-width: 0;
         fill: $black;
-        @include pcSize {
+        @include pc {
           width: 70px;
           height: 28px;
         }
-        @include middleSize {
+        @include lg {
           width: 58px;
           height: 24px;
         }
@@ -125,7 +125,7 @@
   }
 }
 
-@include pcSize {
+@include pc {
   .header {
     height: 100px;
 
@@ -145,7 +145,7 @@
   }
 }
 
-@include middleSize {
+@include lg {
   .header {
     height: 100px;
 

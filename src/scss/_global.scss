@@ -44,7 +44,7 @@ section {
   border-radius: 50px;
   background-color: $black__opacity;
   z-index: 10;
-  @include mobileSize {
+  @include lg {
     bottom: 200px;
   }
 
@@ -81,38 +81,38 @@ h1.section__title {
   color: $black__opacity;
   font-weight: $font-weight-bold;
   font-style: italic;
-  @include pcSize {
+  @include pc {
     font-size: 70px;
   }
-  @include middleSize {
+  @include lg {
     font-size: 70px;
   }
 }
 h3 {
   @include font_vw(25);
   font-family: $font-empha;
-  @include pcSize {
+  @include pc {
     font-size: 55px;
   }
-  @include middleSize {
+  @include lg {
     font-size: 55px;
   }
 }
 h4 {
   @include font_vw(14);
-  @include pcSize {
+  @include pc {
     font-size: 19px;
   }
-  @include middleSize {
+  @include lg {
     font-size: 19px;
   }
 }
 p {
   @include font_vw(12);
-  @include pcSize {
+  @include pc {
     font-size: 18px;
   }
-  @include middleSize {
+  @include lg {
     font-size: 18px;
   }
   span {

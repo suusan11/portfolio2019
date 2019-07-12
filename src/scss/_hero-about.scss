@@ -11,10 +11,10 @@
 
   &__title {
     padding-top: 20vh;
-    @include pcSize {
+    @include pc {
       padding-top: 25vh;
     }
-    @include middleSize {
+    @include lg {
       padding-top: 25vh;
     }
     margin-bottom: 5vh;
@@ -22,10 +22,10 @@
     h1 {
       font-family: $font-empha;
       @include font_vw(94);
-      @include pcSize {
+      @include pc {
         font-size: 160px;
       }
-      @include middleSize {
+      @include lg {
         font-size: 160px;
       }
     }
@@ -35,10 +35,10 @@
       letter-spacing: 2.5px;
       line-height: 1.5;
       margin: 0 auto;
-      @include pcSize {
+      @include pc {
         font-size: 26px;
       }
-      @include middleSize {
+      @include lg {
         font-size: 26px;
       }
     }
@@ -57,14 +57,14 @@
     margin: auto;
 
   }
-  @include pcSize {
+  @include pc {
     &__img {
       top: 700px;
       width: 280px;
       height: 280px;
     }
   }
-  @include middleSize {
+  @include lg {
     &__img {
       top: 700px;
       width: 250px;
@@ -82,10 +82,10 @@
   p {
     @include font_vw(18);
     font-weight: $font-weight-light;
-    @include pcSize {
+    @include pc {
       font-size: 26px;
     }
-    @include middleSize {
+    @include lg {
       font-size: 26px;
     }
   }
@@ -93,17 +93,17 @@
   p.text__change--word {
     position: absolute;
     top: 5vh;
-    @include pcSize {
+    @include pc {
       top: 2vh;
     }
     left: 0;
     right: 0;
     margin: auto;
     @include font_vw(60);
-    @include pcSize {
+    @include pc {
       font-size: 115px;
     }
-    @include middleSize {
+    @include lg {
       font-size: 115px;
     }
     font-family: $font-empha;
@@ -126,10 +126,10 @@
 
     span {
       @include font_vw(35);
-      @include pcSize {
+      @include pc {
         font-size: 80px;
       }
-      @include middleSize {
+      @include lg {
         font-size: 80px;
       }
     }

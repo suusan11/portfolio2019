@@ -11,13 +11,13 @@ a.common__button {
   margin: 5vh auto 0;
   text-align: center;
   @include font_vw(14);
-  @include pcSize {
+  @include pc {
     width: 280px;
     height: 70px;
     line-height: 64px;
     font-size: 20px;
   }
-  @include middleSize {
+  @include lg {
     width: 35vw;
     height: 9vh;
     line-height: 8vh;
@@ -35,10 +35,10 @@ a.common__button {
     z-index: -1;
     background:repeating-linear-gradient(-30deg, $pink 0, $pink 5px, $white 5px, $white 10px);
     transition: all ease-out .3s;
-    @include pcSize {
+    @include pc {
       left: -1.2vw;
     }
-    @include middleSize {
+    @include lg {
       left: -1.8vw;
     }
   }

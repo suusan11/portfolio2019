@@ -6,11 +6,11 @@ footer {
   background-color: $black;
   padding: 20% 0;
   text-align: center;
-  @include pcSize {
+  @include pc {
     height: 250px;
     padding: 130px 0 180px;
   }
-  @include middleSize {
+  @include lg {
     padding: 10% 0 15%;
   }
 
@@ -24,11 +24,11 @@ footer {
       height: 6vw;
       stroke-width: 0;
       fill: $white;
-      @include pcSize {
+      @include pc {
         width: 70px;
         height: 28px;
       }
-      @include middleSize {
+      @include lg {
         width: 58px;
         height: 24px;
       }
@@ -40,11 +40,11 @@ footer {
     @include font_vw(9);
     font-weight: $font-weight-light;
     margin-top: 8%;
-    @include pcSize {
+    @include pc {
       font-size: 13px;
       margin-top: 3%;
     }
-    @include middleSize {
+    @include lg {
       font-size: 13px;
       margin-top: 3%;
     }

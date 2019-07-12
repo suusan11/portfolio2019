@@ -94,7 +94,7 @@ section {
   border-radius: 50px;
   background-color: rgba(45, 49, 51, 0.3);
   z-index: 10; }
-  @media (max-width: 639px) {
+  @media (min-width: 760px) and (max-width: 999px) {
     #js-topButton {
       bottom: 200px; } }
   #js-topButton a {
@@ -132,10 +132,10 @@ h1.section__title {
   color: rgba(45, 49, 51, 0.3);
   font-weight: 700;
   font-style: italic; }
-  @media (min-width: 1000px) {
+  @media (max-width: 1000px) {
     h1.section__title {
       font-size: 70px; } }
-  @media (min-width: 640px) and (max-width: 999px) {
+  @media (min-width: 760px) and (max-width: 999px) {
     h1.section__title {
       font-size: 70px; } }
 
@@ -143,30 +143,30 @@ h3 {
   font-size: 25px;
   font-size: 7.8125vw;
   font-family: "emmeline", serif; }
-  @media (min-width: 1000px) {
+  @media (max-width: 1000px) {
     h3 {
       font-size: 55px; } }
-  @media (min-width: 640px) and (max-width: 999px) {
+  @media (min-width: 760px) and (max-width: 999px) {
     h3 {
       font-size: 55px; } }
 
 h4 {
   font-size: 14px;
   font-size: 4.375vw; }
-  @media (min-width: 1000px) {
+  @media (max-width: 1000px) {
     h4 {
       font-size: 19px; } }
-  @media (min-width: 640px) and (max-width: 999px) {
+  @media (min-width: 760px) and (max-width: 999px) {
     h4 {
       font-size: 19px; } }
 
 p {
   font-size: 12px;
   font-size: 3.75vw; }
-  @media (min-width: 1000px) {
+  @media (max-width: 1000px) {
     p {
       font-size: 18px; } }
-  @media (min-width: 640px) and (max-width: 999px) {
+  @media (min-width: 760px) and (max-width: 999px) {
     p {
       font-size: 18px; } }
   p span {
@@ -211,15 +211,15 @@ html {
           font-variant-ligatures: common-ligatures;
   color: #2D3133; }
 
-@media (min-width: 1000px) {
+@media (max-width: 1000px) {
   .global__menu {
     display: none; } }
 
-@media (min-width: 640px) and (max-width: 999px) {
+@media (min-width: 760px) and (max-width: 999px) {
   .global__menu {
     display: none; } }
 
-@media (max-width: 639px) {
+@media (min-width: 760px) and (max-width: 999px) {
   .header__flex--right {
     display: none; } }
 
@@ -324,16 +324,16 @@ html {
       height: 6vw;
       stroke-width: 0;
       fill: #2D3133; }
-      @media (min-width: 1000px) {
+      @media (max-width: 1000px) {
         .header .global__menu .sns__flex .icon {
           width: 70px;
           height: 28px; } }
-      @media (min-width: 640px) and (max-width: 999px) {
+      @media (min-width: 760px) and (max-width: 999px) {
         .header .global__menu .sns__flex .icon {
           width: 58px;
           height: 24px; } }
 
-@media (min-width: 1000px) {
+@media (max-width: 1000px) {
   .header {
     height: 100px; }
     .header__flex--right {
@@ -348,7 +348,7 @@ html {
         font-size: 18px;
         padding: 0 2vw; } }
 
-@media (min-width: 640px) and (max-width: 999px) {
+@media (min-width: 760px) and (max-width: 999px) {
   .header {
     height: 100px; }
     .header__flex--right {
@@ -388,20 +388,20 @@ html {
   .hero__title {
     padding-top: 20vh;
     margin-bottom: 5vh; }
-    @media (min-width: 1000px) {
+    @media (max-width: 1000px) {
       .hero__title {
         padding-top: 25vh; } }
-    @media (min-width: 640px) and (max-width: 999px) {
+    @media (min-width: 760px) and (max-width: 999px) {
       .hero__title {
         padding-top: 25vh; } }
     .hero__title h1 {
       font-family: "emmeline", serif;
       font-size: 94px;
       font-size: 29.375vw; }
-      @media (min-width: 1000px) {
+      @media (max-width: 1000px) {
         .hero__title h1 {
           font-size: 160px; } }
-      @media (min-width: 640px) and (max-width: 999px) {
+      @media (min-width: 760px) and (max-width: 999px) {
         .hero__title h1 {
           font-size: 160px; } }
     .hero__title p {
@@ -411,10 +411,10 @@ html {
       letter-spacing: 2.5px;
       line-height: 1.5;
       margin: 0 auto; }
-      @media (min-width: 1000px) {
+      @media (max-width: 1000px) {
         .hero__title p {
           font-size: 26px; } }
-      @media (min-width: 640px) and (max-width: 999px) {
+      @media (min-width: 760px) and (max-width: 999px) {
         .hero__title p {
           font-size: 26px; } }
   .hero__img {
@@ -428,12 +428,12 @@ html {
     background-color: #FFFFFF;
     z-index: 2;
     margin: auto; }
-  @media (min-width: 1000px) {
+  @media (max-width: 1000px) {
     .hero__img {
       top: 700px;
       width: 280px;
       height: 280px; } }
-  @media (min-width: 640px) and (max-width: 999px) {
+  @media (min-width: 760px) and (max-width: 999px) {
     .hero__img {
       top: 700px;
       width: 250px;
@@ -448,10 +448,10 @@ html {
     font-size: 18px;
     font-size: 5.625vw;
     font-weight: 300; }
-    @media (min-width: 1000px) {
+    @media (max-width: 1000px) {
       .text__change p {
         font-size: 26px; } }
-    @media (min-width: 640px) and (max-width: 999px) {
+    @media (min-width: 760px) and (max-width: 999px) {
       .text__change p {
         font-size: 26px; } }
   .text__change p.text__change--word {
@@ -468,13 +468,13 @@ html {
     overflow: hidden;
     -webkit-animation: rotateText 20s linear infinite 0s;
     animation: rotateText 20s linear infinite 0s; }
-    @media (min-width: 1000px) {
+    @media (max-width: 1000px) {
       .text__change p.text__change--word {
         top: 2vh; } }
-    @media (min-width: 1000px) {
+    @media (max-width: 1000px) {
       .text__change p.text__change--word {
         font-size: 115px; } }
-    @media (min-width: 640px) and (max-width: 999px) {
+    @media (min-width: 760px) and (max-width: 999px) {
       .text__change p.text__change--word {
         font-size: 115px; } }
     .text__change p.text__change--word:nth-child(2) {
@@ -489,10 +489,10 @@ html {
     .text__change p.text__change--word span {
       font-size: 35px;
       font-size: 10.9375vw; }
-      @media (min-width: 1000px) {
+      @media (max-width: 1000px) {
         .text__change p.text__change--word span {
           font-size: 80px; } }
-      @media (min-width: 640px) and (max-width: 999px) {
+      @media (min-width: 760px) and (max-width: 999px) {
         .text__change p.text__change--word span {
           font-size: 80px; } }
 
@@ -566,10 +566,10 @@ html {
   border: 6px solid #707070;
   margin: 20vh auto;
   padding: 15% 5%; }
-  @media (min-width: 1000px) {
+  @media (max-width: 1000px) {
     .values {
       margin: 30vh auto; } }
-  @media (min-width: 640px) and (max-width: 999px) {
+  @media (min-width: 760px) and (max-width: 999px) {
     .values {
       margin: 30vh auto; } }
   .values h1 {
@@ -619,7 +619,7 @@ html {
     line-height: 1.3;
     font-weight: 300; }
 
-@media (min-width: 1000px) {
+@media (max-width: 1000px) {
   .values {
     width: 40vw;
     height: 90vh;
@@ -651,7 +651,7 @@ html {
         .values__item--flex:last-child .values__item--flex-icon {
           width: 15vw; } }
 
-@media (min-width: 640px) and (max-width: 999px) {
+@media (min-width: 760px) and (max-width: 999px) {
   .values {
     width: 60vw;
     height: 75vh;
@@ -689,10 +689,10 @@ html {
   background-color: #FAFAFA;
   padding: 20% 0 10%;
   text-align: center; }
-  @media (min-width: 1000px) {
+  @media (max-width: 1000px) {
     .works {
       padding: 15% 0 10%; } }
-  @media (min-width: 640px) and (max-width: 999px) {
+  @media (min-width: 760px) and (max-width: 999px) {
     .works {
       padding: 10% 0; } }
   .works h1 {
@@ -724,18 +724,18 @@ html {
     width: 80vw;
     -webkit-filter: drop-shadow(5px 5px 7px rgba(45, 49, 51, 0.3));
             filter: drop-shadow(5px 5px 7px rgba(45, 49, 51, 0.3)); }
-    @media (min-width: 640px) and (max-width: 999px) {
+    @media (min-width: 760px) and (max-width: 999px) {
       .work img {
         width: 50vw; } }
   .work:last-child img {
     width: 40vw; }
-    @media (min-width: 640px) and (max-width: 999px) {
+    @media (min-width: 760px) and (max-width: 999px) {
       .work:last-child img {
         width: 25vw; } }
   .work__hover {
     display: none; }
 
-@media (min-width: 1000px) {
+@media (max-width: 1000px) {
   .works__flex {
     display: -webkit-box;
     display: flex;
@@ -776,7 +776,7 @@ html {
     width: 70vw;
     padding: 0 5vw;
     margin: 7% auto 0; }
-    @media (min-width: 1000px) {
+    @media (max-width: 1000px) {
       .contact__info {
         margin: 3% auto 0; } }
     .contact__info p {
@@ -786,11 +786,11 @@ html {
       line-height: 1.7;
       font-size: 14px;
       font-size: 4.375vw; }
-      @media (min-width: 1000px) {
+      @media (max-width: 1000px) {
         .contact__info p {
           font-size: 18px;
           line-height: 2; } }
-      @media (min-width: 640px) and (max-width: 999px) {
+      @media (min-width: 760px) and (max-width: 999px) {
         .contact__info p {
           font-size: 18px;
           line-height: 2; } }
@@ -818,11 +818,11 @@ footer {
   background-color: #2D3133;
   padding: 20% 0;
   text-align: center; }
-  @media (min-width: 1000px) {
+  @media (max-width: 1000px) {
     footer {
       height: 250px;
       padding: 130px 0 180px; } }
-  @media (min-width: 640px) and (max-width: 999px) {
+  @media (min-width: 760px) and (max-width: 999px) {
     footer {
       padding: 10% 0 15%; } }
   footer .footer__flex {
@@ -837,11 +837,11 @@ footer {
       height: 6vw;
       stroke-width: 0;
       fill: #FFFFFF; }
-      @media (min-width: 1000px) {
+      @media (max-width: 1000px) {
         footer .footer__flex .icon {
           width: 70px;
           height: 28px; } }
-      @media (min-width: 640px) and (max-width: 999px) {
+      @media (min-width: 760px) and (max-width: 999px) {
         footer .footer__flex .icon {
           width: 58px;
           height: 24px; } }
@@ -851,11 +851,11 @@ footer {
     font-size: 2.8125vw;
     font-weight: 300;
     margin-top: 8%; }
-    @media (min-width: 1000px) {
+    @media (max-width: 1000px) {
       footer p {
         font-size: 13px;
         margin-top: 3%; } }
-    @media (min-width: 640px) and (max-width: 999px) {
+    @media (min-width: 760px) and (max-width: 999px) {
       footer p {
         font-size: 13px;
         margin-top: 3%; } }
@@ -872,13 +872,13 @@ a.common__button {
   text-align: center;
   font-size: 14px;
   font-size: 4.375vw; }
-  @media (min-width: 1000px) {
+  @media (max-width: 1000px) {
     a.common__button {
       width: 280px;
       height: 70px;
       line-height: 64px;
       font-size: 20px; } }
-  @media (min-width: 640px) and (max-width: 999px) {
+  @media (min-width: 760px) and (max-width: 999px) {
     a.common__button {
       width: 35vw;
       height: 9vh;
@@ -896,10 +896,10 @@ a.common__button {
     background: repeating-linear-gradient(-30deg, #F28888 0, #F28888 5px, #FFFFFF 5px, #FFFFFF 10px);
     -webkit-transition: all ease-out .3s;
     transition: all ease-out .3s; }
-    @media (min-width: 1000px) {
+    @media (max-width: 1000px) {
       a.common__button::before {
         left: -1.2vw; } }
-    @media (min-width: 640px) and (max-width: 999px) {
+    @media (min-width: 760px) and (max-width: 999px) {
       a.common__button::before {
         left: -1.8vw; } }
   a.common__button:hover::before {
@@ -923,7 +923,7 @@ html {
 
 .work__intro {
   margin: 20vh auto 5vh; }
-  @media (min-width: 1000px) {
+  @media (max-width: 1000px) {
     .work__intro {
       margin-top: 25vh; } }
   .work__intro-top {
@@ -938,11 +938,11 @@ html {
       z-index: -2;
       top: -30px;
       left: -50px; }
-      @media (min-width: 1000px) {
+      @media (max-width: 1000px) {
         .work__intro-top::before {
           top: 100px;
           left: -20px; } }
-      @media (min-width: 640px) and (max-width: 999px) {
+      @media (min-width: 760px) and (max-width: 999px) {
         .work__intro-top::before {
           top: 200px;
           left: -100px; } }
@@ -956,11 +956,11 @@ html {
       z-index: -2;
       bottom: -270px;
       right: -8vw; }
-      @media (min-width: 1000px) {
+      @media (max-width: 1000px) {
         .work__intro-top::after {
           bottom: -100px;
           right: 20px; } }
-      @media (min-width: 640px) and (max-width: 999px) {
+      @media (min-width: 760px) and (max-width: 999px) {
         .work__intro-top::after {
           bottom: -150px; } }
     .work__intro-top img {
@@ -969,10 +969,10 @@ html {
       margin: 0 auto;
       -webkit-filter: drop-shadow(5px 5px 7px rgba(45, 49, 51, 0.3));
               filter: drop-shadow(5px 5px 7px rgba(45, 49, 51, 0.3)); }
-      @media (min-width: 1000px) {
+      @media (max-width: 1000px) {
         .work__intro-top img {
           width: 500px; } }
-      @media (min-width: 640px) and (max-width: 999px) {
+      @media (min-width: 760px) and (max-width: 999px) {
         .work__intro-top img {
           width: 70vw; } }
     .work__intro-top h1 {
@@ -980,17 +980,17 @@ html {
       font-size: 8.75vw;
       font-weight: 500;
       margin-top: 8vw; }
-      @media (min-width: 1000px) {
+      @media (max-width: 1000px) {
         .work__intro-top h1 {
           font-size: 34px;
           margin-left: 7.5vw; } }
-      @media (min-width: 640px) and (max-width: 999px) {
+      @media (min-width: 760px) and (max-width: 999px) {
         .work__intro-top h1 {
           font-size: 34px;
           margin-left: 5vw; } }
     .work__intro-top a.button__small {
       margin: 8vh auto 0; }
-  @media (min-width: 1000px) {
+  @media (max-width: 1000px) {
     .work__intro.sticky {
       position: -webkit-sticky;
       position: sticky;
@@ -1006,7 +1006,7 @@ html {
   background-color: #2D3133;
   padding: 7vh 10vw;
   margin-top: 25vh; }
-  @media (min-width: 640px) and (max-width: 999px) {
+  @media (min-width: 760px) and (max-width: 999px) {
     .work__intro--black {
       padding: 10vh 20vw;
       margin-bottom: 10vh; } }
@@ -1015,10 +1015,10 @@ html {
     font-size: 18px;
     font-size: 5.625vw;
     font-weight: 500; }
-    @media (min-width: 1000px) {
+    @media (max-width: 1000px) {
       .work__intro--black h2 {
         font-size: 28px; } }
-    @media (min-width: 640px) and (max-width: 999px) {
+    @media (min-width: 760px) and (max-width: 999px) {
       .work__intro--black h2 {
         font-size: 28px; } }
   .work__intro--black p {
@@ -1031,10 +1031,10 @@ html {
     border-left: 3px solid #F28888;
     padding-left: 2vw;
     margin-top: 5vh; }
-    @media (min-width: 1000px) {
+    @media (max-width: 1000px) {
       .work__intro--black .detail-set {
         width: 30vw; } }
-    @media (min-width: 640px) and (max-width: 999px) {
+    @media (min-width: 760px) and (max-width: 999px) {
       .work__intro--black .detail-set {
         width: 40vw; } }
     .work__intro--black .detail-set p {
@@ -1042,7 +1042,7 @@ html {
       line-height: 2.5; }
       .work__intro--black .detail-set p:nth-child(2) {
         line-height: 1.4; }
-  @media (min-width: 1000px) {
+  @media (max-width: 1000px) {
     .work__intro--black.scroll__item {
       width: 100%;
       min-height: 720px;
@@ -1052,14 +1052,14 @@ html {
 .work__intro.ui img {
   width: 50vw;
   margin: 0 auto 5vh; }
-  @media (min-width: 640px) and (max-width: 999px) {
+  @media (min-width: 760px) and (max-width: 999px) {
     .work__intro.ui img {
       width: 25vw; } }
 
 .work__intro--black.ui {
   height: 50vh; }
 
-@media (min-width: 1000px) {
+@media (max-width: 1000px) {
   .work__intro--flex {
     display: -webkit-box;
     display: flex;
@@ -1098,12 +1098,12 @@ html {
     margin-bottom: 5vh; }
     .work__color--item p {
       font-weight: 300; }
-      @media (min-width: 1000px) {
+      @media (max-width: 1000px) {
         .work__color--item p {
           width: 40vw;
           line-height: 1.3;
           margin-top: 1.5%; } }
-      @media (min-width: 640px) and (max-width: 999px) {
+      @media (min-width: 760px) and (max-width: 999px) {
         .work__color--item p {
           width: 70vw;
           line-height: 1.3;
@@ -1128,7 +1128,7 @@ html {
       padding-left: 1.2vw;
       font-size: 12px;
       font-size: 3.75vw; }
-      @media (min-width: 1000px) {
+      @media (max-width: 1000px) {
         .work__color .work__color--item--flex-top.kulkuri-color .color--box:nth-child(1) {
           font-size: 18px;
           width: 100px;
@@ -1136,7 +1136,7 @@ html {
           line-height: 68px;
           padding-left: 9px;
           margin-bottom: 5px; } }
-      @media (min-width: 640px) and (max-width: 999px) {
+      @media (min-width: 760px) and (max-width: 999px) {
         .work__color .work__color--item--flex-top.kulkuri-color .color--box:nth-child(1) {
           font-size: 18px;
           width: 100px;
@@ -1155,7 +1155,7 @@ html {
       padding-left: 1.2vw;
       font-size: 12px;
       font-size: 3.75vw; }
-      @media (min-width: 1000px) {
+      @media (max-width: 1000px) {
         .work__color .work__color--item--flex-top.kulkuri-color .color--box:nth-child(2) {
           font-size: 18px;
           width: 100px;
@@ -1163,7 +1163,7 @@ html {
           line-height: 68px;
           padding-left: 9px;
           margin-bottom: 5px; } }
-      @media (min-width: 640px) and (max-width: 999px) {
+      @media (min-width: 760px) and (max-width: 999px) {
         .work__color .work__color--item--flex-top.kulkuri-color .color--box:nth-child(2) {
           font-size: 18px;
           width: 100px;
@@ -1182,7 +1182,7 @@ html {
       padding-left: 1.2vw;
       font-size: 12px;
       font-size: 3.75vw; }
-      @media (min-width: 1000px) {
+      @media (max-width: 1000px) {
         .work__color .work__color--item--flex-top.kulkuri-color .color--box:nth-child(3) {
           font-size: 18px;
           width: 100px;
@@ -1190,7 +1190,7 @@ html {
           line-height: 68px;
           padding-left: 9px;
           margin-bottom: 5px; } }
-      @media (min-width: 640px) and (max-width: 999px) {
+      @media (min-width: 760px) and (max-width: 999px) {
         .work__color .work__color--item--flex-top.kulkuri-color .color--box:nth-child(3) {
           font-size: 18px;
           width: 100px;
@@ -1211,16 +1211,16 @@ html {
       width: 40vw;
       margin-bottom: 7vh;
       position: relative; }
-      @media (min-width: 1000px) {
+      @media (max-width: 1000px) {
         .work__color .work__color--item--flex-middle.kulkuri-color .flex--item {
           width: 200px;
           margin-right: 10%; } }
       .work__color .work__color--item--flex-middle.kulkuri-color .flex--item img {
         width: 26vw; }
-        @media (min-width: 1000px) {
+        @media (max-width: 1000px) {
           .work__color .work__color--item--flex-middle.kulkuri-color .flex--item img {
             width: 144px; } }
-        @media (min-width: 640px) and (max-width: 999px) {
+        @media (min-width: 760px) and (max-width: 999px) {
           .work__color .work__color--item--flex-middle.kulkuri-color .flex--item img {
             width: 175px; } }
       .work__color .work__color--item--flex-middle.kulkuri-color .flex--item:nth-child(1) .color--box {
@@ -1238,15 +1238,15 @@ html {
         padding-left: 1.2vw;
         font-size: 12px;
         font-size: 3.75vw; }
-        @media (min-width: 1000px) {
+        @media (max-width: 1000px) {
           .work__color .work__color--item--flex-middle.kulkuri-color .flex--item:nth-child(1) .color--box {
             top: 140px;
             left: 110px; } }
-        @media (min-width: 640px) and (max-width: 999px) {
+        @media (min-width: 760px) and (max-width: 999px) {
           .work__color .work__color--item--flex-middle.kulkuri-color .flex--item:nth-child(1) .color--box {
             top: 170px;
             left: 160px; } }
-        @media (min-width: 1000px) {
+        @media (max-width: 1000px) {
           .work__color .work__color--item--flex-middle.kulkuri-color .flex--item:nth-child(1) .color--box {
             font-size: 18px;
             width: 100px;
@@ -1254,7 +1254,7 @@ html {
             line-height: 68px;
             padding-left: 9px;
             margin-bottom: 5px; } }
-        @media (min-width: 640px) and (max-width: 999px) {
+        @media (min-width: 760px) and (max-width: 999px) {
           .work__color .work__color--item--flex-middle.kulkuri-color .flex--item:nth-child(1) .color--box {
             font-size: 18px;
             width: 100px;
@@ -1277,15 +1277,15 @@ html {
         padding-left: 1.2vw;
         font-size: 12px;
         font-size: 3.75vw; }
-        @media (min-width: 1000px) {
+        @media (max-width: 1000px) {
           .work__color .work__color--item--flex-middle.kulkuri-color .flex--item:nth-child(2) .color--box {
             top: 140px;
             left: 110px; } }
-        @media (min-width: 640px) and (max-width: 999px) {
+        @media (min-width: 760px) and (max-width: 999px) {
           .work__color .work__color--item--flex-middle.kulkuri-color .flex--item:nth-child(2) .color--box {
             top: 170px;
             left: 160px; } }
-        @media (min-width: 1000px) {
+        @media (max-width: 1000px) {
           .work__color .work__color--item--flex-middle.kulkuri-color .flex--item:nth-child(2) .color--box {
             font-size: 18px;
             width: 100px;
@@ -1293,7 +1293,7 @@ html {
             line-height: 68px;
             padding-left: 9px;
             margin-bottom: 5px; } }
-        @media (min-width: 640px) and (max-width: 999px) {
+        @media (min-width: 760px) and (max-width: 999px) {
           .work__color .work__color--item--flex-middle.kulkuri-color .flex--item:nth-child(2) .color--box {
             font-size: 18px;
             width: 100px;
@@ -1316,15 +1316,15 @@ html {
         padding-left: 1.2vw;
         font-size: 12px;
         font-size: 3.75vw; }
-        @media (min-width: 1000px) {
+        @media (max-width: 1000px) {
           .work__color .work__color--item--flex-middle.kulkuri-color .flex--item:nth-child(3) .color--box {
             top: 140px;
             left: 110px; } }
-        @media (min-width: 640px) and (max-width: 999px) {
+        @media (min-width: 760px) and (max-width: 999px) {
           .work__color .work__color--item--flex-middle.kulkuri-color .flex--item:nth-child(3) .color--box {
             top: 170px;
             left: 160px; } }
-        @media (min-width: 1000px) {
+        @media (max-width: 1000px) {
           .work__color .work__color--item--flex-middle.kulkuri-color .flex--item:nth-child(3) .color--box {
             font-size: 18px;
             width: 100px;
@@ -1332,7 +1332,7 @@ html {
             line-height: 68px;
             padding-left: 9px;
             margin-bottom: 5px; } }
-        @media (min-width: 640px) and (max-width: 999px) {
+        @media (min-width: 760px) and (max-width: 999px) {
           .work__color .work__color--item--flex-middle.kulkuri-color .flex--item:nth-child(3) .color--box {
             font-size: 18px;
             width: 100px;
@@ -1355,15 +1355,15 @@ html {
         padding-left: 1.2vw;
         font-size: 12px;
         font-size: 3.75vw; }
-        @media (min-width: 1000px) {
+        @media (max-width: 1000px) {
           .work__color .work__color--item--flex-middle.kulkuri-color .flex--item:nth-child(4) .color--box {
             top: 140px;
             left: 110px; } }
-        @media (min-width: 640px) and (max-width: 999px) {
+        @media (min-width: 760px) and (max-width: 999px) {
           .work__color .work__color--item--flex-middle.kulkuri-color .flex--item:nth-child(4) .color--box {
             top: 170px;
             left: 160px; } }
-        @media (min-width: 1000px) {
+        @media (max-width: 1000px) {
           .work__color .work__color--item--flex-middle.kulkuri-color .flex--item:nth-child(4) .color--box {
             font-size: 18px;
             width: 100px;
@@ -1371,7 +1371,7 @@ html {
             line-height: 68px;
             padding-left: 9px;
             margin-bottom: 5px; } }
-        @media (min-width: 640px) and (max-width: 999px) {
+        @media (min-width: 760px) and (max-width: 999px) {
           .work__color .work__color--item--flex-middle.kulkuri-color .flex--item:nth-child(4) .color--box {
             font-size: 18px;
             width: 100px;
@@ -1391,7 +1391,7 @@ html {
     .work__color .work__color--item--flex-bottom.kulkuri-color .name-set {
       width: 20%;
       margin: 1% 5%; }
-      @media (min-width: 1000px) {
+      @media (max-width: 1000px) {
         .work__color .work__color--item--flex-bottom.kulkuri-color .name-set {
           margin: 1% 2%; } }
       .work__color .work__color--item--flex-bottom.kulkuri-color .name-set:nth-child(1) .color--box {
@@ -1405,7 +1405,7 @@ html {
         padding-left: 1.2vw;
         font-size: 12px;
         font-size: 3.75vw; }
-        @media (min-width: 1000px) {
+        @media (max-width: 1000px) {
           .work__color .work__color--item--flex-bottom.kulkuri-color .name-set:nth-child(1) .color--box {
             font-size: 18px;
             width: 100px;
@@ -1413,7 +1413,7 @@ html {
             line-height: 68px;
             padding-left: 9px;
             margin-bottom: 5px; } }
-        @media (min-width: 640px) and (max-width: 999px) {
+        @media (min-width: 760px) and (max-width: 999px) {
           .work__color .work__color--item--flex-bottom.kulkuri-color .name-set:nth-child(1) .color--box {
             font-size: 18px;
             width: 100px;
@@ -1432,7 +1432,7 @@ html {
         padding-left: 1.2vw;
         font-size: 12px;
         font-size: 3.75vw; }
-        @media (min-width: 1000px) {
+        @media (max-width: 1000px) {
           .work__color .work__color--item--flex-bottom.kulkuri-color .name-set:nth-child(2) .color--box {
             font-size: 18px;
             width: 100px;
@@ -1440,7 +1440,7 @@ html {
             line-height: 68px;
             padding-left: 9px;
             margin-bottom: 5px; } }
-        @media (min-width: 640px) and (max-width: 999px) {
+        @media (min-width: 760px) and (max-width: 999px) {
           .work__color .work__color--item--flex-bottom.kulkuri-color .name-set:nth-child(2) .color--box {
             font-size: 18px;
             width: 100px;
@@ -1459,7 +1459,7 @@ html {
         padding-left: 1.2vw;
         font-size: 12px;
         font-size: 3.75vw; }
-        @media (min-width: 1000px) {
+        @media (max-width: 1000px) {
           .work__color .work__color--item--flex-bottom.kulkuri-color .name-set:nth-child(3) .color--box {
             font-size: 18px;
             width: 100px;
@@ -1467,7 +1467,7 @@ html {
             line-height: 68px;
             padding-left: 9px;
             margin-bottom: 5px; } }
-        @media (min-width: 640px) and (max-width: 999px) {
+        @media (min-width: 760px) and (max-width: 999px) {
           .work__color .work__color--item--flex-bottom.kulkuri-color .name-set:nth-child(3) .color--box {
             font-size: 18px;
             width: 100px;
@@ -1486,7 +1486,7 @@ html {
         padding-left: 1.2vw;
         font-size: 12px;
         font-size: 3.75vw; }
-        @media (min-width: 1000px) {
+        @media (max-width: 1000px) {
           .work__color .work__color--item--flex-bottom.kulkuri-color .name-set:nth-child(4) .color--box {
             font-size: 18px;
             width: 100px;
@@ -1494,7 +1494,7 @@ html {
             line-height: 68px;
             padding-left: 9px;
             margin-bottom: 5px; } }
-        @media (min-width: 640px) and (max-width: 999px) {
+        @media (min-width: 760px) and (max-width: 999px) {
           .work__color .work__color--item--flex-bottom.kulkuri-color .name-set:nth-child(4) .color--box {
             font-size: 18px;
             width: 100px;
@@ -1524,7 +1524,7 @@ html {
       padding-left: 1.2vw;
       font-size: 12px;
       font-size: 3.75vw; }
-      @media (min-width: 1000px) {
+      @media (max-width: 1000px) {
         .work__color .work__color--item--flex-top.mogu-color .color--box {
           font-size: 18px;
           width: 100px;
@@ -1532,7 +1532,7 @@ html {
           line-height: 68px;
           padding-left: 9px;
           margin-bottom: 5px; } }
-      @media (min-width: 640px) and (max-width: 999px) {
+      @media (min-width: 760px) and (max-width: 999px) {
         .work__color .work__color--item--flex-top.mogu-color .color--box {
           font-size: 18px;
           width: 100px;
@@ -1560,7 +1560,7 @@ html {
       padding-left: 1.2vw;
       font-size: 12px;
       font-size: 3.75vw; }
-      @media (min-width: 1000px) {
+      @media (max-width: 1000px) {
         .work__color .work__color--item--flex-top.wordworth-color .color--box:nth-child(1) {
           font-size: 18px;
           width: 100px;
@@ -1568,7 +1568,7 @@ html {
           line-height: 68px;
           padding-left: 9px;
           margin-bottom: 5px; } }
-      @media (min-width: 640px) and (max-width: 999px) {
+      @media (min-width: 760px) and (max-width: 999px) {
         .work__color .work__color--item--flex-top.wordworth-color .color--box:nth-child(1) {
           font-size: 18px;
           width: 100px;
@@ -1587,7 +1587,7 @@ html {
       padding-left: 1.2vw;
       font-size: 12px;
       font-size: 3.75vw; }
-      @media (min-width: 1000px) {
+      @media (max-width: 1000px) {
         .work__color .work__color--item--flex-top.wordworth-color .color--box:nth-child(2) {
           font-size: 18px;
           width: 100px;
@@ -1595,7 +1595,7 @@ html {
           line-height: 68px;
           padding-left: 9px;
           margin-bottom: 5px; } }
-      @media (min-width: 640px) and (max-width: 999px) {
+      @media (min-width: 760px) and (max-width: 999px) {
         .work__color .work__color--item--flex-top.wordworth-color .color--box:nth-child(2) {
           font-size: 18px;
           width: 100px;
@@ -1614,7 +1614,7 @@ html {
       padding-left: 1.2vw;
       font-size: 12px;
       font-size: 3.75vw; }
-      @media (min-width: 1000px) {
+      @media (max-width: 1000px) {
         .work__color .work__color--item--flex-top.wordworth-color .color--box:nth-child(3) {
           font-size: 18px;
           width: 100px;
@@ -1622,7 +1622,7 @@ html {
           line-height: 68px;
           padding-left: 9px;
           margin-bottom: 5px; } }
-      @media (min-width: 640px) and (max-width: 999px) {
+      @media (min-width: 760px) and (max-width: 999px) {
         .work__color .work__color--item--flex-top.wordworth-color .color--box:nth-child(3) {
           font-size: 18px;
           width: 100px;
@@ -1641,21 +1641,21 @@ html {
     .work__color .work__color--item--flex-top.wordworth-color img {
       width: 20vw;
       margin-right: 3vw; }
-      @media (min-width: 1000px) {
+      @media (max-width: 1000px) {
         .work__color .work__color--item--flex-top.wordworth-color img {
           width: 130px; } }
-      @media (min-width: 640px) and (max-width: 999px) {
+      @media (min-width: 760px) and (max-width: 999px) {
         .work__color .work__color--item--flex-top.wordworth-color img {
           width: 100px; } }
     .work__color .work__color--item--flex-top.wordworth-color img:last-child {
       width: 60vw; }
-      @media (min-width: 1000px) {
+      @media (max-width: 1000px) {
         .work__color .work__color--item--flex-top.wordworth-color img:last-child {
           width: 300px; } }
-      @media (min-width: 640px) and (max-width: 999px) {
+      @media (min-width: 760px) and (max-width: 999px) {
         .work__color .work__color--item--flex-top.wordworth-color img:last-child {
           width: 300px; } }
-  @media (min-width: 1000px) {
+  @media (max-width: 1000px) {
     .work__color.scroll__item {
       width: 100%;
       margin-left: 5vw; } }
@@ -1677,12 +1677,12 @@ html {
 
 .work__font p {
   font-weight: 300; }
-  @media (min-width: 1000px) {
+  @media (max-width: 1000px) {
     .work__font p {
       width: 40vw;
       line-height: 1.3;
       margin-top: 1.5%; } }
-  @media (min-width: 640px) and (max-width: 999px) {
+  @media (min-width: 760px) and (max-width: 999px) {
     .work__font p {
       width: 70vw;
       line-height: 1.3;
@@ -1695,28 +1695,28 @@ html {
     margin-right: 2vw; }
     .work__font--item-each img.font-kulkuri {
       width: 38vw; }
-      @media (min-width: 1000px) {
+      @media (max-width: 1000px) {
         .work__font--item-each img.font-kulkuri {
           width: 160px; } }
-      @media (min-width: 640px) and (max-width: 999px) {
+      @media (min-width: 760px) and (max-width: 999px) {
         .work__font--item-each img.font-kulkuri {
           width: 180px; } }
     .work__font--item-each img.font-mogu {
       width: 45vw; }
-      @media (min-width: 1000px) {
+      @media (max-width: 1000px) {
         .work__font--item-each img.font-mogu {
           width: 250px; } }
-      @media (min-width: 640px) and (max-width: 999px) {
+      @media (min-width: 760px) and (max-width: 999px) {
         .work__font--item-each img.font-mogu {
           width: 270px; } }
     .work__font--item-each p {
       font-weight: 300;
       padding-left: 2vw;
       margin-top: -2vh; }
-      @media (min-width: 1000px) {
+      @media (max-width: 1000px) {
         .work__font--item-each p {
           padding-left: 12px; } }
-      @media (min-width: 640px) and (max-width: 999px) {
+      @media (min-width: 760px) and (max-width: 999px) {
         .work__font--item-each p {
           padding-left: 10px; } }
   .work__font--item.kulkuri__last h4 {
@@ -1726,10 +1726,10 @@ html {
   .work__font--item.kulkuri__last p {
     font-weight: 300;
     padding-left: 44vw; }
-    @media (min-width: 1000px) {
+    @media (max-width: 1000px) {
       .work__font--item.kulkuri__last p {
         padding-left: 270px; } }
-    @media (min-width: 640px) and (max-width: 999px) {
+    @media (min-width: 760px) and (max-width: 999px) {
       .work__font--item.kulkuri__last p {
         padding-left: 280px; } }
   .work__font--item.kulkuri__last img.photo-frame {
@@ -1739,17 +1739,17 @@ html {
             filter: drop-shadow(-10px 10px 7px #9e9e9e);
     -webkit-transform: rotate(-20deg);
             transform: rotate(-20deg); }
-    @media (min-width: 1000px) {
+    @media (max-width: 1000px) {
       .work__font--item.kulkuri__last img.photo-frame {
         width: 184px; } }
-    @media (min-width: 640px) and (max-width: 999px) {
+    @media (min-width: 760px) and (max-width: 999px) {
       .work__font--item.kulkuri__last img.photo-frame {
         width: 200px;
         margin-top: 55px; } }
   .work__font--item.wordworth__last img {
     margin-left: -8px; }
 
-@media (min-width: 1000px) {
+@media (max-width: 1000px) {
   .work__font.scroll__item {
     width: 100%;
     margin-left: 5vw; } }
@@ -1771,16 +1771,16 @@ html {
 
 .work__logo {
   margin: 7vh auto; }
-  @media (min-width: 640px) and (max-width: 999px) {
+  @media (min-width: 760px) and (max-width: 999px) {
     .work__logo {
       margin: 8vh auto; } }
   .work__logo p {
     font-weight: 300; }
-    @media (min-width: 1000px) {
+    @media (max-width: 1000px) {
       .work__logo p {
         width: 40vw;
         line-height: 1.3; } }
-    @media (min-width: 640px) and (max-width: 999px) {
+    @media (min-width: 760px) and (max-width: 999px) {
       .work__logo p {
         width: 70vw;
         line-height: 1.3; } }
@@ -1788,27 +1788,27 @@ html {
     display: block;
     width: 40vw;
     margin: 0 auto; }
-    @media (min-width: 1000px) {
+    @media (max-width: 1000px) {
       .work__logo img.logo-kulkuri {
         width: 240px; } }
-    @media (min-width: 640px) and (max-width: 999px) {
+    @media (min-width: 760px) and (max-width: 999px) {
       .work__logo img.logo-kulkuri {
         width: 260px; } }
   .work__logo img.logo-mogu {
     display: inline-block;
     width: 30vw;
     margin-right: 10vw; }
-    @media (min-width: 1000px) {
+    @media (max-width: 1000px) {
       .work__logo img.logo-mogu {
         width: 200px;
         margin-top: 40px; } }
     .work__logo img.logo-mogu:last-child {
       width: 15vw; }
-      @media (min-width: 1000px) {
+      @media (max-width: 1000px) {
         .work__logo img.logo-mogu:last-child {
           width: 100px;
           margin-top: 0; } }
-  @media (min-width: 1000px) {
+  @media (max-width: 1000px) {
     .work__logo.scroll__item {
       width: 100%;
       margin-left: 5vw;
@@ -1848,10 +1848,10 @@ html {
         position: absolute;
         top: 40vh;
         left: 8vw; }
-        @media (min-width: 1000px) {
+        @media (max-width: 1000px) {
           .work__link--images img:nth-child(2) {
             top: 80vh; } }
-        @media (min-width: 640px) and (max-width: 999px) {
+        @media (min-width: 760px) and (max-width: 999px) {
           .work__link--images img:nth-child(2) {
             top: 80vh; } }
     .work__link--images::before {
@@ -1863,13 +1863,13 @@ html {
       width: 50vw;
       height: 25vh;
       background: url("http://localhost:8080/images/dotted.png") no-repeat; }
-      @media (min-width: 1000px) {
+      @media (max-width: 1000px) {
         .work__link--images::before {
           top: -120px;
           left: 60vw;
           width: 350px;
           height: 350px; } }
-      @media (min-width: 640px) and (max-width: 999px) {
+      @media (min-width: 760px) and (max-width: 999px) {
         .work__link--images::before {
           top: -75px;
           right: 0;
@@ -1888,10 +1888,10 @@ html {
               transform: rotate(5deg);
       position: relative;
       left: 10vw; }
-      @media (min-width: 1000px) {
+      @media (max-width: 1000px) {
         .work__link--images.wordworth img:nth-child(3) {
           left: 5vw; } }
-      @media (min-width: 640px) and (max-width: 999px) {
+      @media (min-width: 760px) and (max-width: 999px) {
         .work__link--images.wordworth img:nth-child(3) {
           left: 5vw; } }
     .work__link--images.wordworth::before {
@@ -1903,21 +1903,21 @@ html {
       width: 50vw;
       height: 25vh;
       background: url("http://localhost:8080/images/dotted.png") no-repeat; }
-      @media (min-width: 1000px) {
+      @media (max-width: 1000px) {
         .work__link--images.wordworth::before {
           top: -150px;
           width: 350px;
           height: 350px; } }
-      @media (min-width: 640px) and (max-width: 999px) {
+      @media (min-width: 760px) and (max-width: 999px) {
         .work__link--images.wordworth::before {
           top: -55px;
           left: 0;
           width: 350px;
           height: 350px; } }
-  @media (min-width: 1000px) {
+  @media (max-width: 1000px) {
     .work__link a.button__work--bottom {
       margin-top: 15vh; } }
-  @media (min-width: 640px) and (max-width: 999px) {
+  @media (min-width: 760px) and (max-width: 999px) {
     .work__link a.button__work--bottom {
       margin-top: 28vh; } }
   .work__link .pagenation {
@@ -1959,7 +1959,7 @@ html {
 
 .work__ui {
   margin-top: 5vh; }
-  @media (min-width: 1000px) {
+  @media (max-width: 1000px) {
     .work__ui {
       display: -webkit-box;
       display: flex;
@@ -1969,7 +1969,7 @@ html {
               align-items: flex-start; } }
   .work__ui .work__description {
     position: relative; }
-    @media (min-width: 1000px) {
+    @media (max-width: 1000px) {
       .work__ui .work__description {
         width: 50vw; } }
     .work__ui .work__description::before {
@@ -1983,13 +1983,13 @@ html {
       height: 25vh;
       opacity: .5;
       background: url("http://localhost:8080/images/dotted.png") no-repeat; }
-      @media (min-width: 1000px) {
+      @media (max-width: 1000px) {
         .work__ui .work__description::before {
           top: 200px;
           left: -30vw;
           width: 350px;
           height: 350px; } }
-      @media (min-width: 640px) and (max-width: 999px) {
+      @media (min-width: 760px) and (max-width: 999px) {
         .work__ui .work__description::before {
           top: 150px;
           left: -50vw;
@@ -1998,12 +1998,12 @@ html {
     .work__ui .work__description p {
       margin-top: 2vh;
       font-weight: 300; }
-      @media (min-width: 1000px) {
+      @media (max-width: 1000px) {
         .work__ui .work__description p {
           width: 40vw;
           line-height: 1.3;
           margin-top: 1.5%; } }
-      @media (min-width: 640px) and (max-width: 999px) {
+      @media (min-width: 760px) and (max-width: 999px) {
         .work__ui .work__description p {
           width: 70vw;
           line-height: 1.3;
@@ -2014,23 +2014,23 @@ html {
       margin: 0 auto;
       -webkit-filter: drop-shadow(-3px 5px 10px rgba(45, 49, 51, 0.3));
               filter: drop-shadow(-3px 5px 10px rgba(45, 49, 51, 0.3)); }
-      @media (min-width: 1000px) {
+      @media (max-width: 1000px) {
         .work__ui .work__description img {
           width: 485px;
           margin-top: 3vh; } }
-      @media (min-width: 640px) and (max-width: 999px) {
+      @media (min-width: 760px) and (max-width: 999px) {
         .work__ui .work__description img {
           width: 450px; } }
     .work__ui .work__description img.work__img--small {
       width: 60vw; }
-      @media (min-width: 1000px) {
+      @media (max-width: 1000px) {
         .work__ui .work__description img.work__img--small {
           width: 350px;
           margin-top: 3vh; } }
-      @media (min-width: 640px) and (max-width: 999px) {
+      @media (min-width: 760px) and (max-width: 999px) {
         .work__ui .work__description img.work__img--small {
           width: 350px; } }
-  @media (min-width: 1000px) {
+  @media (max-width: 1000px) {
     .work__ui .work__color {
       width: 50vw;
       margin-top: 9vh;
@@ -2049,7 +2049,7 @@ html {
               align-items: center;
       flex-wrap: wrap;
       margin-top: 2vh; }
-      @media (min-width: 1000px) {
+      @media (max-width: 1000px) {
         .work__ui .work__color--item--flex-top.ui-color {
           display: -webkit-box;
           display: flex;
@@ -2068,7 +2068,7 @@ html {
         padding-left: 1.2vw;
         font-size: 12px;
         font-size: 3.75vw; }
-        @media (min-width: 1000px) {
+        @media (max-width: 1000px) {
           .work__ui .work__color--item--flex-top.ui-color .color--box:nth-child(1) {
             font-size: 18px;
             width: 100px;
@@ -2076,7 +2076,7 @@ html {
             line-height: 68px;
             padding-left: 9px;
             margin-bottom: 5px; } }
-        @media (min-width: 640px) and (max-width: 999px) {
+        @media (min-width: 760px) and (max-width: 999px) {
           .work__ui .work__color--item--flex-top.ui-color .color--box:nth-child(1) {
             font-size: 18px;
             width: 100px;
@@ -2095,7 +2095,7 @@ html {
         padding-left: 1.2vw;
         font-size: 12px;
         font-size: 3.75vw; }
-        @media (min-width: 1000px) {
+        @media (max-width: 1000px) {
           .work__ui .work__color--item--flex-top.ui-color .color--box:nth-child(2) {
             font-size: 18px;
             width: 100px;
@@ -2103,7 +2103,7 @@ html {
             line-height: 68px;
             padding-left: 9px;
             margin-bottom: 5px; } }
-        @media (min-width: 640px) and (max-width: 999px) {
+        @media (min-width: 760px) and (max-width: 999px) {
           .work__ui .work__color--item--flex-top.ui-color .color--box:nth-child(2) {
             font-size: 18px;
             width: 100px;
@@ -2131,7 +2131,7 @@ html {
         padding-left: 1.2vw;
         font-size: 12px;
         font-size: 3.75vw; }
-        @media (min-width: 1000px) {
+        @media (max-width: 1000px) {
           .work__ui .work__color--item--flex-bottom.ui-color .color--box:nth-child(1) {
             font-size: 18px;
             width: 100px;
@@ -2139,7 +2139,7 @@ html {
             line-height: 68px;
             padding-left: 9px;
             margin-bottom: 5px; } }
-        @media (min-width: 640px) and (max-width: 999px) {
+        @media (min-width: 760px) and (max-width: 999px) {
           .work__ui .work__color--item--flex-bottom.ui-color .color--box:nth-child(1) {
             font-size: 18px;
             width: 100px;
@@ -2158,7 +2158,7 @@ html {
         padding-left: 1.2vw;
         font-size: 12px;
         font-size: 3.75vw; }
-        @media (min-width: 1000px) {
+        @media (max-width: 1000px) {
           .work__ui .work__color--item--flex-bottom.ui-color .color--box:nth-child(2) {
             font-size: 18px;
             width: 100px;
@@ -2166,7 +2166,7 @@ html {
             line-height: 68px;
             padding-left: 9px;
             margin-bottom: 5px; } }
-        @media (min-width: 640px) and (max-width: 999px) {
+        @media (min-width: 760px) and (max-width: 999px) {
           .work__ui .work__color--item--flex-bottom.ui-color .color--box:nth-child(2) {
             font-size: 18px;
             width: 100px;
@@ -2194,7 +2194,7 @@ html {
         padding-left: 1.2vw;
         font-size: 12px;
         font-size: 3.75vw; }
-        @media (min-width: 1000px) {
+        @media (max-width: 1000px) {
           .work__ui .work__color--item--flex.ui-color .color--box:nth-child(1) {
             font-size: 18px;
             width: 100px;
@@ -2202,7 +2202,7 @@ html {
             line-height: 68px;
             padding-left: 9px;
             margin-bottom: 5px; } }
-        @media (min-width: 640px) and (max-width: 999px) {
+        @media (min-width: 760px) and (max-width: 999px) {
           .work__ui .work__color--item--flex.ui-color .color--box:nth-child(1) {
             font-size: 18px;
             width: 100px;
@@ -2221,7 +2221,7 @@ html {
         padding-left: 1.2vw;
         font-size: 12px;
         font-size: 3.75vw; }
-        @media (min-width: 1000px) {
+        @media (max-width: 1000px) {
           .work__ui .work__color--item--flex.ui-color .color--box:nth-child(2) {
             font-size: 18px;
             width: 100px;
@@ -2229,7 +2229,7 @@ html {
             line-height: 68px;
             padding-left: 9px;
             margin-bottom: 5px; } }
-        @media (min-width: 640px) and (max-width: 999px) {
+        @media (min-width: 760px) and (max-width: 999px) {
           .work__ui .work__color--item--flex.ui-color .color--box:nth-child(2) {
             font-size: 18px;
             width: 100px;
@@ -2240,16 +2240,16 @@ html {
     .work__ui .work__color--item img {
       width: 60vw;
       margin-left: -4vw; }
-      @media (min-width: 1000px) {
+      @media (max-width: 1000px) {
         .work__ui .work__color--item img {
           width: 250px;
           margin-left: 0; } }
-      @media (min-width: 640px) and (max-width: 999px) {
+      @media (min-width: 760px) and (max-width: 999px) {
         .work__ui .work__color--item img {
           width: 250px;
           margin-left: 0; } }
 
-@media (min-width: 1000px) {
+@media (max-width: 1000px) {
   .sticky__container {
     display: -webkit-box;
     display: flex;

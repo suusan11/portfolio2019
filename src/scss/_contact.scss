@@ -8,7 +8,7 @@
     width: 70vw;
     padding: 0 5vw;
     margin: 7% auto 0;
-    @include pcSize {
+    @include pc {
       margin: 3% auto 0;
     }
 
@@ -18,11 +18,11 @@
       font-weight: $font-weight-light;
       line-height: 1.7;
       @include font_vw(14);
-      @include pcSize {
+      @include pc {
         font-size: 18px;
         line-height: 2;
       }
-      @include middleSize {
+      @include lg {
         font-size: 18px;
         line-height: 2;
       }
