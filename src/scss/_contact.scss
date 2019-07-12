@@ -26,6 +26,10 @@
         font-size: 18px;
         line-height: 2;
       }
+      @include md {
+        font-size: 18px;
+        line-height: 2;
+      }
 
       span {
         letter-spacing: 1px;
