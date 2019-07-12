@@ -138,6 +138,9 @@ h1.section__title {
   @media (min-width: 600px) and (max-width: 999px) {
     h1.section__title {
       font-size: 70px; } }
+  @media (min-width: 440px) and (max-width: 599px) {
+    h1.section__title {
+      font-size: 60px; } }
 
 h3 {
   font-size: 25px;
