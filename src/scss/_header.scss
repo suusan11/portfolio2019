@@ -13,7 +13,12 @@
 }
 
 //browser for mobile
-@include lg {
+@include md {
+  .header__flex--right {
+    display: none;
+  }
+}
+@include sm {
   .header__flex--right {
     display: none;
   }
@@ -26,9 +31,13 @@
   z-index: 10;
   width: 100vw;
   height: 65px;
+  line-height: 65px;
   background-color: $black;
   color: $white;
-  padding-top: 3vh;
+  @include md {
+    height: 75px;
+    line-height: 75px;
+  }
 
   a {
     color: $white;
@@ -112,14 +121,6 @@
         height: 6vw;
         stroke-width: 0;
         fill: $black;
-        @include pc {
-          width: 70px;
-          height: 28px;
-        }
-        @include lg {
-          width: 58px;
-          height: 24px;
-        }
       }
     }
   }
@@ -128,6 +129,7 @@
 @include pc {
   .header {
     height: 100px;
+    line-height: 100px;
 
     //only for pc and tablet
     &__flex--right {
@@ -148,6 +150,7 @@
 @include lg {
   .header {
     height: 100px;
+    line-height: 100px;
 
     //only for pc and tablet
     &__flex--right {

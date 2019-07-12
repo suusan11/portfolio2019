@@ -2,7 +2,7 @@
 
 //break point
 @mixin pc {
-  @media (max-width: (1000px)) {
+  @media (min-width: (1000px)) {
     @content;
   }
 }
@@ -12,12 +12,12 @@
   }
 }
 @mixin md {
-  @media (min-width: 415px) and (max-width: 759px) {
+  @media (min-width: 440px) and (max-width: 759px) {
     @content;
   }
 }
 @mixin sm {
-  @media (max-width: 414px) {
+  @media (max-width: 439px) {
     @content;
   }
 }
