@@ -8,14 +8,18 @@ export function globalMenu() {
     openButton.addEventListener('click', function () {
         globalMenu.classList.add('active');
         globalMenu.classList.remove('remove');
+        document.body.style.position = 'fixed';
+        document.body.style.top = `-${window.scrollY}px`; //スクロールポジションをスクロールしている位置にする（毎回windowのトップに動かないようにする）
 
         for(let i = 0; i < linkButtons.length; i++) {
             const linkButton = linkButtons[i];
             linkButton.addEventListener('click', function() {
                 globalMenu.classList.remove('active');
                 globalMenu.classList.add('remove');
-                document.body.style.position = 'fixed';
+                document.body.style.position = '';
                 document.body.style.top = `-${window.scrollY}px`; //スクロールポジションをスクロールしている位置にする（毎回windowのトップに動かないようにする）
+                // document.body.style.top = '';
+                // window.scrollTo(0, parseInt(scrollY || '0') * -1);
             });
         }
     });
@@ -23,10 +27,15 @@ export function globalMenu() {
     closeButton.addEventListener('click', function () {
         globalMenu.classList.remove('active');
         globalMenu.classList.add('remove');
+        document.body.style.position = '';
+        // document.documentElement.scrollTop;
+        // document.body.style.top = `-${window.scrollY}px`; //スクロールポジションをスクロールしている位置にする（毎回windowのトップに動かないようにする）
+        document.body.style.top = '';
+        window.scrollTo(0, parseInt(scrollY || '0') * -1);
     });
 }
 
-// //button operation to send page top
+//button operation to send page top
 export function sendTop() {
     window.addEventListener('scroll', function() {
         const scrollValue = window.scrollY;
