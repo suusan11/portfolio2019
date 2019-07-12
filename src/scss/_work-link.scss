@@ -98,17 +98,11 @@
     }
   }
 
-  button.button__work--bottom {
+  a.button__work--bottom {
     @include pcSize {
-      width: 280px;
-      height: 9vh;
-      padding: 0;
       margin-top: 15vh;
     }
     @include middleSize {
-      width: 250px;
-      height: 9vh;
-      padding: 2% 0;
       margin-top: 28vh;
     }
 

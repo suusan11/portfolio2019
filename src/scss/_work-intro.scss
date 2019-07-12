@@ -63,35 +63,8 @@
       }
     }
 
-    button.button__small {
-      width: 55vw;
-      height: 9vh;
-      background-color: $white;
-      border: 3px solid $black;
+    a.button__small {
       margin: 8vh auto 0;
-      @include pcSize {
-        width: 250px;
-        height: 70px;
-        padding: 2%;
-      }
-      @include middleSize {
-        width: 250px;
-        height: 9vh;
-        padding: 3% 0;
-      }
-
-      a {
-        height: 100%;
-        padding: 0 auto;
-        color: $black;
-        @include font_vw(14);
-        @include pcSize {
-          font-size: 20px;
-        }
-        @include middleSize {
-          font-size: 20px;
-        }
-      }
     }
   }
 
