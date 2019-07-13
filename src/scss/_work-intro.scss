@@ -96,72 +96,14 @@
 }
 
 
-.work__intro {
-  margin: 10vh auto 5vh;
-  @include pc {
-    margin-top: 25vh;
-  }
+.work__image {
+  width: 100vw;
+  background-color: $gray;
+  text-align: center;
 
-  &-top {
-    position: relative;
-
-    &::before {
-      @include bgCircle(url("http://localhost:8080/images/shape1.png"));
-      top: -30px;
-      left: -50px;
-      @include pc {
-        top: 100px;
-        left: -20px;
-      }
-      @include lg {
-        top: 200px;
-        left: -100px;
-      }
-    }
-    &::after {
-      @include bgCircle(url("http://localhost:8080/images/shape2.png"));
-      bottom: -270px;
-      right: -8vw;
-      @include pc {
-        bottom: -100px;
-        right: 20px;
-      }
-      @include lg {
-        bottom: -150px;
-      }
-    }
-
-    img {
-      display: block;
-      width: 80vw;
-      margin: 0 auto;
-      filter: drop-shadow(5px 5px 7px $black__opacity);
-
-      @include pc {
-        width: 500px;
-      }
-      @include lg {
-        width: 70vw;
-      }
-    }
-
-    h1 {
-      @include font_vw(28);
-      font-weight: $font-weight-medium;
-      margin-top: 8vw;
-      @include pc {
-        font-size: 34px;
-        margin-left: 7.5vw;
-      }
-      @include lg {
-        font-size: 34px;
-        margin-left: 5vw;
-      }
-    }
-
-    a.hover__link {
-      margin-top: 50px;
-    }
+  img {
+    width: 80vw;
+    margin: 5vh 0;
   }
 
   //only to pc
