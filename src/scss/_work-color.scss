@@ -146,3 +146,30 @@
     }
   }
 }
+
+
+.work__image--color {
+  width: 100vw;
+  background-color: $gray;
+  text-align: center;
+  padding: 2vh 0;
+
+  &.kulkuri {
+    img.no__flex {
+      width: 80vw;
+    }
+  }
+
+  &--flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80vw;
+    margin: 5vh auto;
+
+    img {
+      width: 30%;
+      margin: 0 5%;
+    }
+  }
+}
