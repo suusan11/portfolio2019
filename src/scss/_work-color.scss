@@ -40,63 +40,35 @@
 
     &--flex-middle.kulkuri-color {
       @include flexColorBox;
-
-      .flex--item {
-        width: 40vw;
-        margin-bottom: 7vh;
-        position: relative;
-        @include pc {
-          width: 200px;
-          margin-right: 10%;
-        }
-
-        img {
-          width: 26vw;
-          @include pc {
-            width: 144px;
-          }
-          @include lg {
-            width: 175px;
-          }
-        }
-
-        &:nth-child(1) .color--box {
-          @include absoluteColorBox;
-          @include colorBox(#E59948);
-        }
-        &:nth-child(2) .color--box {
-          @include absoluteColorBox;
-          @include colorBox(#46509F);
-        }
-        &:nth-child(3) .color--box {
-            @include absoluteColorBox;
-            @include colorBox(#938BFF);
-        }
-        &:nth-child(4) .color--box {
-            @include absoluteColorBox;
-            @include colorBox(#B77388);
-        }
-      }
-    }
-
-    &--flex-bottom.kulkuri-color {
-      @include flexColorBox;
       .name-set {
         width: 20%;
-        margin: 1% 5%;
+        margin: 1% 10% 0 0;
         @include pc {
           margin: 1% 2%;
         }
+
         &:nth-child(1) .color--box {
-          @include colorBox(#B0272C);
+            @include colorBox(#46509F);
         }
         &:nth-child(2) .color--box {
-          @include colorBox(#3B91A6);
+          @include colorBox(#E59948);
         }
         &:nth-child(3) .color--box {
-          @include colorBox(#FECC35);
+          @include colorBox(#B77388);
         }
         &:nth-child(4) .color--box {
+            @include colorBox(#B0272C);
+        }
+        &:nth-child(5) .color--box {
+          @include colorBox(#938BFF);
+        }
+        &:nth-child(6) .color--box {
+          @include colorBox(#3B91A6);
+        }
+        &:nth-child(7) .color--box {
+            @include colorBox(#FECC35);
+        }
+        &:nth-child(8) .color--box {
           @include colorBox(#9FA9A2);
         }
 
