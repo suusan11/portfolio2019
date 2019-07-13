@@ -44,7 +44,7 @@ section {
   border-radius: 50px;
   background-color: $black__opacity;
   z-index: 10;
-  @include mobileSize {
+  @include lg {
     bottom: 200px;
   }
 
@@ -75,52 +75,51 @@ section {
   }
 }
 
-.scroll-prevent {
-  position: fixed;
-  z-index: -1;
-  width: 100vw;
-  height: 100vh;
-}
-
 //common fonts style
 h1.section__title {
   @include font_vw(47);
   color: $black__opacity;
   font-weight: $font-weight-bold;
   font-style: italic;
-  @include pcSize {
+  @include pc {
     font-size: 70px;
   }
-  @include middleSize {
+  @include lg {
     font-size: 70px;
+  }
+  @include md {
+    font-size: 60px;
   }
 }
 h3 {
-  @include font_vw(30);
+  @include font_vw(25);
   font-family: $font-empha;
-  @include pcSize {
+  @include pc {
     font-size: 55px;
   }
-  @include middleSize {
+  @include lg {
     font-size: 55px;
   }
 }
 h4 {
   @include font_vw(14);
-  @include pcSize {
+  @include pc {
     font-size: 19px;
   }
-  @include middleSize {
+  @include lg {
     font-size: 19px;
   }
 }
 p {
   @include font_vw(12);
-  @include pcSize {
+  @include pc {
     font-size: 18px;
   }
-  @include middleSize {
+  @include lg {
     font-size: 18px;
+  }
+  @include md {
+    font-size: 16px;
   }
   span {
     color: $pink;

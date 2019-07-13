@@ -86,6 +86,18 @@
 /************************************************************************/
 /******/ ({
 
+/***/ "./src/common.js":
+/*!***********************!*\
+  !*** ./src/common.js ***!
+  \***********************/
+/*! exports provided: globalMenu, sendTop */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"globalMenu\", function() { return globalMenu; });\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"sendTop\", function() { return sendTop; });\n//global menu for mobile device\nfunction globalMenu() {\n    const openButton = document.getElementById('js-open-menu');\n    const closeButton = document.getElementById('js-close-menu');\n    const linkButtons = document.getElementById('js-global-menu').getElementsByTagName('li');\n    const globalMenu = document.getElementById('js-global-menu');\n\n    openButton.addEventListener('click', function () {\n        globalMenu.classList.add('active');\n        globalMenu.classList.remove('remove');\n        document.body.style.position = 'fixed';\n        document.body.style.top = `-${window.scrollY}px`; //スクロールポジションをスクロールしている位置にする（毎回windowのトップに動かないようにする）\n\n        for(let i = 0; i < linkButtons.length; i++) {\n            const linkButton = linkButtons[i];\n            linkButton.addEventListener('click', function() {\n                globalMenu.classList.remove('active');\n                globalMenu.classList.add('remove');\n                document.body.style.position = '';\n                document.body.style.top = `-${window.scrollY}px`; //スクロールポジションをスクロールしている位置にする（毎回windowのトップに動かないようにする）\n                // document.body.style.top = '';\n                // window.scrollTo(0, parseInt(scrollY || '0') * -1);\n            });\n        }\n    });\n\n    closeButton.addEventListener('click', function () {\n        globalMenu.classList.remove('active');\n        globalMenu.classList.add('remove');\n        document.body.style.position = '';\n        // document.documentElement.scrollTop;\n        // document.body.style.top = `-${window.scrollY}px`; //スクロールポジションをスクロールしている位置にする（毎回windowのトップに動かないようにする）\n        document.body.style.top = '';\n        window.scrollTo(0, parseInt(scrollY || '0') * -1);\n    });\n}\n\n//button operation to send page top\nfunction sendTop() {\n    window.addEventListener('scroll', function() {\n        const scrollValue = window.scrollY;\n\n        const breakPoint = document.getElementById('js-breakPoint').clientHeight;\n        const objectTop = document.getElementById('js-breakPoint').offsetTop;\n        const breakPointTotal = breakPoint + objectTop;\n\n        const buttonShow = document.getElementById('js-topButton');\n\n        if(scrollValue > breakPointTotal) {\n            buttonShow.classList.add('is__show');\n        }else {\n            buttonShow.classList.remove('is__show');\n        }\n    });\n}\n\n//# sourceURL=webpack:///./src/common.js?");
+
+/***/ }),
+
 /***/ "./src/index.js":
 /*!**********************!*\
   !*** ./src/index.js ***!
@@ -94,7 +106,7 @@
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _scss_style_scss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./scss/style.scss */ \"./src/scss/style.scss\");\n/* harmony import */ var _scss_style_scss__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_scss_style_scss__WEBPACK_IMPORTED_MODULE_0__);\n\n\n//button operation to send page top\nwindow.addEventListener('scroll', function() {\n    const scrollValue = window.scrollY;\n\n    const breakPoint = document.getElementById('js-breakPoint').clientHeight;\n    const objectTop = document.getElementById('js-breakPoint').offsetTop;\n    const breakPointTotal = breakPoint + objectTop;\n\n    const buttonShow = document.getElementById('js-topButton');\n\n    if(scrollValue > breakPointTotal) {\n        buttonShow.classList.add('is__show');\n    }else {\n        buttonShow.classList.remove('is__show');\n    }\n});\n\n//# sourceURL=webpack:///./src/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _scss_style_scss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./scss/style.scss */ \"./src/scss/style.scss\");\n/* harmony import */ var _scss_style_scss__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_scss_style_scss__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _common__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./common */ \"./src/common.js\");\n\n\n\n//loading after read HTML\nwindow.onload = function() {\n    _common__WEBPACK_IMPORTED_MODULE_1__[\"globalMenu\"]();\n    _common__WEBPACK_IMPORTED_MODULE_1__[\"sendTop\"]();\n};\n\n//# sourceURL=webpack:///./src/index.js?");
 
 /***/ }),
 

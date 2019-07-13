@@ -1,22 +1,31 @@
 @import "color", "mixin";
 
-button {
+a.common__button {
   display: block;
   position: relative;
   width: 55vw;
   height: 8vh;
+  line-height: 7vh;
   background-color: $white;
   border: 3px solid $black;
   margin: 5vh auto 0;
-  @include pcSize {
+  text-align: center;
+  @include font_vw(14);
+  @include pc {
     width: 280px;
     height: 70px;
-    padding: 10px;
+    line-height: 64px;
+    font-size: 20px;
   }
-  @include middleSize {
-    width: 35vw;
-    height: 9vh;
-    padding: 3% 8%;
+  @include lg {
+    width: 245px;
+    height: 70px;
+    line-height: 64px;
+    font-size: 20px;
+  }
+  @include md {
+    width: 40vw;
+    font-size: 18px;
   }
 
   &::before {
@@ -30,28 +39,19 @@ button {
     z-index: -1;
     background:repeating-linear-gradient(-30deg, $pink 0, $pink 5px, $white 5px, $white 10px);
     transition: all ease-out .3s;
-    @include pcSize {
+    @include pc {
       left: -1.2vw;
     }
-    @include middleSize {
-      left: -1.8vw;
+    @include lg {
+      left: -2vw;
+    }
+    @include md {
+      left: -2.3vw;
     }
   }
 
   &:hover::before {
     top: 0;
     left: 0;
-  }
-
-  a {
-    height: 100%;
-    padding: 0 auto;
-    @include font_vw(14);
-    @include pcSize {
-      font-size: 20px;
-    }
-    @include middleSize {
-      font-size: 20px;
-    }
   }
 }

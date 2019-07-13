@@ -4,12 +4,12 @@
 
   p {
     font-weight: $font-weight-light;
-    @include pcSize {
+    @include pc {
       width: 40vw;
       line-height: 1.3;
       margin-top: 1.5%;
     }
-    @include middleSize {
+    @include lg {
       width: 70vw;
       line-height: 1.3;
       margin-top: 1.5%;
@@ -25,20 +25,20 @@
 
       img.font-kulkuri {
         width: 38vw;
-        @include pcSize {
+        @include pc {
           width: 160px;
         }
-        @include middleSize {
+        @include lg {
           width: 180px;
         }
       }
 
       img.font-mogu {
         width: 45vw;
-        @include pcSize {
+        @include pc {
           width: 250px;
         }
-        @include middleSize {
+        @include lg {
           width: 270px;
         }
       }
@@ -47,10 +47,10 @@
         font-weight: $font-weight-light;
         padding-left: 2vw;
         margin-top: -2vh;
-        @include pcSize {
+        @include pc {
           padding-left: 12px;
         }
-        @include middleSize {
+        @include lg {
           padding-left: 10px;
         }
       }
@@ -67,10 +67,10 @@
       p {
         font-weight: $font-weight-light;
         padding-left: 44vw;
-        @include pcSize {
+        @include pc {
           padding-left: 270px;
         }
-        @include middleSize {
+        @include lg {
           padding-left: 280px;
         }
       }
@@ -79,10 +79,10 @@
         margin: 4vh 2vw 0;
         filter: drop-shadow(-10px 10px 7px #9e9e9e);
         transform: rotate(-20deg);
-        @include pcSize {
+        @include pc {
           width: 184px;
         }
-        @include middleSize {
+        @include lg {
           width: 200px;
           margin-top: 55px;
         }
@@ -97,7 +97,7 @@
   }
 
   //only to pc
-  @include pcSize {
+  @include pc {
     &.scroll__item {
       width: 100%;
       margin-left: 5vw;

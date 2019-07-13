@@ -29,12 +29,14 @@
             </ul>
             <div class="global__menu">
                 <div id="js-open-menu">MENU</div>
-                <ul id="js-global-menu" class="click__open">
+                <div id="js-global-menu" class="click__open">
                     <div id="js-close-menu" class="close__button">×</div>
-                    <li class="js-link-menu"><a href="#home">HOME</a></li>
-                    <li class="js-link-menu"><a href="#about">ABOUT</a></li>
-                    <li class="js-link-menu"><a href="#works">WORKS</a></li>
-                    <li class="js-link-menu"><a href="#contact">CONTACT</a></li>
+                    <ul>
+                        <li class="js-link-menu"><a href="#home">HOME</a></li>
+                        <li class="js-link-menu"><a href="#about">ABOUT</a></li>
+                        <li class="js-link-menu"><a href="#works">WORKS</a></li>
+                        <li class="js-link-menu"><a href="#contact">CONTACT</a></li>
+                    </ul>
                     <div class="sns__flex">
                         <a href="https://www.linkedin.com/in/mie-suzuki-079644161/" target="_blank"><svg class="icon icon-linkedin2"><use xlink:href="#icon-linkedin2"><symbol id="icon-linkedin2" viewBox="0 0 32 32">
                             <title>linkedin2</title>
@@ -57,7 +59,7 @@
                             <path d="M26.462 7.456c0 1.060-0.859 1.919-1.919 1.919s-1.919-0.859-1.919-1.919c0-1.060 0.859-1.919 1.919-1.919s1.919 0.859 1.919 1.919z"></path>
                         </symbol></use></svg></a>
                     </div>
-                </ul>
+                </div>
             </div>
         </div>
     </header>
@@ -71,33 +73,16 @@
                     <p>Front-End Developer - Based on Vancouver</p>
                 </div>
                 <img id="about" class="hero__img" src="images/profile.png" alt="my image">
-                <div class="about__wrap top">
-                    <div class="about__wrap--item">
-                        <h2>Design</h2>
-                        <p>A keen eye for <span>pixel-perfect details</span>.</p>
-                    </div>
-                    <div class="about__wrap--item">
-                        <h2>Coding</h2>
-                        <p>Highly motivated <span>Front-end developer</span>.</p>
-                    </div>
+                <div class="text__change">
+                    <p>who loves</p>
+                    <p class="text__change--word">Coding <span>👩🏻‍💻</span></p>
+                    <p class="text__change--word">Design <span>🎨</span></p>
+                    <p class="text__change--word">Food <span>🥟💓</span></p>
+                    <p class="text__change--word">Travel <span>✈️</span>️</p>
                 </div>
             </div>
         </section>
         <!--hero section-->
-
-        <section class="about container">
-            <div class="about__wrap bottom">
-                <div class="about__wrap--item">
-                    <h2>Foodie</h2>
-                    <p>A delicious meal is a day’s pleasure.</p>
-                </div>
-                <div class="about__wrap--item">
-                    <h2>Traveler</h2>
-                    <p>Explore the world's foods and beautiful scenery.</p>
-                </div>
-            </div>
-        </section>
-        <!--about section-->
 
         <section class="values container">
             <h1 class="section__title">Values</h1>
@@ -141,27 +126,19 @@
             <div class="works__flex">
                 <div class="work">
                     <a class="animsition-link" href="html/work-kulkuri.html"><img src="images/kulkuri/thumbnail.jpg" alt="thumbnail kulkuri"></a>
-                    <div class="work__hover">
-                        <p>Jump to case study</p>
-                    </div>
+                    <p>#Web Development - HTML / Sass / JavaScript</p>
                 </div>
                 <div class="work">
                     <a class="animsition-link" href="html/work-mogu.html"><img src="images/mogu/thumbnail.jpg" alt="thumbnail mogu"></a>
-                    <div class="work__hover">
-                        <p>Jump to case study</p>
-                    </div>
+                    <p>#Web Development - WordPress</p>
                 </div>
                 <div class="work">
                     <a class="animsition-link" href="html/work-wordworth.html"><img src="images/wordsworth/thumbnail.jpg" alt="thumbnail wordsworth"></a>
-                    <div class="work__hover">
-                        <p>Jump to case study</p>
-                    </div>
+                    <p>#Web Design - Adobe XD</p>
                 </div>
                 <div class="work">
                     <a class="animsition-link" href="html/work-uidesign.html"><img src="images/ui/thumbnail.jpg" alt="thumbnail ui"></a>
-                    <div class="work__hover">
-                        <p>Jump to case study</p>
-                    </div>
+                    <p class="text__center">#UI Design - Illustlator / Photoshop</p>
                 </div>
             </div>
         </section>
@@ -176,7 +153,7 @@
                     please send an email to me.
                 </p>
             </div>
-            <button><a href="mailto:gawow11@gmail.com">Send an E-mail</a></button>
+            <a class="common__button" href="mailto:gawow11@gmail.com">Send an E-mail</a>
         </section>
         <!--contact section-->
 
@@ -213,33 +190,6 @@
         <!--button to transit page top-->
 
     <script type="text/javascript">
-        //global menu for mobile device
-        const openButton = document.getElementById('js-open-menu');
-        const closeButton = document.getElementById('js-close-menu');
-        const linkButton = document.getElementById('js-global-menu').getElementsByTagName('li');
-        const globalMenu = document.getElementById('js-global-menu');
-        const scrollControl = document.documentElement;
-
-        openButton.addEventListener('click', function () {
-            globalMenu.classList.add('active');
-            globalMenu.classList.remove('remove');
-            scrollControl.classList.add('scroll-prevent');
-
-            for(let i = 0; i < linkButton.length; i++) {
-                linkButton[i].addEventListener('click', function() {
-                    globalMenu.classList.remove('active');
-                    globalMenu.classList.add('remove');
-                    scrollControl.classList.remove('scroll-prevent');
-                    linkButton.location.reload(true);
-                });
-            }
-        });
-        closeButton.addEventListener('click', function () {
-            globalMenu.classList.remove('active');
-            globalMenu.classList.add('remove');
-            scrollControl.classList.add('scroll-prevent');
-        });
-
         $(document).ready(function() {
             $(".animsition").animsition({
                 inClass: 'fade-in',

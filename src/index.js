@@ -1,18 +1,8 @@
 import "./scss/style.scss";
+import * as commonFiles  from './common';
 
-//button operation to send page top
-window.addEventListener('scroll', function() {
-    const scrollValue = window.scrollY;
-
-    const breakPoint = document.getElementById('js-breakPoint').clientHeight;
-    const objectTop = document.getElementById('js-breakPoint').offsetTop;
-    const breakPointTotal = breakPoint + objectTop;
-
-    const buttonShow = document.getElementById('js-topButton');
-
-    if(scrollValue > breakPointTotal) {
-        buttonShow.classList.add('is__show');
-    }else {
-        buttonShow.classList.remove('is__show');
-    }
-});
+//loading after read HTML
+window.onload = function() {
+    commonFiles.globalMenu();
+    commonFiles.sendTop();
+};

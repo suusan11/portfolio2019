@@ -1,6 +1,6 @@
 @import "mixin";
 
-@include pcSize {
+@include pc {
   //flexを使ってメインとstickyしたいものの高さを揃える
   .sticky__container {
     display: flex;

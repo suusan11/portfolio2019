@@ -1,4 +1,4 @@
-@import "color", "mixin";
+@import "typography", "color", "mixin";
 
 .works {
   position: relative;
@@ -6,10 +6,10 @@
   background-color: $gray;
   padding: 20% 0 10%;
   text-align: center;
-  @include pcSize {
+  @include pc {
     padding: 15% 0 10%;
   }
-  @include middleSize {
+  @include lg {
     padding: 10% 0;
   }
   h1 {
@@ -25,31 +25,52 @@
 }
 
 .work {
+  width: 80vw;
   position: relative;
-  margin: 15vh 0;
+  margin: 15vh auto;
   z-index: 2;
+  @include lg {
+    width: 430px;
+  }
 
   img {
-    width: 80vw;
+    width: 100%;
     filter: drop-shadow(5px 5px 7px $black__opacity);
-    @include middleSize {
-      width: 50vw;
+    &:hover {
+      opacity: .8;
     }
   }
 
   &:last-child img {
     width: 40vw;
-    @include middleSize {
-      width: 25vw;
+    @include lg {
+      width: 50%;
     }
   }
 
-  &__hover {
-    display: none;
+  p {
+    text-align: left;
+    @include font_vw(12);
+    @include pc {
+      font-size: 15px;
+    }
+    @include lg {
+      font-size: 18px;
+    }
+    @include md {
+      font-size: 16px;
+    }
+    font-weight: $font-weight-light;
+    margin-top: 1vh;
+
+    &.text__center {
+      text-align: center;
+    }
   }
+
 }
 
-@include pcSize {
+@include pc {
   .works__flex {
     display: flex;
     justify-content: space-around;
@@ -59,15 +80,11 @@
   }
 
   .work {
-    width: 30vw;
+    width: 33vw;
     margin: 5%;
 
     img {
       width: 100%;
-
-      &:hover {
-        opacity: .8;
-      }
     }
 
     &:last-child img {

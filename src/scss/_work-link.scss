@@ -20,10 +20,10 @@
         position: absolute;
         top: 40vh;
         left: 8vw;
-        @include pcSize {
+        @include pc {
           top: 80vh;
         }
-        @include middleSize {
+        @include lg {
           top: 80vh;
         }
       }
@@ -38,13 +38,13 @@
       width: 50vw;
       height: 25vh;
       background: url("http://localhost:8080/images/dotted.png") no-repeat;
-      @include pcSize {
+      @include pc {
         top: -120px;
         left: 60vw;
         width: 350px;
         height: 350px;
       }
-      @include middleSize {
+      @include lg {
         top: -75px;
         right: 0;
         width: 350px;
@@ -66,10 +66,10 @@
         transform: rotate(5deg);
         position: relative;
         left: 10vw;
-        @include pcSize {
+        @include pc {
           left: 5vw;
         }
-        @include middleSize {
+        @include lg {
           left: 5vw;
         }
       }
@@ -83,12 +83,12 @@
         width: 50vw;
         height: 25vh;
         background: url("http://localhost:8080/images/dotted.png") no-repeat;
-        @include pcSize {
+        @include pc {
           top: -150px;
           width: 350px;
           height: 350px;
         }
-        @include middleSize {
+        @include lg {
           top: -55px;
           left: 0;
           width: 350px;
@@ -98,17 +98,11 @@
     }
   }
 
-  button.button__work--bottom {
-    @include pcSize {
-      width: 280px;
-      height: 9vh;
-      padding: 0;
+  a.button__work--bottom {
+    @include pc {
       margin-top: 15vh;
     }
-    @include middleSize {
-      width: 250px;
-      height: 9vh;
-      padding: 2% 0;
+    @include lg {
       margin-top: 28vh;
     }
 

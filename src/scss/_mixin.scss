@@ -1,18 +1,23 @@
 @import "color";
 
 //break point
-@mixin pcSize {
+@mixin pc {
   @media (min-width: (1000px)) {
     @content;
   }
 }
-@mixin middleSize {
-  @media (min-width: 640px) and (max-width: 999px) {
+@mixin lg {
+  @media (min-width: 600px) and (max-width: 999px) {
     @content;
   }
 }
-@mixin mobileSize {
-  @media (max-width: 639px) {
+@mixin md {
+  @media (min-width: 440px) and (max-width: 599px) {
+    @content;
+  }
+}
+@mixin sm {
+  @media (max-width: 439px) {
     @content;
   }
 }
@@ -87,7 +92,7 @@
   margin-right: 1.5vw;
   padding-left: 1.2vw;
   @include font_vw(12);
-  @include pcSize {
+  @include pc {
     font-size: 18px;
     width: 100px;
     height: 68px;
@@ -95,7 +100,7 @@
     padding-left: 9px;
     margin-bottom: 5px;
   }
-  @include middleSize {
+  @include lg {
     font-size: 18px;
     width: 100px;
     height: 68px;
@@ -120,11 +125,11 @@
   top: 90px;
   left: 20vw;
   z-index: 2;
-  @include pcSize {
+  @include pc {
     top: 140px;
     left: 110px;
   }
-  @include middleSize {
+  @include lg {
     top: 170px;
     left: 160px;
   }

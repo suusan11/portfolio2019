@@ -5,7 +5,7 @@
   width: 80vw;
   height: 70vh;
   border: 6px solid $border;
-  margin: 10vh auto;
+  margin: 30vh auto;
   padding: 15% 5%;
 
   h1 {
@@ -57,7 +57,7 @@
   }
 }
 
-@include pcSize {
+@include pc {
   .values {
     width: 40vw;
     height: 90vh;
@@ -94,10 +94,10 @@
   }
 }
 
-@include middleSize {
+@include lg {
   .values {
-    width: 60vw;
-    height: 75vh;
+    width: 55vw;
+    height: 85vh;
     padding: 8% 5%;
 
     h1 {
@@ -126,6 +126,24 @@
         .values__item--flex-icon {
           width: 15vw;
         }
+      }
+    }
+  }
+}
+
+@include md {
+  .values {
+    width: 65vw;
+    height: 70vh;
+
+    h1 {
+      &::before {
+        @include sideLine;
+        left: -1vw;
+      }
+      &::after {
+        @include sideLine;
+        right: -1vw;
       }
     }
   }
