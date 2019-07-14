@@ -5,6 +5,7 @@
 
   p {
     font-weight: $font-weight-light;
+    line-height: 2;
     @include pc {
       width: 40vw;
       line-height: 1.3;
