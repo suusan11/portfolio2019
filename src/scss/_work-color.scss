@@ -175,6 +175,12 @@
       @include pc {
         width: 60%;
       }
+      @include lg {
+        width: 60vw;
+      }
+      @include md {
+        width: 60vw;
+      }
     }
   }
 
@@ -187,6 +193,9 @@
     @include pc {
       width: 50vw;
       margin: 15vh auto;
+    }
+    @include lg {
+      margin: 10vh auto;
     }
 
     img {
