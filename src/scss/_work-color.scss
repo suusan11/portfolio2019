@@ -2,8 +2,9 @@
 
 .work__color {
   text-align: left;
+  margin-top: 10vh;
   @include pc {
-    padding-left: 10vw;
+    padding: 0 5vw;
   }
 
   &--item {
@@ -49,6 +50,10 @@
         width: 20%;
         margin: 1% 10% 0 0;
         @include pc {
+          width: 25%;
+          margin-right: 0;
+        }
+        @include lg {
           margin-right: 2%;
         }
         p {
