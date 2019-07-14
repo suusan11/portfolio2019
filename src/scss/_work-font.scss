@@ -1,6 +1,7 @@
 @import 'typography', 'mixin';
 
 .work__font {
+  margin-bottom: 5vh;
 
   p {
     font-weight: $font-weight-light;
@@ -74,6 +75,48 @@
     &.scroll__item {
       width: 100%;
       margin-left: 5vw;
+    }
+  }
+}
+
+.work__image--font {
+  width: 100vw;
+  background-color: $gray;
+  text-align: center;
+  padding: 3vh 0;
+
+  &-item {
+    margin-top: 10vh;
+
+    p {
+      text-align: left;
+      margin: 1vh 0 0 15vw;
+      font-weight: $font-weight-light;
+    }
+
+
+  }
+
+  &.kulkuri {
+    img {
+      width: 70vw;
+    }
+
+    & .flex {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      width: 80vw;
+      margin: 10vh auto;
+
+      img {
+        width: 45%;
+      }
+
+      p {
+        margin-left: 0;
+      }
     }
   }
 }
