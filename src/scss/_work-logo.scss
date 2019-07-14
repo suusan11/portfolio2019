@@ -1,60 +1,71 @@
-@import "typography";
-
-.work__logo {
-  margin: 7vh auto;
-  @include lg {
-    margin: 8vh auto;
-  }
-
-  p {
-    font-weight: $font-weight-light;
-    @include pc {
-      width: 40vw;
-      line-height: 1.3;
-    }
-    @include lg {
-      width: 70vw;
-      line-height: 1.3;
-    }
-  }
-
-  img.logo-kulkuri {
-    display: block;
-    width: 40vw;
-    margin: 0 auto;
-    @include pc {
-      width: 240px;
-    }
-    @include lg {
-      width: 260px;
-    }
-  }
-
-  img.logo-mogu {
-    display: inline-block;
-    width: 30vw;
-    margin-right: 10vw;
-    @include pc {
-      width: 200px;
-      margin-top: 40px;
-    }
-
-    &:last-child {
-      width: 15vw;
-      @include pc {
-        width: 100px;
-        margin-top: 0;
-      }
-    }
-
-  }
-
-  //only to pc
-  @include pc {
-    &.scroll__item {
-      width: 100%;
-      margin-left: 5vw;
-      margin-bottom: 20vh;
-    }
-  }
-}
+//@import "typography";
+//
+//.work__logo {
+//  margin: 7vh auto;
+//  @include lg {
+//    margin: 8vh auto;
+//  }
+//
+//  p {
+//    font-weight: $font-weight-light;
+//    @include pc {
+//      width: 40vw;
+//      line-height: 1.3;
+//    }
+//    @include lg {
+//      width: 70vw;
+//      line-height: 1.3;
+//    }
+//  }
+//
+//  img.logo-kulkuri {
+//    display: block;
+//    width: 40vw;
+//    margin: 0 auto;
+//    @include pc {
+//      width: 240px;
+//    }
+//    @include lg {
+//      width: 260px;
+//    }
+//  }
+//
+//  img.logo-mogu {
+//    display: inline-block;
+//    width: 30vw;
+//    margin-right: 10vw;
+//    @include pc {
+//      width: 200px;
+//      margin-top: 40px;
+//    }
+//
+//    &:last-child {
+//      width: 15vw;
+//      @include pc {
+//        width: 100px;
+//        margin-top: 0;
+//      }
+//    }
+//
+//  }
+//
+//  //only to pc
+//  @include pc {
+//    &.scroll__item {
+//      width: 100%;
+//      margin-left: 5vw;
+//      margin-bottom: 20vh;
+//    }
+//  }
+//}
+//
+//.work__image--logo {
+//  width: 100vw;
+//  background-color: $gray;
+//  text-align: center;
+//  padding: 2vh 0;
+//
+//  img {
+//    width: 60vw;
+//  }
+//}
