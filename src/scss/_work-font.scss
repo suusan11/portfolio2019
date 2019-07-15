@@ -29,13 +29,16 @@
       margin-right: 2vw;
 
       img.font-kulkuri {
-        width: 38vw;
+        width: 30vw;
         @include pc {
           width: 160px;
           margin-top: 5px;
         }
         @include lg {
           width: 180px;
+        }
+        @include md {
+          width: 25vw;
         }
       }
 
@@ -126,6 +129,9 @@
       @include pc {
         width: 30vw;
       }
+      @include lg {
+        width: 50vw;
+      }
       img {
         width: 100%;
       }
@@ -139,6 +145,9 @@
       &:nth-child(4) {
         img {
           width: 70%;
+        }
+        p {
+          padding-left: 15%;
         }
       }
     }
@@ -154,6 +163,9 @@
         justify-content: center;
         width: 100%;
         margin-bottom: 0;
+      }
+      @include lg {
+        width: 50vw;
       }
       img {
         width: 45%;
