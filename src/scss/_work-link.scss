@@ -6,9 +6,13 @@
 
   &--images {
     margin-bottom: 5vh;
+    text-align: center;
 
     img {
-      width: 100vw;
+      width: 80vw;
+      @include pc {
+        width: 70vw;
+      }
     }
   }
 
