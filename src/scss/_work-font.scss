@@ -177,6 +177,25 @@
     }
   }
 
+  &.mogu {
+    .image__wrapper {
+      width: 80vw;
+      margin: 0 auto;
+      @include pc {
+        width: 35vw;
+      }
+      img {
+        width: 100%;
+        margin: 10vh auto 0;
+      }
+      p {
+        text-align: left;
+        margin-top: 1vh;
+        font-weight: $font-weight-light;
+      }
+    }
+  }
+
   //only to pc
   @include pc {
     &.scroll__item {
