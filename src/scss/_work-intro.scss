@@ -98,9 +98,11 @@
 
 //only to uidesign page
 .work__intro.ui {
+  width: 100vw;
+  text-align: center;
   img {
-    width: 50vw;
-    margin: 0 auto 5vh;
+    width: 40%;
+    margin: 10vh auto 5vh;
     @include lg {
       width: 25vw;
     }
