@@ -30,9 +30,9 @@
 
       img.font-kulkuri {
         width: 30vw;
+        margin-top: 5px;
         @include pc {
           width: 160px;
-          margin-top: 5px;
         }
         @include lg {
           width: 180px;

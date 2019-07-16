@@ -150,6 +150,10 @@
       width: 50vw;
       padding: 10vh 0;
     }
+    @include md {
+      width: 60vw;
+      padding: 10vh 0;
+    }
   }
 
   //only to pc
