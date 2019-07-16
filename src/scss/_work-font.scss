@@ -52,6 +52,10 @@
         }
       }
 
+      img.font-wordsworth {
+        margin-top: 1vh;
+      }
+
       p {
         font-weight: $font-weight-light;
         padding-left: 2vw;
@@ -99,12 +103,6 @@
     &.mogu__small img.font-mogu {
       @include pc {
         width: 170px;
-      }
-    }
-
-    &.wordworth__last {
-      img {
-        margin-left: -8px;
       }
     }
   }
