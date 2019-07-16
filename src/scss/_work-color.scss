@@ -99,8 +99,8 @@
       }
     }
 
-    //color only to wordworth
-    &--flex-top.wordworth-color {
+    //color only to wordsworth
+    &--flex-top.wordsworth-color {
       @include flexColorBox;
       .color--box {
         &:nth-child(1) {
@@ -188,9 +188,18 @@
       font-weight: $font-weight-light;
     }
 
-    &.wordworth {
+    &.wordsworth {
       img {
-        width: 70%;
+        width: 70vw;
+        @include pc {
+          width: 90%;
+        }
+      }
+      img.big {
+        width: 80vw;
+        @include pc {
+          width: 100%;
+        }
       }
     }
   }
