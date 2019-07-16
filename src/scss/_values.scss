@@ -5,7 +5,7 @@
   width: 80vw;
   height: 70vh;
   border: 6px solid $border;
-  margin: 30vh auto;
+  margin: 25vh auto 15vh;
   padding: 15% 5%;
 
   h1 {
@@ -135,6 +135,7 @@
   .values {
     width: 65vw;
     height: 70vh;
+    margin: 20vh auto 10vh;
 
     h1 {
       &::before {
