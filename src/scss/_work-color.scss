@@ -25,10 +25,8 @@
         margin-top: 1.5%;
       }
     }
-  }
 
-  //color only to kulkuri
-  .work__color--item {
+    //color only to kulkuri
     &--flex-top.kulkuri-color {
       @include flexColorBox;
       .color--box {
@@ -61,7 +59,7 @@
         }
 
         &:nth-child(1) .color--box {
-            @include colorBox(#46509F);
+          @include colorBox(#46509F);
         }
         &:nth-child(2) .color--box {
           @include colorBox(#E59948);
@@ -70,7 +68,7 @@
           @include colorBox(#B77388);
         }
         &:nth-child(4) .color--box {
-            @include colorBox(#B0272C);
+          @include colorBox(#B0272C);
         }
         &:nth-child(5) .color--box {
           @include colorBox(#938BFF);
@@ -79,7 +77,7 @@
           @include colorBox(#3B91A6);
         }
         &:nth-child(7) .color--box {
-            @include colorBox(#FECC35);
+          @include colorBox(#FECC35);
         }
         &:nth-child(8) .color--box {
           @include colorBox(#9FA9A2);
@@ -100,50 +98,47 @@
     }
 
     //color only to wordsworth
-    &--flex-top.wordsworth-color {
-      @include flexColorBox;
-      .color--box {
-        &:nth-child(1) {
-          @include colorBox(#BFAE8E);
-        }
-        &:nth-child(2) {
-          @include colorBox(#552F65);
-        }
-        &:nth-child(3) {
-          @include colorBox(#F1F1F1);
-        }
+    &.wordsworth {
+      span.gold{
+        color: #BFAE8E;
+        font-weight: $font-weight-bold;
       }
-
-      p.color__component {
-        margin: 3vh 0;
-
-        &.gold span{
-          color: #BFAE8E;
-          font-weight: $font-weight-bold;
-        }
-        &.purple span {
-          color: #552F65;
-          font-weight: $font-weight-bold;
-        }
+      span.purple {
+        color: #552F65;
+        font-weight: $font-weight-bold;
       }
+       .work__color--item--flex-top {
+        @include flexColorBox;
+        .color--box {
+          &:nth-child(1) {
+            @include colorBox(#BFAE8E);
+          }
+          &:nth-child(2) {
+            @include colorBox(#552F65);
+          }
+          &:nth-child(3) {
+            @include colorBox(#F1F1F1);
+          }
+        }
 
-      img {
-        width: 20vw;
-        margin-right: 3vw;
-        @include pc {
-          width: 130px;
+        img {
+          width: 20vw;
+          margin-right: 3vw;
+          @include pc {
+            width: 130px;
+          }
+          @include lg {
+            width: 100px;
+          }
         }
-        @include lg {
-          width: 100px;
-        }
-      }
-      img:last-child {
-        width: 60vw;
-        @include pc {
-          width: 300px;
-        }
-        @include lg {
-          width: 300px;
+        img:last-child {
+          width: 60vw;
+          @include pc {
+            width: 300px;
+          }
+          @include lg {
+            width: 300px;
+          }
         }
       }
     }
