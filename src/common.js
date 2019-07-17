@@ -60,3 +60,11 @@ export function sendTop() {
         }
     });
 }
+
+//smooth scroll
+export function smoothScroll() {
+    const scroll = new SmoothScroll('a[href*="#"]', {
+        speed: 500,
+        header: '[data-scroll-header]'
+    });
+}

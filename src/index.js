@@ -5,4 +5,5 @@ import * as commonFiles  from './common';
 window.onload = function() {
     commonFiles.globalMenu();
     commonFiles.sendTop();
+    commonFiles.smoothScroll();
 };
