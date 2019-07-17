@@ -31,7 +31,7 @@ export function globalMenu() {
         globalMenu.classList.add('remove');
         document.body.style.position = '';
 
-        const scrollY = body.style.top;
+        const scrollY = document.body.style.top;
         document.body.style.position = '';
         document.body.style.top = '';
         window.scrollTo(0, parseInt(scrollY || '0') * -1);
