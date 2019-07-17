@@ -7,7 +7,12 @@
 
 html {
   box-sizing: border-box;
-  scroll-behavior: smooth;
+  //@include pc {
+  //  scroll-behavior: smooth;
+  //}
+  //@include lg {
+  //  scroll-behavior: smooth;
+  //}
 }
 
 body {

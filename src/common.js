@@ -8,18 +8,20 @@ export function globalMenu() {
     openButton.addEventListener('click', function () {
         globalMenu.classList.add('active');
         globalMenu.classList.remove('remove');
-        document.body.style.position = 'fixed';
-        document.body.style.top = `-${window.scrollY}px`; //スクロールポジションをスクロールしている位置にする（毎回windowのトップに動かないようにする）
 
+        const scrollY = document.documentElement.style.getPropertyValue('--scroll-y'); //window.scrollで取得した値を呼び出す
+        document.body.style.position = 'fixed';
+        document.body.style.top = `-${scrollY}`; //スクロールポジションをスクロールしている位置にする（毎回windowのトップに動かないようにする）
         for(let i = 0; i < linkButtons.length; i++) {
             const linkButton = linkButtons[i];
             linkButton.addEventListener('click', function() {
                 globalMenu.classList.remove('active');
                 globalMenu.classList.add('remove');
+
+                const scrollY = document.body.style.top;
                 document.body.style.position = '';
-                document.body.style.top = `-${window.scrollY}px`; //スクロールポジションをスクロールしている位置にする（毎回windowのトップに動かないようにする）
-                // document.body.style.top = '';
-                // window.scrollTo(0, parseInt(scrollY || '0') * -1);
+                document.body.style.top = '';
+                window.scrollTo(0, parseInt(scrollY || '0') * -1);
             });
         }
     });
@@ -28,10 +30,15 @@ export function globalMenu() {
         globalMenu.classList.remove('active');
         globalMenu.classList.add('remove');
         document.body.style.position = '';
-        // document.documentElement.scrollTop;
-        // document.body.style.top = `-${window.scrollY}px`; //スクロールポジションをスクロールしている位置にする（毎回windowのトップに動かないようにする）
+
+        const scrollY = body.style.top;
+        document.body.style.position = '';
         document.body.style.top = '';
         window.scrollTo(0, parseInt(scrollY || '0') * -1);
+    });
+
+    window.addEventListener('scroll', () => {
+        document.documentElement.style.setProperty('--scroll-y', `${window.scrollY}px`);
     });
 }
 
