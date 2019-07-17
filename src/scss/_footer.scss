@@ -27,6 +27,7 @@ footer {
       height: 3vh;
       stroke-width: 0;
       fill: $white;
+      transition: opacity .2s ease-out;
       @include pc {
         width: 70px;
         height: 28px;
@@ -34,6 +35,10 @@ footer {
       @include lg {
         width: 58px;
         height: 24px;
+      }
+
+      &:hover {
+        opacity: .8;
       }
     }
   }

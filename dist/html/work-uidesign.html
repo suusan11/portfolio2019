@@ -13,26 +13,28 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
     <!--animsition.js-->
     <script src="../js/animsition.min.js"></script>
+    <!--smooth-scroll.js-->
+    <script src="../js/smooth-scroll.polyfills.min.js"></script>
     <link rel="shortcut icon" href="../images/favicon.ico">
 </head>
 <body>
 
     <!--header-->
-    <header class="header">
+    <header data-scroll-header class="header">
         <div class="header__flex">
             <h3>Mie Suzuki</h3>
             <ul class="header__flex--right">
-                <li><a href="../../index.html">HOME</a></li>
-                <li><a href="../../index.html#about">ABOUT</a></li>
-                <li><a href="../../index.html#works">WORKS</a></li>
-                <li><a href="../../index.html#contact">CONTACT</a></li>
+                <li><a data-scroll href="../../index.html">HOME</a></li>
+                <li><a data-scroll href="../../index.html#about">VALUES</a></li>
+                <li><a data-scroll href="../../index.html#works">WORKS</a></li>
+                <li><a data-scroll href="../../index.html#contact">CONTACT</a></li>
             </ul>
             <div class="global__menu">
                 <div id="js-open-menu">MENU</div>
                 <ul id="js-global-menu" class="click__open">
                     <div id="js-close-menu" class="close__button">×</div>
                     <li class="js-link-menu"><a class="animsition-link" href="../../index.html#home">HOME</a></li>
-                    <li class="js-link-menu"><a class="animsition-link" href="../../index.html#about">ABOUT</a></li>
+                    <li class="js-link-menu"><a class="animsition-link" href="../../index.html#about">VALUES</a></li>
                     <li class="js-link-menu"><a class="animsition-link" href="../../index.html#works">WORKS</a></li>
                     <li class="js-link-menu"><a class="animsition-link" href="../../index.html#contact">CONTACT</a></li>
                     <div class="sns__flex">
@@ -65,14 +67,6 @@
     <div class="animsition">
 
             <div class="work__intro--flex">
-                <!--introduction of work-->
-                <section class="work__intro container ui">
-                    <div class="work__intro-top">
-                        <img src="../images/ui/thumbnail.jpg" alt="ui design thumbnail">
-                        <h1>DailyUI</h1>
-                    </div>
-                </section>
-
                 <section id="js-breakPoint" class="work__intro--black container ui">
                     <h2>DailyUI</h2>
                     <p>Challenging “Daily UI”. During designing 100 of theme, I have improved my skill of design and using those tool.</p>
@@ -82,7 +76,14 @@
                         <p>Jun 2018</p>
                     </div>
                 </section>
+
+                <section class="work__intro container ui">
+                    <div class="work__intro-top">
+                        <img src="../images/ui/thumbnail.jpg" alt="ui design thumbnail">
+                    </div>
+                </section>
             </div>
+            <!--introduction of work-->
 
             <section class="work__ui container">
                 <div class="work__description">
@@ -167,7 +168,7 @@
         <p>&copy;2019 MIE SUZUKI developed by &hearts;</p>
     </footer>
 
-    <div id="js-topButton"><a href="#">↑</a></div>
+    <div data-scroll id="js-topButton"><a href="#">↑</a></div>
     <!--button to transit page top-->
 
     <script type="text/javascript">

@@ -10,16 +10,7 @@
   text-align: center;
 
   &__title {
-    padding-top: 20vh;
-    @include pc {
-      padding-top: 25vh;
-    }
-    @include lg {
-      padding-top: 25vh;
-    }
-    @include md {
-      padding-top: 25vh;
-    }
+    padding-top: 25vh;
     margin-bottom: 5vh;
 
     h1 {

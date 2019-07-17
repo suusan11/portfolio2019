@@ -1,0 +1,80 @@
+@import "typography";
+
+.work__feature {
+  text-align: left;
+  margin: 5vh auto;
+  @include pc {
+    padding: 0 5vw;
+  }
+
+  p {
+    font-weight: $font-weight-light;
+    line-height: 2;
+    @include pc {
+      width: 40vw;
+      line-height: 1.8;
+      margin-top: 1.5%;
+    }
+    @include lg {
+      width: 70vw;
+      line-height: 1.3;
+      margin-top: 1.5%;
+    }
+  }
+
+  //only to pc
+  @include pc {
+    &.sticky {
+      position: sticky;
+      top: 150px;
+      width: 50vw;
+      height: 100%;
+      min-height: 700px;
+      margin-bottom: 100px;
+    }
+  }
+}
+
+.work__image--feature {
+  width: 100vw;
+  background-color: $gray;
+  text-align: center;
+  padding: 5vh 0;
+
+  &.kulkuri {
+    img {
+      padding: 5vh 0;
+      width: 80vw;
+      @include pc {
+        width: 50vw;
+      }
+    }
+  }
+
+  &.mogu {
+    .image__wrapper {
+      width: 80vw;
+      margin: 0 auto;
+      @include pc {
+        width: 35vw;
+      }
+      img {
+        width: 100%;
+        margin: 10vh auto 0;
+      }
+      p {
+        text-align: left;
+        margin-top: 1vh;
+        font-weight: $font-weight-light;
+      }
+    }
+  }
+
+  //only to pc
+  @include pc {
+    &.scroll__item {
+      width: 100%;
+      margin-bottom: 100px;
+    }
+  }
+}

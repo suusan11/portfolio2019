@@ -66,6 +66,11 @@
     &.text__center {
       text-align: center;
     }
+
+    span {
+      color: $black;
+      font-weight: $font-weight-regular;
+    }
   }
 
 }

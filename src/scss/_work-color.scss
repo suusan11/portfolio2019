@@ -2,15 +2,21 @@
 
 .work__color {
   text-align: left;
+  margin-top: 10vh;
+  @include pc {
+    padding: 0 5vw;
+  }
 
   &--item {
     margin-bottom: 5vh;
 
     p {
       font-weight: $font-weight-light;
+      line-height: 2;
+      margin-top: 1vh;
       @include pc {
-        width: 40vw;
-        line-height: 1.3;
+        width: 35vw;
+        line-height: 1.8;
         margin-top: 1.5%;
       }
       @include lg {
@@ -19,10 +25,8 @@
         margin-top: 1.5%;
       }
     }
-  }
 
-  //color only to kulkuri
-  .work__color--item {
+    //color only to kulkuri
     &--flex-top.kulkuri-color {
       @include flexColorBox;
       .color--box {
@@ -40,63 +44,42 @@
 
     &--flex-middle.kulkuri-color {
       @include flexColorBox;
-
-      .flex--item {
-        width: 40vw;
-        margin-bottom: 7vh;
-        position: relative;
-        @include pc {
-          width: 200px;
-          margin-right: 10%;
-        }
-
-        img {
-          width: 26vw;
-          @include pc {
-            width: 144px;
-          }
-          @include lg {
-            width: 175px;
-          }
-        }
-
-        &:nth-child(1) .color--box {
-          @include absoluteColorBox;
-          @include colorBox(#E59948);
-        }
-        &:nth-child(2) .color--box {
-          @include absoluteColorBox;
-          @include colorBox(#46509F);
-        }
-        &:nth-child(3) .color--box {
-            @include absoluteColorBox;
-            @include colorBox(#938BFF);
-        }
-        &:nth-child(4) .color--box {
-            @include absoluteColorBox;
-            @include colorBox(#B77388);
-        }
-      }
-    }
-
-    &--flex-bottom.kulkuri-color {
-      @include flexColorBox;
       .name-set {
         width: 20%;
-        margin: 1% 5%;
+        margin: 1% 10% 0 0;
         @include pc {
-          margin: 1% 2%;
+          width: 25%;
+          margin-right: 0;
         }
+        @include lg {
+          margin-right: 2%;
+        }
+        p {
+          margin-top: 0;
+        }
+
         &:nth-child(1) .color--box {
-          @include colorBox(#B0272C);
+          @include colorBox(#46509F);
         }
         &:nth-child(2) .color--box {
-          @include colorBox(#3B91A6);
+          @include colorBox(#E59948);
         }
         &:nth-child(3) .color--box {
-          @include colorBox(#FECC35);
+          @include colorBox(#B77388);
         }
         &:nth-child(4) .color--box {
+          @include colorBox(#B0272C);
+        }
+        &:nth-child(5) .color--box {
+          @include colorBox(#938BFF);
+        }
+        &:nth-child(6) .color--box {
+          @include colorBox(#3B91A6);
+        }
+        &:nth-child(7) .color--box {
+          @include colorBox(#FECC35);
+        }
+        &:nth-child(8) .color--box {
           @include colorBox(#9FA9A2);
         }
 
@@ -114,63 +97,171 @@
       }
     }
 
-    //color only to wordworth
-    &--flex-top.wordworth-color {
-      @include flexColorBox;
-      .color--box {
-        &:nth-child(1) {
-          @include colorBox(#BFAE8E);
-        }
-        &:nth-child(2) {
-          @include colorBox(#552F65);
-        }
-        &:nth-child(3) {
-          @include colorBox(#F1F1F1);
-        }
+    //color only to wordsworth
+    &.wordsworth {
+      span.gold{
+        color: #BFAE8E;
+        font-weight: $font-weight-bold;
       }
-
-      p.color__component {
-        margin: 3vh 0;
-
-        &.gold span{
-          color: #BFAE8E;
-          font-weight: $font-weight-bold;
-        }
-        &.purple span {
-          color: #552F65;
-          font-weight: $font-weight-bold;
-        }
+      span.purple {
+        color: #552F65;
+        font-weight: $font-weight-bold;
       }
+       .work__color--item--flex-top {
+        @include flexColorBox;
+        .color--box {
+          &:nth-child(1) {
+            @include colorBox(#BFAE8E);
+          }
+          &:nth-child(2) {
+            @include colorBox(#552F65);
+          }
+          &:nth-child(3) {
+            @include colorBox(#F1F1F1);
+          }
+        }
 
-      img {
-        width: 20vw;
-        margin-right: 3vw;
-        @include pc {
-          width: 130px;
+        img {
+          width: 20vw;
+          margin-right: 3vw;
+          @include pc {
+            width: 130px;
+          }
+          @include lg {
+            width: 100px;
+          }
         }
-        @include lg {
-          width: 100px;
-        }
-      }
-      img:last-child {
-        width: 60vw;
-        @include pc {
-          width: 300px;
-        }
-        @include lg {
-          width: 300px;
+        img:last-child {
+          width: 60vw;
+          @include pc {
+            width: 300px;
+          }
+          @include lg {
+            width: 300px;
+          }
         }
       }
     }
   }
 
+  //only to pc
+  @include pc {
+    &.sticky {
+      position: sticky;
+      top: 100px;
+      width: 50vw;
+      height: 100%;
+      min-height: 700px;
+      margin-bottom: 100px;
+    }
+  }
+}
 
+
+.work__image--color {
+  width: 100vw;
+  background-color: $gray;
+  text-align: center;
+  padding: 2vh 0;
+
+  .image__wrapper {
+    width: 80vw;
+    margin: 0 auto;
+    @include pc {
+      width: 35vw;
+    }
+    img {
+      width: 100%;
+      margin: 8vh auto 0;
+      @include pc {
+        margin: 10vh auto 0;
+      }
+    }
+    p {
+      text-align: left;
+      margin-top: 1vh;
+      font-weight: $font-weight-light;
+    }
+
+    &.wordsworth {
+      img {
+        width: 70vw;
+        @include pc {
+          width: 90%;
+        }
+        @include lg {
+          width: 60%;
+        }
+        @include md {
+          width: 70%;
+        }
+      }
+      img.big {
+        width: 80vw;
+        @include pc {
+          width: 100%;
+        }
+        @include lg {
+          width: 70%;
+        }
+        @include md {
+          width: 80%;
+        }
+      }
+      p {
+        @include lg {
+          padding-left: 12vw;
+        }
+        @include md {
+          padding-left: 8vw;
+        }
+      }
+    }
+  }
+
+  &.kulkuri {
+    img.no__flex {
+      width: 80vw;
+      @include pc {
+        width: 60%;
+      }
+      @include lg {
+        width: 60vw;
+      }
+      @include md {
+        width: 60vw;
+      }
+    }
+  }
+
+  &--flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80vw;
+    margin: 5vh auto;
+    @include pc {
+      width: 50vw;
+      margin: 15vh auto;
+    }
+    @include lg {
+      margin: 10vh auto;
+    }
+
+    img {
+      width: 30%;
+      margin: 0 5%;
+      @include pc {
+        width: 25%;
+      }
+    }
+  }
 
   //only to pc
   @include pc {
     &.scroll__item {
       width: 100%;
-      margin-left: 5vw;
+      margin-bottom: 100px;
     }
   }
 }
