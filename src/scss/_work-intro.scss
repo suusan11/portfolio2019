@@ -97,6 +97,13 @@
 }
 
 //only to uidesign page
+.work__intro--black.ui {
+  height: 80vh;
+  padding-top: 20vh;
+  @include lg {
+    margin-bottom: 0;
+  }
+}
 .work__intro.ui {
   width: 100vw;
   text-align: center;
@@ -107,11 +114,9 @@
       width: 25vw;
     }
   }
+}
 
-}
-.work__intro--black.ui {
-  height: 50vh;
-}
+
 @include pc {
   .work__intro--flex {
     display: flex;
