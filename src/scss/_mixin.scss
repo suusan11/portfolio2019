@@ -32,21 +32,6 @@
   font-size: get_vw($font-size);
 }
 
-//line to about detail from profile img
-@mixin line($rotate, $top, $left, $color) {
-  display: block;
-  content: '';
-  position: absolute;
-  top: $top;
-  left: $left;
-  width: 2px;
-  height: 200px;
-  border-radius: 30px;
-  transform: rotate($rotate);
-  background-color: $color;
-  opacity: .3;
-}
-
 //background line to works section
 @mixin bgLine($left) {
   position: absolute;
@@ -68,17 +53,6 @@
     position: absolute;
     top: 4vh;
     z-index: 3;
-}
-
-//background image to work intro
-@mixin bgCircle($url) {
-  display: block;
-  content: '';
-  background: $url no-repeat;
-  width: 300px;
-  height: 300px;
-  position: absolute;
-  z-index: -2;
 }
 
 //color box to work page color section
@@ -125,20 +99,4 @@
   align-items: center;
   flex-wrap: wrap;
   margin-top: 2vh;
-}
-
-//absolute position to color box above image
-@mixin absoluteColorBox {
-  position: absolute;
-  top: 90px;
-  left: 20vw;
-  z-index: 2;
-  @include pc {
-    top: 140px;
-    left: 110px;
-  }
-  @include lg {
-    top: 170px;
-    left: 160px;
-  }
 }
