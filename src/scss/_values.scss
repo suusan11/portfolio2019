@@ -2,8 +2,8 @@
 
 .values {
   position: relative;
-  width: 80vw;
-  height: 70vh;
+  width: 90vw;
+  height: 75vh;
   border: 6px solid $border;
   margin: 25vh auto 15vh;
   padding: 15% 5%;
@@ -31,22 +31,19 @@
   &__item {
     &--flex {
       display: flex;
+      display: -webkit-flex;
+      display: -ms-flex;
       justify-content: center;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
       align-items:flex-start;
-      margin-bottom: 5vh;
+      -webkit-box-align: start;
+      -ms-flex-align: start;
+      margin-bottom: 10vh;
 
-      &-icon {
-        stroke-width: 0;
-        fill: $black;
-        padding-right: 20px;
-      }
-
-      &:last-child {
-        margin-bottom: 0;
-
-        .values__item--flex-icon {
-          padding-right: 13px;
-        }
+      img {
+        width: 12vw;
+        padding-right: 3vw;
       }
     }
   }
@@ -59,7 +56,7 @@
 
 @include pc {
   .values {
-    width: 40vw;
+    width: 50vw;
     height: 90vh;
     padding: 8% 5%;
 
@@ -75,20 +72,12 @@
     }
 
     &__item--flex {
-      margin-bottom: 12vh;
-
-      &:first-child {
-        .values__item--flex-icon {
-          padding-right: 13px;
-        }
+      img {
+        width: 85px;
       }
 
-      &:last-child {
-        margin-bottom: 0;
-
-        .values__item--flex-icon {
-          width: 15vw;
-        }
+      &:first-child {
+        margin-top: 5vh;
       }
     }
   }
@@ -96,8 +85,8 @@
 
 @include lg {
   .values {
-    width: 55vw;
-    height: 85vh;
+    width: 60vw;
+    height: 90vh;
     padding: 8% 5%;
 
     h1 {
@@ -112,20 +101,12 @@
       }
 
     &__item--flex {
-      margin-bottom: 10vh;
-
-      &:first-child {
-        .values__item--flex-icon {
-          padding-right: 13px;
-        }
+      img {
+        width: 8vw;
       }
 
-      &:last-child {
-        margin-bottom: 0;
-
-        .values__item--flex-icon {
-          width: 15vw;
-        }
+      &:first-child {
+        margin-top: 3vh;
       }
     }
   }
@@ -134,7 +115,7 @@
 @include md {
   .values {
     width: 65vw;
-    height: 70vh;
+    height: 80vh;
     margin: 20vh auto 10vh;
 
     h1 {
@@ -147,5 +128,10 @@
         right: -1vw;
       }
     }
+
+    &__item--flex img {
+      width: 8vw;
+    }
+
   }
 }
