@@ -1,7 +1,7 @@
 # My Portfolio site 2019 🦄🍬
 Start to develop in June 2019
 
-Mie Suzuki's portfolio site using **HTML**, **Sass**, and **JavaScript**.
+Mie Suzuki's portfolio site using **HTML**, **SASS/SCSS**, and **JavaScript**.
 
 <img width="1430" alt="Screen Shot 2019-05-02 at 12 46 31 AM" src="https://user-images.githubusercontent.com/38636923/61344819-89b3a500-a807-11e9-8d82-2ab878280e01.jpg">
 
