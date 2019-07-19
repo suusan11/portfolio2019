@@ -183,6 +183,21 @@
       font-weight: $font-weight-light;
     }
 
+    &.mogu {
+      img {
+        width: 70vw;
+        @include pc {
+          width: 90%;
+        }
+        @include lg {
+          width: 60%;
+        }
+        @include md {
+          width: 70%;
+        }
+      }
+    }
+
     &.wordsworth {
       img {
         width: 70vw;
