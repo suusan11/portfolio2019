@@ -202,7 +202,7 @@
       img {
         width: 70vw;
         @include pc {
-          width: 90%;
+          width: 80%;
         }
         @include lg {
           width: 60%;
@@ -229,6 +229,18 @@
         }
         @include md {
           padding-left: 8vw;
+        }
+      }
+      p.space__left {
+        padding-left: 5vw;
+        @include pc {
+          padding-left: 3.5vw;
+        }
+        @include lg {
+          padding-left: 16vw;
+        }
+        @include md {
+          padding-left: 12vw;
         }
       }
     }

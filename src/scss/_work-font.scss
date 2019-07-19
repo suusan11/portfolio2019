@@ -178,7 +178,7 @@
   }
 
   .image__wrapper {
-    width: 80vw;
+    width: 75vw;
     margin: 0 auto;
     @include pc {
       width: 35vw;
@@ -207,6 +207,18 @@
         }
         @include md {
           width: 70%;
+        }
+      }
+    }
+
+    &.wordsworth {
+      img.small {
+        width: 40%;
+      }
+      p.space__left {
+        padding-left: 23vw;
+        @include pc {
+          padding-left: 10.5vw;
         }
       }
     }
