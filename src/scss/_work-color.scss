@@ -183,11 +183,38 @@
       font-weight: $font-weight-light;
     }
 
-    &.wordsworth {
+    &.mogu {
       img {
         width: 70vw;
         @include pc {
           width: 90%;
+        }
+        @include lg {
+          width: 60%;
+        }
+        @include md {
+          width: 70%;
+        }
+      }
+      p {
+        padding-left: 5vw;
+        @include pc {
+          padding-left: 2vw;
+        }
+        @include lg {
+          padding-left: 16vw;
+        }
+        @include md {
+          padding-left: 12vw;
+        }
+      }
+    }
+
+    &.wordsworth {
+      img {
+        width: 70vw;
+        @include pc {
+          width: 80%;
         }
         @include lg {
           width: 60%;
@@ -214,6 +241,18 @@
         }
         @include md {
           padding-left: 8vw;
+        }
+      }
+      p.space__left {
+        padding-left: 5vw;
+        @include pc {
+          padding-left: 3.5vw;
+        }
+        @include lg {
+          padding-left: 16vw;
+        }
+        @include md {
+          padding-left: 12vw;
         }
       }
     }
