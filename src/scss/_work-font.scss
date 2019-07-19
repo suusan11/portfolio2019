@@ -209,6 +209,18 @@
           width: 70%;
         }
       }
+      p {
+        padding-left: 5vw;
+        @include pc {
+          padding-left: 2vw;
+        }
+        @include lg {
+          padding-left: 16vw;
+        }
+        @include md {
+          padding-left: 12vw;
+        }
+      }
     }
 
     &.wordsworth {
