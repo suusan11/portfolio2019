@@ -107,13 +107,13 @@
   }
 }
 .work__intro.ui {
-  width: 100vw;
+  width: 80vw;
   text-align: center;
   img {
-    width: 40%;
+    width: 100%;
     margin: 10vh auto 5vh;
     @include lg {
-      width: 25vw;
+      width: 70vw;
     }
   }
 }
@@ -130,6 +130,10 @@
 
       img {
         width: 170px;
+      }
+
+      &.ui img {
+        width: 80%;
       }
     }
     .work__intro--black {
