@@ -2,6 +2,7 @@
 
 //only to hero section
 .hero {
+  position: relative;
   width: 100vw;
   height: 100vh;
   margin: 0 auto 10vh;
@@ -9,74 +10,144 @@
   color: $white;
   text-align: center;
 
+
+  &__flex {
+    margin: 0 auto;
+    @include pc {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+      height: 90vh;
+      padding-top: 10vh;
+      margin: 0 auto;
+    }
+  }
+
   &__title {
-    padding-top: 25vh;
+    display: inline-block;
+    padding-top: 20vh;
     margin-bottom: 5vh;
+    text-align: left;
+    @include pc {
+      padding-top: 0;
+      padding-right: 5vw;
+    }
+    @include lg {
+      padding-top: 25vh;
+    }
 
     h1 {
       font-family: $font-empha;
-      @include font_vw(94);
+      padding-bottom: 2vh;
+      @include font_vw(45);
       @include pc {
-        font-size: 160px;
+        font-size: 90px;
       }
       @include lg {
-        font-size: 160px;
+        font-size: 90px;
       }
       @include md {
-        font-size: 130px;
+        font-size: 70px;
+      }
+      span {
+        color: $pink;
       }
     }
     p {
-      width: 70vw;
       @include font_vw(18);
       letter-spacing: 2.5px;
       line-height: 1.5;
-      margin: 0 auto;
       @include pc {
-        font-size: 26px;
+        font-size: 40px;
       }
       @include lg {
-        width: 356px;
-        font-size: 26px;
+        font-size: 40px;
       }
       @include md {
-        width: 300px;
-        font-size: 23px;
+        font-size: 30px;
       }
     }
   }
 
   &__img {
-    position: absolute;
-    top: 90vh;
-    left: 0;
-    right: 0;
+    display: block;
     width: 200px;
     height: 200px;
     border-radius: 50%;
     background-color: $white;
-    z-index: 2;
-    margin: auto;
-
+    margin: 0 auto;
   }
   @include pc {
     &__img {
-      top: 700px;
-      width: 280px;
-      height: 280px;
+      width: 250px;
+      height: 250px;
+      margin: 0;
     }
   }
   @include lg {
     &__img {
-      top: 700px;
-      width: 250px;
-      height: 250px;
+      width: 230px;
+      height: 230px;
     }
   }
   @include md {
     &__img {
       width: 230px;
       height: 230px;
+    }
+  }
+
+  //p.scroll__guide {
+  //  @include font_vw(10);
+  //  font-weight: $font-weight-light;
+  //  @include pc {
+  //    font-size: 14px;
+  //  }
+  //  @include lg {
+  //    font-size: 14px;
+  //  }
+  //  @include md {
+  //    font-size: 13px;
+  //  }
+  //
+  //  &::before {
+  //    display: inline-block;
+  //    content: '↓';
+  //    color: $white;
+  //    font-size: 16px;
+  //    padding-right: 2vw;
+  //    animation: arrow-down 1.3s infinite ease-out;
+  //  }
+  //
+  //  @keyframes arrow-down {
+  //    0% {
+  //      transform: translateY(-20px);
+  //      opacity: 0;
+  //    }
+  //    50% {
+  //      transform: translateY(0);
+  //      opacity: 1;
+  //    }
+  //    100% {
+  //      transform: translateY(20px);
+  //      opacity: 0;
+  //    }
+  //  }
+  //}
+
+  &::before {
+    @include pc {
+      display: block;
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      margin: 0 auto;
+      width: 2px;
+      height: 150px;
+      border-left: 2px solid $white;
     }
   }
 }
