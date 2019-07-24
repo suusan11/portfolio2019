@@ -54,14 +54,7 @@
 
       p {
         font-weight: $font-weight-light;
-        padding-left: 2vw;
         margin-top: -2vh;
-        @include pc {
-          padding-left: 12px;
-        }
-        @include lg {
-          padding-left: 10px;
-        }
       }
     }
 
