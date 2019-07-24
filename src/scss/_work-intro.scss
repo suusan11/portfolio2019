@@ -2,7 +2,7 @@
 
 .work__intro--black {
   width: 100vw;
-  height: 85vh;
+  height: 100vh;
   background-color: $black;
   padding: 7vh 10vw;
   margin-top: 8vh;
@@ -10,9 +10,11 @@
     margin-top: 0;
   }
   @include lg {
-    height: 100vh;
     padding: 15vh 20vw;
     margin-bottom: 10vh;
+  }
+  @include md {
+    padding: 15vh 10vw;
   }
 
   h2 {
