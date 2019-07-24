@@ -7,7 +7,7 @@
   padding: 20% 0 10%;
   text-align: center;
   @include pc {
-    padding: 15% 0 10%;
+    padding: 5% 0;
   }
   @include lg {
     padding: 10% 0;
@@ -24,76 +24,47 @@
   }
 }
 
-.work {
-  width: 80vw;
+.works__items {
   position: relative;
-  margin: 15vh auto;
+  width: 80vw;
+  margin: 0 auto;
+  text-align: left;
   z-index: 2;
-  @include lg {
-    width: 430px;
-  }
+  &-item {
+    margin: 5vh 0;
+    h2 {
+      font-size: 60px;
+      font-weight: $font-weight-bold;
+      padding-bottom: 1vh;
+    }
+    a:hover {
+      color: $pink;
+    }
 
-  img {
-    width: 100%;
-    filter: drop-shadow(5px 5px 7px $black__opacity);
-    &:hover {
-      opacity: .8;
+    &:hover .hover__appear {
+      display: block;
+    }
+
+    @keyframes slideIn {
+      0% {
+        transform: translateX(500px);
+      }
+      100% {
+        transform: translateX(0);
+      }
     }
   }
 
-  &:last-child img {
-    width: 40vw;
-    @include lg {
-      width: 50%;
-    }
-  }
-
-  p {
-    text-align: left;
-    @include font_vw(12);
-    @include pc {
-      font-size: 15px;
-    }
-    @include lg {
-      font-size: 18px;
-    }
-    @include md {
-      font-size: 16px;
-    }
-    font-weight: $font-weight-light;
-    margin-top: 1vh;
-
-    &.text__center {
-      text-align: center;
-    }
-
-    span {
-      color: $black;
-      font-weight: $font-weight-regular;
-    }
-  }
-
-}
-
-@include pc {
-  .works__flex {
-    display: flex;
-    justify-content: space-around;
-    align-items: flex-start;
-    flex-wrap: wrap;
-    margin: 0 5%;
-  }
-
-  .work {
-    width: 33vw;
-    margin: 5%;
-
+  .hover__appear {
+    display: none;
+    width: 30vw;
+    position: absolute;
+    right: 0;
+    top: 100px;
+    z-index: -1;
+    animation: slideIn 1s ease-out forwards;
     img {
       width: 100%;
-    }
-
-    &:last-child img {
-      width: 45%;
     }
   }
 }
