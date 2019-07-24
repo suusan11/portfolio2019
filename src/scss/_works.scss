@@ -65,6 +65,7 @@
     animation: slideIn 1s ease-out forwards;
     img {
       width: 100%;
+      filter: drop-shadow(5px 5px 7px $black__opacity);
     }
   }
 }
