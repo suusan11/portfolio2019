@@ -828,33 +828,22 @@ html {
 @-webkit-keyframes imgSlide {
   0% {
     -webkit-transform: translateX(100px);
-            transform: translateX(100px); }
+            transform: translateX(100px);
+    opacity: 0; }
   100% {
     -webkit-transform: translateX(0);
-            transform: translateX(0); } }
+            transform: translateX(0);
+    opacity: 1; } }
 
 @keyframes imgSlide {
   0% {
     -webkit-transform: translateX(100px);
-            transform: translateX(100px); }
+            transform: translateX(100px);
+    opacity: 0; }
   100% {
     -webkit-transform: translateX(0);
-            transform: translateX(0); } }
-    @media (min-width: 1000px) {
-      @-webkit-keyframes imgSlide {
-        0% {
-          -webkit-transform: translateX(500px);
-                  transform: translateX(500px); }
-        100% {
-          -webkit-transform: translateX(0);
-                  transform: translateX(0); } }
-      @keyframes imgSlide {
-        0% {
-          -webkit-transform: translateX(500px);
-                  transform: translateX(500px); }
-        100% {
-          -webkit-transform: translateX(0);
-                  transform: translateX(0); } } }
+            transform: translateX(0);
+    opacity: 1; } }
   .works__items .hover__appear {
     display: none;
     width: 80vw;
