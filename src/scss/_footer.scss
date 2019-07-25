@@ -4,7 +4,7 @@ footer {
   width: 100vw;
   height: 100px;
   background-color: $black;
-  padding-top: 8%;
+  padding: 8% 0;
   text-align: center;
   @include pc {
     height: 150px;
@@ -51,7 +51,7 @@ footer {
     margin-top: 5%;
     @include pc {
       font-size: 13px;
-      margin-top: 3%;
+      margin-top: 2%;
     }
     @include lg {
       font-size: 13px;
