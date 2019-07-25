@@ -2,19 +2,20 @@
 
 footer {
   width: 100vw;
-  height: 200px;
+  height: 100px;
   background-color: $black;
-  padding: 20% 0;
+  padding-top: 8%;
   text-align: center;
   @include pc {
-    height: 250px;
-    padding: 130px 0 180px;
+    height: 150px;
+    padding: 50px 0;
   }
   @include lg {
-    padding: 10% 0 15%;
+    height: 150px;
+    padding: 50px 0;
   }
   @include md {
-    padding: 13% 0;
+    height: 150px;
   }
 
   .footer__flex {
@@ -23,18 +24,18 @@ footer {
     align-items: center;
 
     .icon {
-      width: 12vw;
-      height: 3vh;
+      width: 8vw;
+      height: 2.5vh;
       stroke-width: 0;
       fill: $white;
       transition: opacity .2s ease-out;
       @include pc {
-        width: 70px;
-        height: 28px;
+        width: 50px;
+        height: 20px;
       }
       @include lg {
-        width: 58px;
-        height: 24px;
+        width: 50px;
+        height: 20px;
       }
 
       &:hover {
@@ -47,7 +48,7 @@ footer {
     color: $white;
     @include font_vw(9);
     font-weight: $font-weight-light;
-    margin-top: 8%;
+    margin-top: 5%;
     @include pc {
       font-size: 13px;
       margin-top: 3%;
