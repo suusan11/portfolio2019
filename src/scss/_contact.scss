@@ -1,8 +1,14 @@
 @import "typography", "color", "mixin";
 
 .contact {
-  margin: 10vh auto;
   text-align: center;
+  padding: 20% 0 10%;
+  @include pc {
+    padding: 8% 0;
+  }
+  @include lg {
+    padding: 10% 0;
+  }
 
   &__info{
     width: 70vw;
