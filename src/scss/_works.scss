@@ -43,7 +43,6 @@
         font-size: 40px;
       }
     }
-
     .color__change {
       position: relative;
       width: 100vw;
@@ -73,20 +72,11 @@
     @keyframes imgSlide {
       0% {
         transform: translateX(100px);
+        opacity: 0;
       }
       100% {
         transform: translateX(0);
-      }
-    }
-
-    @include pc {
-      @keyframes imgSlide {
-        0% {
-          transform: translateX(500px);
-        }
-        100% {
-          transform: translateX(0);
-        }
+        opacity: 1;
       }
     }
   }
