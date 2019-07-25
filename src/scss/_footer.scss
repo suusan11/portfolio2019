@@ -2,26 +2,99 @@
 
 footer {
   width: 100vw;
-  height: 100px;
+  height: 300px;
   background-color: $black;
-  padding: 8% 0;
+  padding: 10vh 10vw;
   text-align: center;
   @include pc {
-    height: 150px;
-    padding: 50px 0;
+    height: 300px;
+    padding: 8vh 10vw;
+    text-align: right;
   }
   @include lg {
-    height: 150px;
-    padding: 50px 0;
+    height: 350px;
+    padding: 5vh 10vw;
+    text-align: right;
   }
   @include md {
-    height: 150px;
+    height: 300px;
+    padding: 6vh 0;
   }
+
+  .contact {
+    width: 80vw;
+    margin: 0 auto;
+    @include pc {
+      text-align: left;
+    }
+    @include lg {
+      text-align: left;
+    }
+    p {
+        display: inline-block;
+        text-align: left;
+        font-weight: $font-weight-light;
+        @include font_vw(14);
+        @include pc {
+          font-size: 18px;
+        }
+        @include lg {
+          font-size: 18px;
+        }
+        @include md {
+          font-size: 18px;
+        }
+      }
+    h2 {
+      @include font_vw(20);
+      font-weight: $font-weight-bold;
+      font-style: italic;
+      margin-top: 2vh;
+      @include pc {
+        font-size: 32px;
+      }
+      @include lg {
+        font-size: 32px;
+      }
+      @include md {
+        font-size: 22px;
+      }
+    }
+    a {
+      position: relative;
+      color: $white;
+      &::after {
+        display: block;
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 0;
+        height: 3px;
+        background-color: $pink;
+        transition: all .3s ease-in-out;
+      }
+    }
+    a:hover::after {
+      width: 100%;
+    }
+  }
+
 
   .footer__flex {
     display: flex;
     justify-content: center;
     align-items: center;
+    width: 80vw;
+    margin: 7vh auto 0;
+    @include pc {
+      justify-content: flex-end;
+      margin: 0 auto;
+    }
+    @include lg {
+      justify-content: flex-end;
+      margin: 0 auto;
+    }
 
     .icon {
       width: 8vw;
@@ -36,6 +109,7 @@ footer {
       @include lg {
         width: 50px;
         height: 20px;
+        margin-top: 10vh;
       }
 
       &:hover {
