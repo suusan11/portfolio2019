@@ -80,6 +80,7 @@ h1.section__title {
   color: $black__opacity;
   font-weight: $font-weight-bold;
   font-style: italic;
+  margin-bottom: 5vh;
   @include pc {
     font-size: 70px;
   }

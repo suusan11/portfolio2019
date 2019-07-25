@@ -1,21 +1,8 @@
 @import "typography", "color", "mixin";
 
 .values {
-  position: relative;
   width: 80vw;
-  padding: 15vh 0;
-  margin: 15vh auto 0;
-
-  h1 {
-    position: absolute;
-    top: -5vh;
-    left: 0;
-    right: 0;
-    margin: auto;
-    background-color: $white;
-    padding: 0 5%;
-    z-index: 2;
-  }
+  margin: 10vh auto 0;
 }
 
 .values__flex {
