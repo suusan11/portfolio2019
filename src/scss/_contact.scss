@@ -3,6 +3,7 @@
 .contact {
   text-align: center;
   padding-top: 20%;
+  margin-bottom: 10vh;
   @include pc {
     padding-top: 8%;
   }
@@ -26,20 +27,47 @@
       @include font_vw(14);
       @include pc {
         font-size: 18px;
-        line-height: 2;
       }
       @include lg {
         font-size: 18px;
-        line-height: 2;
       }
       @include md {
         font-size: 18px;
         line-height: 2;
       }
+    }
 
-      span {
-        letter-spacing: 1px;
+    h2 {
+      @include font_vw(20);
+      font-weight: $font-weight-bold;
+      font-style: italic;
+      padding: 2% 0;
+      @include pc {
+        font-size: 32px;
       }
+      @include lg {
+        font-size: 32px;
+      }
+      @include md {
+        font-size: 22px;
+      }
+    }
+    a {
+      position: relative;
+      &::after {
+        display: block;
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 0;
+        height: 3px;
+        background-color: $pink;
+        transition: all .3s ease-in-out;
+      }
+    }
+    a:hover::after {
+      width: 100%;
     }
   }
 }
