@@ -15,7 +15,7 @@
     margin: 0 auto;
     @include pc {
       display: flex;
-      justify-content: center;
+      justify-content: flex-start;
       align-items: center;
       flex-wrap: wrap;
       height: 90vh;
@@ -26,11 +26,11 @@
 
   &__title {
     display: inline-block;
-    padding-top: 20vh;
+    margin-top: 20vh;
     margin-bottom: 5vh;
     text-align: left;
     @include pc {
-      padding-top: 0;
+      margin-top: 0;
       padding-right: 5vw;
     }
 
@@ -39,7 +39,7 @@
       padding-bottom: 2vh;
       @include font_vw(45);
       @include pc {
-        font-size: 90px;
+        font-size: 100px;
       }
       @include lg {
         font-size: 90px;
@@ -51,12 +51,13 @@
         color: $pink;
       }
     }
-    p {
+    h2 {
       @include font_vw(18);
+      font-family: $font-empha;
       letter-spacing: 2.5px;
       line-height: 1.5;
       @include pc {
-        font-size: 40px;
+        font-size: 50px;
       }
       @include lg {
         font-size: 40px;
@@ -67,41 +68,14 @@
     }
   }
 
-  &__img {
-    display: block;
-    width: 200px;
-    height: 200px;
-    border-radius: 50%;
-    background-color: $white;
-    margin: 0 auto;
-  }
-  @include pc {
-    &__img {
-      width: 250px;
-      height: 250px;
-      margin: 0;
-    }
-  }
-  @include lg {
-    &__img {
-      width: 230px;
-      height: 230px;
-    }
-  }
-  @include md {
-    &__img {
-      width: 230px;
-      height: 230px;
-    }
-  }
+
 
   p.scroll__guide {
     @include font_vw(10);
     font-weight: $font-weight-light;
     position: absolute;
     bottom: 0;
-    left: 0;
-    right: 0;
+    left: 10vw;
     margin: 0 auto 5vh;
     @include pc {
       font-size: 14px;
@@ -136,107 +110,5 @@
         opacity: 0;
       }
     }
-  }
-}
-
-
-.text__change {
-  position: relative;
-  width: 80%;
-  text-align: center;
-  margin: 0 auto;
-  p {
-    @include font_vw(18);
-    font-weight: $font-weight-light;
-    @include pc {
-      font-size: 26px;
-    }
-    @include lg {
-      font-size: 26px;
-    }
-    @include md {
-      font-size: 23px;
-    }
-  }
-
-  p.text__change--word {
-    position: absolute;
-    top: 5vh;
-    @include pc {
-      top: 2vh;
-    }
-    left: 0;
-    right: 0;
-    margin: auto;
-    @include font_vw(60);
-    @include pc {
-      font-size: 115px;
-    }
-    @include lg {
-      font-size: 115px;
-    }
-    @include md {
-      font-size: 85px;
-    }
-    font-family: $font-empha;
-    padding: 3%;
-    opacity: 0;
-    overflow: hidden;
-    -webkit-animation: rotateText 20s linear infinite 0s;
-    -o-animation: rotateText 20s linear infinite 0s;
-    animation: rotateText 20s linear infinite 0s;
-
-    &:nth-child(2) {
-      animation-delay: 5s;
-    }
-    &:nth-child(3) {
-      animation-delay: 10s;
-    }
-    &:nth-child(4) {
-      animation-delay: 15s;
-    }
-
-    span {
-      @include font_vw(35);
-      @include pc {
-        font-size: 80px;
-      }
-      @include lg {
-        font-size: 80px;
-      }
-      @include md {
-        font-size: 50px;
-      }
-    }
-  }
-}
-
-@keyframes rotateText {
-  0% {
-    opacity: 0;
-  }
-  2% {
-    opacity: 0;
-    transform: translateY(-30px);
-  }
-  5% {
-    opacity: 1;
-    transform: translateY(0px);
-  }
-  17% {
-    opacity: 1;
-    -webkit-transform: translateY(0px);
-    transform: translateY(0px);
-  }
-  20% {
-    opacity: 0;
-    -webkit-transform: translateY(30px);
-    transform: translateY(30px);
-  }
-  80% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 0;
   }
 }
