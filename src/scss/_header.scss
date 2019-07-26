@@ -48,7 +48,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 0 5vw;
+    margin: 0 10vw;
   }
 
   //global menu only for mobile
@@ -138,10 +138,9 @@
       display: flex;
       justify-content: space-around;
       align-items: center;
-      margin-right: 8vw;
 
       li {
-        font-size: 18px;
+        font-size: 16px;
         padding: 0 2vw;
       }
       a:hover {
@@ -165,7 +164,7 @@
       margin-right: 15vw;
 
       li {
-        font-size: 18px;
+        font-size: 16px;
         margin: 0 2vw;
       }
       a:hover {
