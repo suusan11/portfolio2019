@@ -69,10 +69,11 @@
         line-height: 100px;
         color: $pink;
         clip: rect(0,0,100px,0);
-        transition: clip 0.8s linear;
+        transition: clip 0.3s linear;
       }
       &:hover::after {
         clip: rect(0,100vw,100px,0);
+        transition: clip 1s linear;
       }
     }
 
