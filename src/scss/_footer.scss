@@ -2,23 +2,22 @@
 
 footer {
   width: 100vw;
-  height: 300px;
+  height: 180px;
   background-color: $black;
-  padding: 10vh 10vw;
+  padding: 4vh 10vw;
   text-align: center;
   @include pc {
-    height: 300px;
-    padding: 8vh 10vw;
+    height: 200px;
     text-align: right;
   }
   @include lg {
-    height: 350px;
-    padding: 5vh 10vw;
+    height: 250px;
+    padding: 5vh 8vw;
     text-align: right;
   }
   @include md {
-    height: 300px;
-    padding: 6vh 0;
+    height: 200px;
+    padding: 2vh 0;
   }
 
   .contact {
@@ -32,6 +31,7 @@ footer {
     }
     p {
         display: inline-block;
+        color: $white;
         text-align: left;
         font-weight: $font-weight-light;
         @include font_vw(14);
@@ -86,14 +86,17 @@ footer {
     justify-content: center;
     align-items: center;
     width: 80vw;
-    margin: 7vh auto 0;
+    margin: 6vh auto 0;
     @include pc {
       justify-content: flex-end;
-      margin: 0 auto;
+      margin: 2vh auto 0;
     }
     @include lg {
       justify-content: flex-end;
-      margin: 0 auto;
+      margin: 4vh auto 0;
+    }
+    @include md {
+      margin: 6vh auto 0;
     }
 
     .icon {
@@ -109,7 +112,6 @@ footer {
       @include lg {
         width: 50px;
         height: 20px;
-        margin-top: 10vh;
       }
 
       &:hover {
@@ -118,7 +120,7 @@ footer {
     }
   }
 
-  p {
+  p.copy-write {
     color: $white;
     @include font_vw(9);
     font-weight: $font-weight-light;
@@ -129,10 +131,11 @@ footer {
     }
     @include lg {
       font-size: 13px;
-      margin-top: 3%;
+      margin-top: 2%;
     }
     @include md {
       font-size: 12px;
+      margin-top: 2%;
     }
   }
 }
