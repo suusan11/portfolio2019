@@ -5,32 +5,18 @@
   position: relative;
   width: 100vw;
   height: 100vh;
+  min-height: 450px;
   margin: 0 auto;
   background-color: $black;
   color: $white;
   text-align: center;
 
-
-  &__flex {
-    margin: 0 auto;
-    @include pc {
-      display: flex;
-      justify-content: flex-start;
-      align-items: center;
-      flex-wrap: wrap;
-      height: 90vh;
-      padding-top: 10vh;
-      margin: 0 auto;
-    }
-  }
-
   &__title {
-    display: inline-block;
-    margin-top: 20vh;
+    padding-top: 35vh;
     margin-bottom: 5vh;
     text-align: left;
     @include pc {
-      margin-top: 0;
+      padding-top: 35vh;
       padding-right: 5vw;
     }
 
@@ -39,20 +25,20 @@
       padding-bottom: 2vh;
       @include font_vw(45);
       @include pc {
-        font-size: 100px;
+        font-size: 80px;
       }
       @include lg {
-        font-size: 90px;
+        font-size: 75px;
       }
       @include md {
-        font-size: 70px;
+        font-size: 65px;
       }
       span {
         color: $pink;
       }
     }
     h2 {
-      @include font_vw(18);
+      @include font_vw(20);
       font-family: $font-empha;
       letter-spacing: 2.5px;
       line-height: 1.5;
@@ -60,10 +46,10 @@
         font-size: 50px;
       }
       @include lg {
-        font-size: 40px;
+        font-size: 45px;
       }
       @include md {
-        font-size: 30px;
+        font-size: 35px;
       }
     }
   }
