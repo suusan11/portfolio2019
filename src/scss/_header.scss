@@ -39,6 +39,11 @@
     line-height: 75px;
   }
 
+  li {
+    font-size: 16px;
+    padding: 0 2vw;
+  }
+
   a {
     color: $white;
     transition: color .2s ease-out;
@@ -55,7 +60,7 @@
   .global__menu {
     a {
       color: $white;
-      @include font_vw(14);
+      font-size: 16px;
     }
     .click__open {
       display: none;
@@ -134,14 +139,15 @@
 
     //only for pc and tablet
     &__flex--right {
-      width: 20vw;
+      width: 40vw;
       display: flex;
-      justify-content: space-around;
+      justify-content: flex-end;
       align-items: center;
 
       li {
-        font-size: 16px;
-        padding: 0 2vw;
+        &:last-child {
+          padding-right: 0;
+        }
       }
       a:hover {
         color: $pink;
@@ -157,15 +163,15 @@
 
     //only for pc and tablet
     &__flex--right {
-      width: 20vw;
+      width: 40vw;
       display: flex;
-      justify-content: space-around;
+      justify-content: flex-end;
       align-items: center;
-      margin-right: 15vw;
 
       li {
-        font-size: 16px;
-        margin: 0 2vw;
+        &:last-child {
+          padding-right: 0;
+        }
       }
       a:hover {
         color: $pink;
