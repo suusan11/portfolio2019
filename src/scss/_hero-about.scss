@@ -20,21 +20,26 @@
       padding-right: 5vw;
     }
 
+    $h1Size: 80px;
     h1 {
       font-family: $font-empha;
       padding-bottom: 2vh;
       @include font_vw(45);
       @include pc {
-        font-size: 80px;
+        font-size: $h1Size;
       }
       @include lg {
-        font-size: 75px;
+        font-size: calc(#{$h1Size - 5px});
       }
       @include md {
-        font-size: 65px;
+        font-size: calc(#{$h1Size - 15px});
       }
       span {
         color: $pink;
+      }
+      span.small {
+        color: $white;
+        font-size: calc(#{$h1Size - 40px});
       }
     }
     h2 {
