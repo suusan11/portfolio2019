@@ -41,12 +41,27 @@
         color: $white;
         font-size: calc(#{$h1Size - 40px});
       }
+      -webkit-animation: slideUp 1s ease-in;
+      -o-animation: slideUp 1s ease-in;
+      animation: slideUp 1s ease-in;
+    }
+
+    @keyframes slideUp {
+      0% {
+        transform: translateY(50px);
+        opacity: 0;
+      }
+      100% {
+        transform: translateY(0);
+        opacity: 1;
+      }
     }
     h2 {
       @include font_vw(20);
       font-family: $font-empha;
       letter-spacing: 2.5px;
       line-height: 1.5;
+      opacity: 0;
       @include pc {
         font-size: 50px;
       }
@@ -55,6 +70,16 @@
       }
       @include md {
         font-size: 35px;
+      }
+      &.slideUp__first {
+        -webkit-animation: slideUp 1s 1s ease-in forwards;
+        -o-animation: slideUp 1s 1s ease-in forwards;
+        animation: slideUp 1s 1s ease-in forwards;
+      }
+      &.slideUp__second {
+        -webkit-animation: slideUp 1s 2s ease-in forwards;
+        -o-animation: slideUp 1s 2s ease-in forwards;
+        animation: slideUp 1s 2s ease-in forwards;
       }
     }
   }
@@ -68,6 +93,8 @@
     bottom: 0;
     left: 10vw;
     margin: 0 auto 5vh;
+    opacity: 0;
+    animation: show .5s 3s forwards;
     @include pc {
       font-size: 14px;
     }
@@ -77,6 +104,14 @@
     @include md {
       font-size: 13px;
     }
+    @keyframes show {
+      0% {
+        opacity: 0;
+      }
+      100% {
+        opacity: 1;
+      }
+    }
 
     &::before {
       display: inline-block;
@@ -84,7 +119,8 @@
       color: $white;
       font-size: 16px;
       padding-right: 2vw;
-      animation: arrow-down 1.3s infinite ease-out;
+      opacity: 0;
+      animation: arrow-down 1.3s 3s infinite ease-out;
     }
 
     @keyframes arrow-down {
