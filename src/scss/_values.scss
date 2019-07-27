@@ -8,6 +8,7 @@
   width: 80vw;
   margin: 5vh auto 0;
   text-align: center;
+  animation: slideRight 2s forwards;
   @include pc {
     justify-content: flex-end;
     width: 50vw;
@@ -15,6 +16,18 @@
   }
   @include lg {
     justify-content: center;
+  }
+
+  //slide animation
+  @keyframes slideRight {
+    0% {
+      transform: translateX(200px);
+      opacity: 0;
+    }
+    100% {
+      transform: translateX(0);
+      opacity: 1;
+    }
   }
 
   &-item {
