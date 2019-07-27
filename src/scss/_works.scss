@@ -12,11 +12,6 @@
     padding: 5% 0;
   }
 
-  h1 {
-    margin-right: 10vw;
-    text-align: right;
-  }
-
   &::before {
     @include bgLine(33vw);
   }
