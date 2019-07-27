@@ -1,0 +1,38 @@
+@import "color";
+
+.about {
+  margin: 5% auto;
+
+  &__flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .intro__wrap {
+    position: relative;
+    width: 40vw;
+    background-color: $black;
+    text-align: center;
+    padding: 10vh;
+    margin-top: 5vh;
+
+    &--txt {
+      color: $white;
+      text-align: left;
+      line-height: 1.8;
+      letter-spacing: 1.3px;
+    }
+
+    img {
+      position: absolute;
+      top: -18vh;
+      left: 0;
+      right: 0;
+      margin: auto;
+      width: 200px;
+      height: 200px;
+      border-radius: 50%;
+      background-color: $white;
+    }
+  }
+}
