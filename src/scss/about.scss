@@ -22,7 +22,8 @@
     padding: 10vh;
     margin-top: 5vh;
     @include pc {
-      width: 40vw;
+      width: 45vw;
+      margin-top: 0;
     }
     @include lg {
       width: 80vw;
@@ -33,22 +34,6 @@
       text-align: left;
       line-height: 1.8;
       letter-spacing: 1.3px;
-    }
-
-    img {
-      position: absolute;
-      top: -18vh;
-      left: 0;
-      right: 0;
-      margin: auto;
-      width: 150px;
-      height: 150px;
-      border-radius: 50%;
-      background-color: $white;
-      @include pc {
-        width: 200px;
-        height: 200px;
-      }
     }
   }
 
