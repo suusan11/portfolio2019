@@ -1,20 +1,32 @@
-@import "color";
+@import "color", "mixin";
 
 .about {
-  margin: 5% auto;
-
-  &__flex {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  margin: 5vh auto 2vh;
+  @include pc {
+    margin: 5vh auto;
   }
+
+  @include pc {
+    &__flex {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+
   .intro__wrap {
     position: relative;
-    width: 40vw;
+    width: 100vw;
     background-color: $black;
     text-align: center;
     padding: 10vh;
     margin-top: 5vh;
+    @include pc {
+      width: 40vw;
+    }
+    @include lg {
+      width: 80vw;
+    }
 
     &--txt {
       color: $white;
@@ -29,10 +41,31 @@
       left: 0;
       right: 0;
       margin: auto;
-      width: 200px;
-      height: 200px;
+      width: 150px;
+      height: 150px;
       border-radius: 50%;
       background-color: $white;
+      @include pc {
+        width: 200px;
+        height: 200px;
+      }
+    }
+  }
+
+  @include md {
+    &.container {
+      width: 100vw;
+    }
+    h1 {
+      margin-right: 10vw;
+    }
+  }
+  @include sm {
+    &.container {
+      width: 100vw;
+    }
+    h1 {
+      margin-right: 10vw;
     }
   }
 }
