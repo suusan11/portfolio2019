@@ -5,12 +5,16 @@
   width: 100vw;
   background-color: $gray;
   padding: 15% 0;
-  text-align: center;
   @include pc {
     padding: 5% 0;
   }
   @include lg {
     padding: 5% 0;
+  }
+
+  h1 {
+    margin-right: 10vw;
+    text-align: right;
   }
 
   &::before {
