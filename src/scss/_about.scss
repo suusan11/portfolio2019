@@ -21,13 +21,24 @@
     text-align: center;
     padding: 10vh;
     margin-top: 5vh;
-    animation: slideLeft 2s forwards;
     @include pc {
       width: 45vw;
       margin-top: 0;
     }
     @include lg {
       width: 80vw;
+    }
+
+    &--txt {
+      color: $white;
+      text-align: left;
+      line-height: 1.8;
+      letter-spacing: 1.3px;
+    }
+
+    //slide animation handle by JS
+    &.values__animation1 {
+      animation: slideLeft 2s forwards;
     }
     @keyframes slideLeft {
       0% {
@@ -40,12 +51,6 @@
       }
     }
 
-    &--txt {
-      color: $white;
-      text-align: left;
-      line-height: 1.8;
-      letter-spacing: 1.3px;
-    }
   }
 
   @include md {
