@@ -77,9 +77,9 @@
         animation: slideUp 1s 1s ease-in forwards;
       }
       &.slideUp__second {
-        -webkit-animation: slideUp 1s 2s ease-in forwards;
-        -o-animation: slideUp 1s 2s ease-in forwards;
-        animation: slideUp 1s 2s ease-in forwards;
+        -webkit-animation: slideUp 1s 1.5s ease-in forwards;
+        -o-animation: slideUp 1s 1.5s ease-in forwards;
+        animation: slideUp 1s 1.5s ease-in forwards;
       }
     }
   }
@@ -94,7 +94,7 @@
     left: 10vw;
     margin: 0 auto 5vh;
     opacity: 0;
-    animation: show .5s 3s forwards;
+    animation: show .5s 2.5s forwards;
     @include pc {
       font-size: 14px;
     }
