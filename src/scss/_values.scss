@@ -18,19 +18,19 @@
   }
 
   //slide animation handle by JS
-  &.values__animation2 {
-    animation: slideRight 2s forwards;
-  }
-  @keyframes slideRight {
-    0% {
-      transform: translateX(200px);
-      opacity: 0;
-    }
-    100% {
-      transform: translateX(0);
-      opacity: 1;
-    }
-  }
+  //&.values__animation2 {
+  //  animation: slideRight 2s forwards;
+  //}
+  //@keyframes slideRight {
+  //  0% {
+  //    transform: translateX(200px);
+  //    opacity: 0;
+  //  }
+  //  100% {
+  //    transform: translateX(0);
+  //    opacity: 1;
+  //  }
+  //}
 
   &-item {
     width: 100%;
