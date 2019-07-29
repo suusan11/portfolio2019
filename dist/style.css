@@ -786,10 +786,13 @@ html {
               filter: drop-shadow(5px 5px 7px rgba(45, 49, 51, 0.3)); }
 
 .about {
-  margin: 5vh auto 2vh; }
+  padding: 15% 0; }
   @media (min-width: 1000px) {
     .about {
-      margin: 8vh auto; } }
+      padding: 5% 0; } }
+  @media (min-width: 600px) and (max-width: 999px) {
+    .about {
+      padding: 5% 0; } }
   @media (min-width: 1000px) {
     .about__flex {
       display: -webkit-box;
