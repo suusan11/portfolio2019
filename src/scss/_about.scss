@@ -1,9 +1,12 @@
 @import "color", "mixin";
 
 .about {
-  margin: 5vh auto 2vh;
+  padding: 15% 0;
   @include pc {
-    margin: 8vh auto;
+    padding: 5% 0;
+  }
+  @include lg {
+    padding: 5% 0;
   }
 
   @include pc {

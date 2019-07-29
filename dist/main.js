@@ -86,18 +86,6 @@
 /************************************************************************/
 /******/ ({
 
-/***/ "./src/animation.js":
-/*!**************************!*\
-  !*** ./src/animation.js ***!
-  \**************************/
-/*! exports provided: valuesAnimation */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"valuesAnimation\", function() { return valuesAnimation; });\n//the ignition point of values animation\nfunction valuesAnimation() {\n    let animationFlag = false;\n    window.addEventListener('scroll', () => {\n        const scrollValue = window.pageYOffset;\n        const headerHeight = document.getElementById('js-header').clientHeight;\n        const scrollTotal = scrollValue + headerHeight;\n\n        const objectTop = document.getElementById('values').offsetTop;\n\n        const animation1 = document.getElementById('slideLeft');\n        const animation2 = document.getElementById('slideRight');\n\n        if(scrollTotal > objectTop) {\n            if(!animationFlag) {\n                animationFlag = true;\n                animation1.classList.add('values__animation1');\n                animation2.classList.add('values__animation2');\n            }\n        }\n        else {\n            animation1.classList.remove('values__animation1');\n            animation2.classList.remove('values__animation2');\n        }\n    });\n}\n\n//# sourceURL=webpack:///./src/animation.js?");
-
-/***/ }),
-
 /***/ "./src/common.js":
 /*!***********************!*\
   !*** ./src/common.js ***!
@@ -118,7 +106,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) *
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _scss_style_scss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./scss/style.scss */ \"./src/scss/style.scss\");\n/* harmony import */ var _scss_style_scss__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_scss_style_scss__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _common__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./common */ \"./src/common.js\");\n/* harmony import */ var _animation__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./animation */ \"./src/animation.js\");\n\n\n\n\n//loading after read HTML\nwindow.onload = function() {\n    _common__WEBPACK_IMPORTED_MODULE_1__[\"globalMenu\"]();\n    _common__WEBPACK_IMPORTED_MODULE_1__[\"sendTop\"]();\n    _common__WEBPACK_IMPORTED_MODULE_1__[\"smoothScroll\"]();\n    _animation__WEBPACK_IMPORTED_MODULE_2__[\"valuesAnimation\"]();\n};\n\n//# sourceURL=webpack:///./src/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _scss_style_scss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./scss/style.scss */ \"./src/scss/style.scss\");\n/* harmony import */ var _scss_style_scss__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_scss_style_scss__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _common__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./common */ \"./src/common.js\");\n\n\n// import * as animationFiles from './animation';\n\n//loading after read HTML\nwindow.onload = function() {\n    _common__WEBPACK_IMPORTED_MODULE_1__[\"globalMenu\"]();\n    _common__WEBPACK_IMPORTED_MODULE_1__[\"sendTop\"]();\n    _common__WEBPACK_IMPORTED_MODULE_1__[\"smoothScroll\"]();\n    // animationFiles.valuesAnimation();\n};\n\n//# sourceURL=webpack:///./src/index.js?");
 
 /***/ }),
 
