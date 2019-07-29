@@ -476,8 +476,8 @@ html {
         -webkit-animation: slideUp 1s 1s ease-in forwards;
         animation: slideUp 1s 1s ease-in forwards; }
       .hero__title h2.slideUp__second {
-        -webkit-animation: slideUp 1s 2s ease-in forwards;
-        animation: slideUp 1s 2s ease-in forwards; }
+        -webkit-animation: slideUp 1s 1.5s ease-in forwards;
+        animation: slideUp 1s 1.5s ease-in forwards; }
   .hero p.scroll__guide {
     font-size: 10px;
     font-size: 3.125vw;
@@ -487,8 +487,8 @@ html {
     left: 10vw;
     margin: 0 auto 5vh;
     opacity: 0;
-    -webkit-animation: show .5s 3s forwards;
-            animation: show .5s 3s forwards; }
+    -webkit-animation: show .5s 2.5s forwards;
+            animation: show .5s 2.5s forwards; }
     @media (min-width: 1000px) {
       .hero p.scroll__guide {
         font-size: 14px; } }

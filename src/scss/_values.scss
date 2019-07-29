@@ -60,22 +60,24 @@
       @include font_vw(12);
       opacity: 0;
       width: 70%;
-      height: 75px;
+      height: 45px;
       font-weight: $font-weight-light;
       line-height: 1.4;
       margin: 0 auto;
       transition: all .3s ease-in;
       @include pc {
+        width: 90%;
         height: 75px;
         font-size: 15px;
       }
       @include lg {
-        width: 75%;
-        height: 100px;
+        width: 90%;
+        height: 50px;
         font-size: 15px;
       }
       @include md {
-        width: 50%;
+        width: 80%;
+        height: 75px;
         font-size: 13px;
       }
     }
