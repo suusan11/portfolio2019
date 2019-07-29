@@ -612,7 +612,7 @@ html {
       font-size: 3.75vw;
       opacity: 0;
       width: 70%;
-      height: 75px;
+      height: 45px;
       font-weight: 300;
       line-height: 1.4;
       margin: 0 auto;
@@ -620,16 +620,18 @@ html {
       transition: all .3s ease-in; }
       @media (min-width: 1000px) {
         .values__flex-item p.text__hide {
+          width: 90%;
           height: 75px;
           font-size: 15px; } }
       @media (min-width: 600px) and (max-width: 999px) {
         .values__flex-item p.text__hide {
-          width: 75%;
-          height: 100px;
+          width: 90%;
+          height: 50px;
           font-size: 15px; } }
       @media (min-width: 440px) and (max-width: 599px) {
         .values__flex-item p.text__hide {
-          width: 50%;
+          width: 80%;
+          height: 75px;
           font-size: 13px; } }
     .values__flex-item:hover img {
       width: 50px; }
@@ -859,7 +861,7 @@ footer {
   @media (min-width: 600px) and (max-width: 999px) {
     footer {
       height: 250px;
-      padding: 5vh 8vw;
+      padding: 8vh 8vw;
       text-align: right; } }
   @media (min-width: 440px) and (max-width: 599px) {
     footer {
@@ -939,7 +941,7 @@ footer {
       footer .footer__flex {
         -webkit-box-pack: end;
                 justify-content: flex-end;
-        margin: 4vh auto 0; } }
+        margin: 5vh auto 0; } }
     @media (min-width: 440px) and (max-width: 599px) {
       footer .footer__flex {
         margin: 6vh auto 0; } }
