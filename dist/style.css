@@ -941,7 +941,10 @@ footer {
       footer .footer__flex {
         -webkit-box-pack: end;
                 justify-content: flex-end;
-        margin: 13% 0 2% auto; } }
+        margin: 10% 0 2% auto; } }
+    @media (min-width: 440px) and (max-width: 599px) {
+      footer .footer__flex {
+        margin: 7% auto 0; } }
     footer .footer__flex .icon {
       width: 8vw;
       height: 2.5vh;
