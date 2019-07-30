@@ -4,20 +4,17 @@ footer {
   width: 100vw;
   height: 180px;
   background-color: $black;
-  padding: 4vh 10vw;
+  padding: 7% 10vw 0;
   text-align: center;
   @include pc {
     height: 200px;
+    padding: 3% 10vw 0;
     text-align: right;
   }
   @include lg {
     height: 250px;
-    padding: 8vh 8vw;
+    padding: 5% 10vw 0;
     text-align: right;
-  }
-  @include md {
-    height: 200px;
-    padding: 2vh 0;
   }
 
   .contact {
@@ -34,7 +31,7 @@ footer {
         color: $white;
         text-align: left;
         font-weight: $font-weight-light;
-        @include font_vw(14);
+        @include font_vw(11);
         @include pc {
           font-size: 18px;
         }
@@ -46,7 +43,7 @@ footer {
         }
       }
     h2 {
-      @include font_vw(20);
+      @include font_vw(15);
       font-weight: $font-weight-bold;
       font-style: italic;
       margin-top: 2vh;
@@ -86,17 +83,14 @@ footer {
     justify-content: center;
     align-items: center;
     width: 80vw;
-    margin: 6vh auto 0;
+    margin: 10% auto 0;
     @include pc {
       justify-content: flex-end;
-      margin: 2vh auto 0;
+      margin: 2% auto 0;
     }
     @include lg {
       justify-content: flex-end;
-      margin: 5vh auto 0;
-    }
-    @include md {
-      margin: 6vh auto 0;
+      margin: 13% 0 2% auto;
     }
 
     .icon {
@@ -110,6 +104,10 @@ footer {
         height: 20px;
       }
       @include lg {
+        width: 50px;
+        height: 20px;
+      }
+      @include md {
         width: 50px;
         height: 20px;
       }
