@@ -2,183 +2,140 @@
 
 //only to hero section
 .hero {
+  position: relative;
   width: 100vw;
   height: 100vh;
-  margin: 0 auto 10vh;
+  min-height: 450px;
+  margin: 0 auto;
   background-color: $black;
   color: $white;
   text-align: center;
 
   &__title {
-    padding-top: 25vh;
+    padding-top: 35vh;
     margin-bottom: 5vh;
+    text-align: left;
+    @include pc {
+      padding-top: 35vh;
+      padding-right: 5vw;
+    }
 
+    $h1Size: 80px;
     h1 {
       font-family: $font-empha;
-      @include font_vw(94);
+      padding-bottom: 2vh;
+      @include font_vw(45);
       @include pc {
-        font-size: 160px;
+        font-size: $h1Size;
       }
       @include lg {
-        font-size: 160px;
+        font-size: calc(#{$h1Size - 5px});
       }
       @include md {
-        font-size: 130px;
+        font-size: calc(#{$h1Size - 15px});
+      }
+      span {
+        color: $pink;
+      }
+      span.small {
+        color: $white;
+        font-size: calc(#{$h1Size - 40px});
+      }
+      -webkit-animation: slideUp 1s ease-in;
+      -o-animation: slideUp 1s ease-in;
+      animation: slideUp 1s ease-in;
+    }
+
+    @keyframes slideUp {
+      0% {
+        transform: translateY(50px);
+        opacity: 0;
+      }
+      100% {
+        transform: translateY(0);
+        opacity: 1;
       }
     }
-    p {
-      width: 70vw;
-      @include font_vw(18);
+    h2 {
+      @include font_vw(20);
+      font-family: $font-empha;
       letter-spacing: 2.5px;
       line-height: 1.5;
-      margin: 0 auto;
+      opacity: 0;
       @include pc {
-        font-size: 26px;
-      }
-      @include lg {
-        width: 356px;
-        font-size: 26px;
-      }
-      @include md {
-        width: 300px;
-        font-size: 23px;
-      }
-    }
-  }
-
-  &__img {
-    position: absolute;
-    top: 90vh;
-    left: 0;
-    right: 0;
-    width: 200px;
-    height: 200px;
-    border-radius: 50%;
-    background-color: $white;
-    z-index: 2;
-    margin: auto;
-
-  }
-  @include pc {
-    &__img {
-      top: 700px;
-      width: 280px;
-      height: 280px;
-    }
-  }
-  @include lg {
-    &__img {
-      top: 700px;
-      width: 250px;
-      height: 250px;
-    }
-  }
-  @include md {
-    &__img {
-      width: 230px;
-      height: 230px;
-    }
-  }
-}
-
-
-.text__change {
-  position: relative;
-  width: 80%;
-  text-align: center;
-  margin: 0 auto;
-  p {
-    @include font_vw(18);
-    font-weight: $font-weight-light;
-    @include pc {
-      font-size: 26px;
-    }
-    @include lg {
-      font-size: 26px;
-    }
-    @include md {
-      font-size: 23px;
-    }
-  }
-
-  p.text__change--word {
-    position: absolute;
-    top: 5vh;
-    @include pc {
-      top: 2vh;
-    }
-    left: 0;
-    right: 0;
-    margin: auto;
-    @include font_vw(60);
-    @include pc {
-      font-size: 115px;
-    }
-    @include lg {
-      font-size: 115px;
-    }
-    @include md {
-      font-size: 85px;
-    }
-    font-family: $font-empha;
-    padding: 3%;
-    opacity: 0;
-    overflow: hidden;
-    -webkit-animation: rotateText 20s linear infinite 0s;
-    -o-animation: rotateText 20s linear infinite 0s;
-    animation: rotateText 20s linear infinite 0s;
-
-    &:nth-child(2) {
-      animation-delay: 5s;
-    }
-    &:nth-child(3) {
-      animation-delay: 10s;
-    }
-    &:nth-child(4) {
-      animation-delay: 15s;
-    }
-
-    span {
-      @include font_vw(35);
-      @include pc {
-        font-size: 80px;
-      }
-      @include lg {
-        font-size: 80px;
-      }
-      @include md {
         font-size: 50px;
       }
+      @include lg {
+        font-size: 45px;
+      }
+      @include md {
+        font-size: 35px;
+      }
+      &.slideUp__first {
+        -webkit-animation: slideUp 1s 1s ease-in forwards;
+        -o-animation: slideUp 1s 1s ease-in forwards;
+        animation: slideUp 1s 1s ease-in forwards;
+      }
+      &.slideUp__second {
+        -webkit-animation: slideUp 1s 1.5s ease-in forwards;
+        -o-animation: slideUp 1s 1.5s ease-in forwards;
+        animation: slideUp 1s 1.5s ease-in forwards;
+      }
     }
   }
-}
 
-@keyframes rotateText {
-  0% {
+
+
+  p.scroll__guide {
+    @include font_vw(10);
+    font-weight: $font-weight-light;
+    position: absolute;
+    bottom: 0;
+    left: 10vw;
+    margin: 0 auto 5vh;
     opacity: 0;
-  }
-  2% {
-    opacity: 0;
-    transform: translateY(-30px);
-  }
-  5% {
-    opacity: 1;
-    transform: translateY(0px);
-  }
-  17% {
-    opacity: 1;
-    -webkit-transform: translateY(0px);
-    transform: translateY(0px);
-  }
-  20% {
-    opacity: 0;
-    -webkit-transform: translateY(30px);
-    transform: translateY(30px);
-  }
-  80% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 0;
+    animation: show .5s 2.5s forwards;
+    @include pc {
+      font-size: 14px;
+    }
+    @include lg {
+      font-size: 14px;
+    }
+    @include md {
+      font-size: 13px;
+    }
+    @keyframes show {
+      0% {
+        opacity: 0;
+      }
+      100% {
+        opacity: 1;
+      }
+    }
+
+    &::before {
+      display: inline-block;
+      content: '↓';
+      color: $white;
+      font-size: 16px;
+      padding-right: 2vw;
+      opacity: 0;
+      animation: arrow-down 1.3s 3s infinite ease-out;
+    }
+
+    @keyframes arrow-down {
+      0% {
+        transform: translateY(-20px);
+        opacity: 0;
+      }
+      50% {
+        transform: translateY(0);
+        opacity: 1;
+      }
+      100% {
+        transform: translateY(20px);
+        opacity: 0;
+      }
+    }
   }
 }

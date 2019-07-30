@@ -5,38 +5,40 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Mie Suzuki | Front-End Developer</title>
-    <script src="dist/main.js"></script>
-    <link rel="stylesheet" href="dist/style.css">
+    <script src="main.js"></script>
+    <link rel="stylesheet" href="style.css">
     <!--animsition.css-->
-    <link rel="stylesheet" href="dist/css/animsition.min.css">
+    <link rel="stylesheet" href="css/animsition.min.css">
     <!--jQuery-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
     <!--animsition.js-->
-    <script src="dist/js/animsition.min.js"></script>
+    <script src="js/animsition.min.js"></script>
     <!--smooth-scroll.js-->
-    <script src="dist/js/smooth-scroll.polyfills.min.js"></script>
-    <link rel="shortcut icon" href="dist/images/favicon.ico">
+    <script src="js/smooth-scroll.polyfills.min.js"></script>
+    <link rel="shortcut icon" href="images/favicon.ico">
 </head>
 <body>
 
     <!--header-->
-    <header data-scroll-header id="home" class="header">
-        <div class="header__flex">
-            <h3><a href="#">Mie Suzuki</a></h3>
+    <header id="home" data-scroll-header  class="header">
+        <div id="js-header" class="header__flex">
+            <div class="name__flex">
+                <a class="header__icon" href="#"><img src="images/profile.png" alt="profile image"></a>
+                <h3>MIE SUZUKI</h3>
+            </div>
             <ul class="header__flex--right">
-                <li><a data-scroll href="#">HOME</a></li>
-                <li><a data-scroll href="#about">VALUES</a></li>
                 <li><a data-scroll href="#works">WORKS</a></li>
+                <li><a data-scroll href="#values">VALUES</a></li>
                 <li><a data-scroll href="#contact">CONTACT</a></li>
             </ul>
             <div class="global__menu">
-                <div id="js-open-menu">MENU</div>
+                <div id="js-open-menu"><a>MENU</a></div>
                 <div id="js-global-menu" class="click__open">
                     <div id="js-close-menu" class="close__button">×</div>
                     <ul>
                         <li class="js-link-menu"><a href="#home">HOME</a></li>
-                        <li class="js-link-menu"><a href="#about">VALUES</a></li>
                         <li class="js-link-menu"><a href="#works">WORKS</a></li>
+                        <li class="js-link-menu"><a href="#values">VALUES</a></li>
                         <li class="js-link-menu"><a href="#contact">CONTACT</a></li>
                     </ul>
                     <div class="sns__flex">
@@ -66,85 +68,107 @@
         </div>
     </header>
 
-    <div class="animsition">git
+    <div class="animsition">
 
         <section id="js-breakPoint" class="hero">
             <div class="container">
                 <div class="hero__title">
-                    <h1>I'm Mie.</h1>
-                    <p>Front-End Developer - Based on Vancouver</p>
+                    <h1>I'm <span>Mie</span><span class="small">,</span></h1>
+                    <h2 class="slideUp__first">Front-End Developer</h2>
+                    <h2 class="slideUp__second">Based in Vancouver</h2>
                 </div>
-                <img id="about" class="hero__img" src="dist/images/profile.png" alt="my image">
-                <div class="text__change">
-                    <p>who loves</p>
-                    <p class="text__change--word">Coding <span>👩🏻‍💻</span></p>
-                    <p class="text__change--word">Design <span>🎨</span></p>
-                    <p class="text__change--word">Food <span>🥟💓</span></p>
-                    <p class="text__change--word">Travel <span>✈️</span></p>
-                </div>
+                <p class="scroll__guide">scroll down</p>
             </div>
         </section>
         <!--hero section-->
 
-        <section class="values container">
-            <h1 class="section__title">Values</h1>
-            <div class="values__item">
-                <div class="values__item--flex">
-                    <img src="dist/images/icon__eye.png" alt="icon eye">
-                    <p>Design and development <span>with a keen eye and attention to detail</span> is my strength. Working with caution that an error of 1px will change the impression of the website.</p>
-                </div>
-                <div class="values__item--flex">
-                    <img src="dist/images/icon__pen.png" alt="icon pen">
-                    <p>To <span>clarify the target and the concept</span>, and proceed with the design so that the axis does not move. The presence of an axis prevents directional blurring when making corrections.</p>
-                </div>
-                <div class="values__item--flex">
-                    <img src="dist/images/icon__code.png" alt="icon code">
-                    <p><span>Coding is part of the design</span> and trying to keep the clear and clean code. Keep in mind the code which can be used repeatedly paying attention to the component.</p>
-                </div>
-            </div>
-        </section>
-        <!--values section-->
-
         <section id="works" class="works container">
             <h1 class="section__title">Works</h1>
-            <div class="works__flex">
-                <div class="work">
-                    <a class="animsition-link" href="dist/html/work-kulkuri.html"><img src="dist/images/kulkuri/thumbnail.jpg" alt="thumbnail kulkuri"></a>
-                    <p><span>kulkuri</span> - HTML / SCSS / JavaScript</p>
+            <div class="works__items">
+                <div class="works__items-item">
+                    <div class="text__hover">
+                        <a href="html/work-kulkuri.html"><h2 class="color__change" data-txt="kulkuri">kulkuri</h2></a>
+                        <p>- HTML / SCSS / JavaScript</p>
+                    </div>
+                    <div class="hover__appear">
+                        <img src="images/kulkuri/thumbnail.jpg" alt="thumbnail kulkuri">
+                    </div>
                 </div>
-                <div class="work">
-                    <a class="animsition-link" href="dist/html/work-mogu.html"><img src="dist/images/mogu/thumbnail.png" alt="thumbnail mogu"></a>
-                    <p><span>mogu</span> - WordPress</p>
+                <div class="works__items-item">
+                    <div class="text__hover">
+                        <a href="html/work-mogu.html"><h2 class="color__change" data-txt="mogu">mogu</h2></a>
+                        <p>- WordPress</p>
+                    </div>
+                    <div class="hover__appear">
+                        <img src="images/mogu/thumbnail.png" alt="thumbnail mogu">
+                    </div>
                 </div>
-                <div class="work">
-                    <a class="animsition-link" href="dist/html/work-wordworth.html"><img src="dist/images/wordsworth/thumbnail.jpg" alt="thumbnail wordsworth"></a>
-                    <p><span>Wordsworth Planner</span> - Adobe XD</p>
+                <div class="works__items-item">
+                    <div class="text__hover">
+                        <a href="html/work-wordworth.html"><h2 class="color__change" data-txt="Wordsworth Planner">Wordsworth Planner</h2></a>
+                        <p>- Adobe XD</p>
+                    </div>
+                    <div class="hover__appear">
+                        <img src="images/wordsworth/thumbnail.jpg" alt="thumbnail wordsworth">
+                    </div>
                 </div>
-                <div class="work">
-                    <a class="animsition-link" href="dist/html/work-uidesign.html"><img src="dist/images/ui/thumbnail.png" alt="thumbnail ui"></a>
-                    <p class="text__center"><span>DailyUI</span> - Illustlator / Photoshop</p>
+                <div class="works__items-item">
+                    <div class="text__hover">
+                        <a href="html/work-uidesign.html"><h2 class="color__change" data-txt="DailyUI">DailyUI</h2></a>
+                        <p>- Illustlator / Photoshop</p>
+                    </div>
+                    <div class="hover__appear">
+                        <img src="images/ui/thumbnail.png" alt="thumbnail ui">
+                    </div>
                 </div>
             </div>
         </section>
         <!--works section-->
 
-        <section id="contact" class="contact container">
-            <h1 class="section__title">Contact</h1>
-            <div class="contact__info">
-                <p>I am seeking a job as a
-                    <span>Front-End Developer</span>.
-                    <br>If you are interested me,
-                    please send an email to me.
-                </p>
+        <section id="values" class="about container">
+            <h1 class="section__title">Values</h1>
+            <div class="about__flex">
+                <div id="slideLeft" class="intro__wrap values__animation1">
+                    <p class="intro__wrap--txt">
+                        Hello, I'm an <span>ambitious Front-End Developer</span> with thoughtfully designed and carefully coded projects with UI considerations in mind.
+                        I'm willing to continuous learning to stay up to date on the latest tech and design trends.
+                        <br>In my free time, I've <span>passionate about food</span> a lot. Always searching good or trend foodie on Vancouver.
+                    </p>
+                </div>
+                <div id="slideRight" class="values__flex values__animation2">
+                    <div class="values__flex-item">
+                        <img src="images/icon__eye.png" alt="icon eye">
+                        <p class="text__bold">Eye for pixel-perfect</p>
+                        <p class="text__hide">Design and development with a keen eye and attention to detail.</p>
+                    </div>
+                    <div class="values__flex-item">
+                        <img src="images/icon__pen.png" alt="icon pen">
+                        <p class="text__bold">Firm focus on concepts</p>
+                        <p class="text__hide">To clarify the target and the concept, and proceed with the design.</p>
+                    </div>
+                    <div class="values__flex-item">
+                        <img src="images/icon__code.png" alt="icon code">
+                        <p class="text__bold">Clear and clean code</p>
+                        <p class="text__hide">Believe the code is part of the design and should be reusable.</p>
+                    </div>
+                    <div class="values__flex-item">
+                        <img src="images/icon__pingpong.png" alt="icon ping-pong">
+                        <p class="text__bold">Share my energy</p>
+                        <p class="text__hide">Bring my energy to the team and to solve the problem.</p>
+                    </div>
+                </div>
             </div>
-            <a class="common__button" href="mailto:miesuzuki107@gmail.com">Send an E-mail</a>
         </section>
-        <!--contact section-->
+        <!--values section-->
 
     </div>
     <!--animsition-->
 
-    <footer>
+    <footer id="contact">
+        <div class="contact">
+            <p>Drop me a line. I'll get back to you soon.</p>
+            <h2><a href="mailto:miesuzuki107@gmail.com">miesuzuki107@gmail.com</a></h2>
+        </div>
         <div class="footer__flex">
             <a href="https://www.linkedin.com/in/mie-suzuki-079644161/" target="_blank"><svg class="icon icon-linkedin2"><use xlink:href="#icon-linkedin2"><symbol id="icon-linkedin2" viewBox="0 0 32 32">
                 <title>linkedin2</title>
@@ -167,7 +191,7 @@
                 <path d="M26.462 7.456c0 1.060-0.859 1.919-1.919 1.919s-1.919-0.859-1.919-1.919c0-1.060 0.859-1.919 1.919-1.919s1.919 0.859 1.919 1.919z"></path>
             </symbol></use></svg></a>
         </div>
-        <p>&copy;2019 MIE SUZUKI developed by &hearts;</p>
+        <p class="copy-write">&copy;2019 MIE SUZUKI developed by &hearts;</p>
     </footer>
 
     <div id="js-topButton"><a data-scroll href="#">↑</a></div>

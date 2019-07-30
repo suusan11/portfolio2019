@@ -19,7 +19,7 @@ section {
   margin: 5% 0;
 
   & > .section__title {
-    text-align: center;
+    text-align: right;
   }
 
   & > .section__title.work__h1 {
@@ -35,7 +35,7 @@ section {
 #js-topButton {
   display: none;
   position: fixed;
-  bottom: 250px;
+  bottom: 130px;
   right: 10px;
   width: 50px;
   height: 50px;
@@ -43,8 +43,11 @@ section {
   border-radius: 50px;
   background-color: $black__opacity;
   z-index: 10;
+  @include pc {
+    bottom: 150px;
+  }
   @include lg {
-    bottom: 200px;
+    bottom: 220px;
   }
 
   a {
@@ -80,6 +83,7 @@ h1.section__title {
   color: $black__opacity;
   font-weight: $font-weight-bold;
   font-style: italic;
+  margin-bottom: 5vh;
   @include pc {
     font-size: 70px;
   }
@@ -91,16 +95,15 @@ h1.section__title {
   }
 }
 h3 {
-  @include font_vw(25);
-  font-family: $font-empha;
+  @include font_vw(14);
   @include pc {
-    font-size: 55px;
+    font-size: 16px;
   }
   @include lg {
-    font-size: 55px;
+    font-size: 16px;
   }
   @include md {
-    font-size: 45px;
+    font-size: 16px;
   }
 }
 h4 {

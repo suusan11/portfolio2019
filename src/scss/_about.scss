@@ -1,0 +1,75 @@
+@import "color", "mixin";
+
+.about {
+  padding: 15% 0;
+  @include pc {
+    padding: 5% 0;
+  }
+  @include lg {
+    padding: 5% 0;
+  }
+
+  @include pc {
+    &__flex {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+
+  .intro__wrap {
+    position: relative;
+    width: 100vw;
+    background-color: $black;
+    text-align: center;
+    padding: 10vh;
+    margin-top: 5vh;
+    @include pc {
+      width: 45vw;
+      margin-top: 0;
+    }
+    @include lg {
+      width: 80vw;
+    }
+
+    &--txt {
+      color: $white;
+      text-align: left;
+      line-height: 1.8;
+      letter-spacing: 1.3px;
+    }
+
+    //slide animation handle by JS
+    //&.values__animation1 {
+    //  animation: slideLeft 2s forwards;
+    //}
+    //@keyframes slideLeft {
+    //  0% {
+    //    transform: translateX(-200px);
+    //    opacity: 0;
+    //  }
+    //  100% {
+    //    transform: translateX(0);
+    //    opacity: 1;
+    //  }
+    //}
+
+  }
+
+  @include md {
+    &.container {
+      width: 100vw;
+    }
+    h1 {
+      margin-right: 10vw;
+    }
+  }
+  @include sm {
+    &.container {
+      width: 100vw;
+    }
+    h1 {
+      margin-right: 10vw;
+    }
+  }
+}

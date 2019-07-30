@@ -59,19 +59,17 @@
 @mixin colorBox($color) {
   width: 20vw;
   height: 7vh;
-  border: 3px solid $color;
   background-color: $color;
   color: $white;
-  line-height: 6vh;
+  line-height: 7vh;
+  text-align: center;
   margin-right: 1.5vw;
-  padding-left: 1.2vw;
   @include font_vw(12);
   @include pc {
     font-size: 18px;
     width: 100px;
     height: 68px;
     line-height: 68px;
-    padding-left: 9px;
     margin-bottom: 5px;
   }
   @include lg {
@@ -79,7 +77,6 @@
     width: 100px;
     height: 68px;
     line-height: 68px;
-    padding-left: 9px;
     margin-bottom: 5px;
   }
   @include md {
@@ -87,7 +84,6 @@
     width: 100px;
     height: 68px;
     line-height: 68px;
-    padding-left: 9px;
     margin-bottom: 5px;
   }
 }
