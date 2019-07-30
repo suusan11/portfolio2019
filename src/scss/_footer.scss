@@ -90,7 +90,10 @@ footer {
     }
     @include lg {
       justify-content: flex-end;
-      margin: 13% 0 2% auto;
+      margin: 10% 0 2% auto;
+    }
+    @include md {
+      margin: 7% auto 0;
     }
 
     .icon {

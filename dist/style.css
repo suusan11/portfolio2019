@@ -86,7 +86,7 @@ section {
 #js-topButton {
   display: none;
   position: fixed;
-  bottom: 250px;
+  bottom: 130px;
   right: 10px;
   width: 50px;
   height: 50px;
@@ -94,9 +94,12 @@ section {
   border-radius: 50px;
   background-color: rgba(45, 49, 51, 0.3);
   z-index: 10; }
+  @media (min-width: 1000px) {
+    #js-topButton {
+      bottom: 150px; } }
   @media (min-width: 600px) and (max-width: 999px) {
     #js-topButton {
-      bottom: 200px; } }
+      bottom: 220px; } }
   #js-topButton a {
     display: block;
     width: 48px;
