@@ -852,21 +852,18 @@ footer {
   width: 100vw;
   height: 180px;
   background-color: #2D3133;
-  padding: 4vh 10vw;
+  padding: 7% 10vw 0;
   text-align: center; }
   @media (min-width: 1000px) {
     footer {
       height: 200px;
+      padding: 3% 10vw 0;
       text-align: right; } }
   @media (min-width: 600px) and (max-width: 999px) {
     footer {
       height: 250px;
-      padding: 8vh 8vw;
+      padding: 5% 10vw 0;
       text-align: right; } }
-  @media (min-width: 440px) and (max-width: 599px) {
-    footer {
-      height: 200px;
-      padding: 2vh 0; } }
   footer .contact {
     width: 80vw;
     margin: 0 auto; }
@@ -881,8 +878,8 @@ footer {
       color: #FFFFFF;
       text-align: left;
       font-weight: 300;
-      font-size: 14px;
-      font-size: 4.375vw; }
+      font-size: 11px;
+      font-size: 3.4375vw; }
       @media (min-width: 1000px) {
         footer .contact p {
           font-size: 18px; } }
@@ -893,8 +890,8 @@ footer {
         footer .contact p {
           font-size: 18px; } }
     footer .contact h2 {
-      font-size: 20px;
-      font-size: 6.25vw;
+      font-size: 15px;
+      font-size: 4.6875vw;
       font-weight: 700;
       font-style: italic;
       margin-top: 2vh; }
@@ -931,20 +928,17 @@ footer {
     -webkit-box-align: center;
             align-items: center;
     width: 80vw;
-    margin: 6vh auto 0; }
+    margin: 10% auto 0; }
     @media (min-width: 1000px) {
       footer .footer__flex {
         -webkit-box-pack: end;
                 justify-content: flex-end;
-        margin: 2vh auto 0; } }
+        margin: 2% auto 0; } }
     @media (min-width: 600px) and (max-width: 999px) {
       footer .footer__flex {
         -webkit-box-pack: end;
                 justify-content: flex-end;
-        margin: 5vh auto 0; } }
-    @media (min-width: 440px) and (max-width: 599px) {
-      footer .footer__flex {
-        margin: 6vh auto 0; } }
+        margin: 13% 0 2% auto; } }
     footer .footer__flex .icon {
       width: 8vw;
       height: 2.5vh;
@@ -957,6 +951,10 @@ footer {
           width: 50px;
           height: 20px; } }
       @media (min-width: 600px) and (max-width: 999px) {
+        footer .footer__flex .icon {
+          width: 50px;
+          height: 20px; } }
+      @media (min-width: 440px) and (max-width: 599px) {
         footer .footer__flex .icon {
           width: 50px;
           height: 20px; } }

@@ -35,7 +35,7 @@ section {
 #js-topButton {
   display: none;
   position: fixed;
-  bottom: 250px;
+  bottom: 130px;
   right: 10px;
   width: 50px;
   height: 50px;
@@ -43,8 +43,11 @@ section {
   border-radius: 50px;
   background-color: $black__opacity;
   z-index: 10;
+  @include pc {
+    bottom: 150px;
+  }
   @include lg {
-    bottom: 200px;
+    bottom: 220px;
   }
 
   a {
