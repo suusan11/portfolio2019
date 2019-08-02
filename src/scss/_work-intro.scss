@@ -107,10 +107,11 @@
   }
 }
 .work__intro.ui {
-  width: 80vw;
+  width: 100vw;
   text-align: center;
+  background-color: $darkgray;
   img {
-    width: 100%;
+    width: 80%;
     margin: 10vh auto 5vh;
     @include lg {
       width: 70vw;
@@ -123,13 +124,16 @@
   .work__intro--flex {
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-end;
 
     .work__intro {
       width: 50vw;
+      height: 100vh;
+      background-color: $darkgray;
 
       &.ui img {
         width: 80%;
+        margin-top: 250px;
       }
     }
     .work__intro--black {
@@ -144,7 +148,7 @@
 
 .work__image {
   width: 100vw;
-  background-color: #f0f0f0;
+  background-color: $darkgray;
   text-align: center;
 
   img {
