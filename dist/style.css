@@ -1130,10 +1130,11 @@ html {
       margin-bottom: 0; } }
 
 .work__intro.ui {
-  width: 80vw;
-  text-align: center; }
+  width: 100vw;
+  text-align: center;
+  background-color: #f0f0f0; }
   .work__intro.ui img {
-    width: 100%;
+    width: 80%;
     margin: 10vh auto 5vh; }
     @media (min-width: 600px) and (max-width: 999px) {
       .work__intro.ui img {
@@ -1145,12 +1146,15 @@ html {
     display: flex;
     -webkit-box-pack: center;
             justify-content: center;
-    -webkit-box-align: center;
-            align-items: center; }
+    -webkit-box-align: end;
+            align-items: flex-end; }
     .work__intro--flex .work__intro {
-      width: 50vw; }
+      width: 50vw;
+      height: 100vh;
+      background-color: #f0f0f0; }
       .work__intro--flex .work__intro.ui img {
-        width: 80%; }
+        width: 80%;
+        margin-top: 250px; }
     .work__intro--flex .work__intro--black {
       width: 50vw;
       min-height: 770px;
@@ -1764,7 +1768,7 @@ html {
 
 .work__image--color {
   width: 100vw;
-  background-color: #FAFAFA;
+  background-color: #f0f0f0;
   text-align: center;
   padding: 2vh 0; }
   .work__image--color .image__wrapper {
@@ -1976,7 +1980,7 @@ html {
 
 .work__image--font {
   width: 100vw;
-  background-color: #FAFAFA;
+  background-color: #f0f0f0;
   text-align: center;
   padding: 3vh 0; }
   .work__image--font.kulkuri .work__image--font-item {
@@ -2179,7 +2183,7 @@ html {
 
 .work__image--feature {
   width: 100vw;
-  background-color: #FAFAFA;
+  background-color: #f0f0f0;
   text-align: center;
   padding: 5vh 0; }
   .work__image--feature.kulkuri img {
