@@ -9,7 +9,7 @@ Mie Suzuki's portfolio site using **HTML**, **SASS/SCSS**, and **JavaScript**.
 Introduce my work/projects, values, and myself. 
 <br>The work page reproduces the workflow with color or font details.
 
-### Summery
+### Summary
 <img width="1440" alt="Screen Shot 2019-08-03 at 4 35 15 PM" src="https://user-images.githubusercontent.com/38636923/62417755-2601e800-b60d-11e9-9000-2c9899b40f92.png">
 
 ### Color section
